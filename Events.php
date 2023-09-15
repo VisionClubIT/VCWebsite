@@ -1,15 +1,15 @@
 <?php
-include_once  'Header/header.php';
 require_once ('config/database.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl>
 <head>
-    <meta charset="UTF-8">
+	<?php include_once  'Header/headerwhitehead.php'; ?>
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    
     <link rel="stylesheet" href="css/Event11.css"/>
 	<link rel="stylesheet" href="css/events.css?v=<?php echo time(); ?>">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -17,6 +17,8 @@ require_once ('config/database.php');
     
 </head>
 <body> 
+<?php include_once  'Header/headerwhitebody.php'; ?>
+
              <!-- <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('_2022')">2022</button>
                 <button class="btn" onclick="filterSelection('_2021')">2021</button>

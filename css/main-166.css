@@ -6027,7 +6027,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
 
 @media(max-width: 1279px) {
     header nav .mobile-menu-copy {
-        margin-top: 5.8rem;
+        margin-top: 0.8rem;
         font-size: 1.1rem;
         line-height: 2.4rem;
         display: -webkit-box;
@@ -6038,8 +6038,8 @@ header.mobile-menu-opened .nav-list .nav-item ul {
 
 @media(max-width: 1279px)and (max-width: 1023px) {
     header nav .mobile-menu-copy {
-        margin-top: 4.1rem;
-        font-size: 1rem
+        margin-top: 0.3rem;
+        font-size: 3rem
     }
 }
 

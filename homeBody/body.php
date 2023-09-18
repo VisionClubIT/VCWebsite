@@ -77,7 +77,7 @@
           .u-block-5930-6 {font-weight: 700; font-size: 1rem; width: auto; margin-top: 60px; margin-bottom: 60px; margin-left: 0px; margin-right: 0px} }</style><div class="u-clearfix u-sheet u-valign-middle-xs u-block-5930-5" style="min-height: 529px"><p class="u-align-center u-text u-text-white u-block-control u-block-5930-6" style="font-weight: 700; font-size: 1.5rem; width: 512px; margin-top: 200px; margin-left: auto; margin-right: auto; margin-bottom: 60px" data-block="13">​    بدايةً من التاريخ المعدود ٢٠١٦، نرسم للحلم صورة <br>                            مرورا بال​تاريخ المشهود ٢٠٢٢،نرفع للتميز راية <br>                            وصولًا للتاريخ الموعود ٢٠٣٠،نروي قصة وعد وجدارة</p></div></section>
 
 
-    <section class="u-carousel u-slide u-block-70af-1" id="carousel-057e" data-interval="5000" data-u-ride="carousel">
+    <!-- <section class="u-carousel u-slide u-block-70af-1" id="carousel-057e" data-interval="5000" data-u-ride="carousel">
       <ol class="u-absolute-hcenter u-carousel-indicators u-block-70af-2">
         <li data-u-target="#carousel-057e" class="u-active u-grey-30" data-u-slide-to="0"></li>
         <li data-u-target="#carousel-057e" class="u-grey-30" data-u-slide-to="1"></li>
@@ -117,7 +117,11 @@
         </span>
         <span class="sr-only">Next</span>
       </a>
-    </section>
+    </section> -->
+
+    <?php
+    include('homeBody/eventBlock2.php')
+    ?>
     
   
 <!-- </body> -->

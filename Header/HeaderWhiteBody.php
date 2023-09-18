@@ -34,17 +34,17 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                         <!-- Menu Items -->
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown mr-5">
                             <a class="nav-link" id="headerTextSize" href="index.php">
                             الصفحة الرئيسية
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" id="headerTextSize" href="aboutus2.php">
+                        <li class="nav-item dropdown mr-5">
+                            <a class="nav-link" id="headerTextSize" href="aboutus.php">
                                 عن النادي
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown mr-5">
                             <a class="nav-link dropdown-toggle" id="headerTextSize" href="Events.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 الفعاليات والأنشطة
                             </a>
@@ -53,8 +53,8 @@
                                 <a class="dropdown-item" id="subPages" href="Events.php">الفعاليات القادمة</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="headerTextSize" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown mr-5">
+                            <a class="nav-link dropdown-toggle" id="headerTextSize" href="ContactUs.php" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 التواصل
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -67,10 +67,10 @@
                 <!-- Search -->
                 <div class="d-flex justify-content-end searchDiv">
                     <form id="searchForm" class="form-inline d-none mr-2">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control" type="search" placeholder="البحث" aria-label="البحث">
                     </form>
                     <button id="searchToggle" class="btn mx-auto">
-                        <i  class="fa-solid fa-magnifying-glass fa-xl" style="color: #b4bdc1;"></i>
+                        <i  class="fa-solid fa-magnifying-glass fa-xl"></i>
                     </button>
                 </div>
             </div>

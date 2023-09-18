@@ -1,9 +1,10 @@
 <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    
     <title>
        نادي رؤية 2030
     </title>
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
     <meta name="description" content="تقدم وانجازات نادي رؤية 2030    ">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -17,6 +18,7 @@
 
     
     <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
@@ -38,10 +40,13 @@
             padding: 0;
         }
         .header2023White li #headerTextSize{
-            font-size: 13px !important;
+            font-size: 15px !important;
             color: #b4bdc1;
             font-weight: 900 !important;
             font-family:"Bukra Bold" !important;
+         }
+         .header2023White li #headerTextSize:hover, .header2023White #subPages:hover, .header2023White #searchToggle:hover{
+            color: #24b4ba
          }
          .header2023White #subPages{
             font-size: 11px !important;
@@ -58,7 +63,7 @@
         .header2023White #searchForm {
             margin-right: 10px;
         }
-        .header2023White #searchToggle i {
+        .header2023White #searchToggle {
             color: #b4bdc1;
         }
 

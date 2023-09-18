@@ -122,9 +122,6 @@
     <link rel="shortcut icon" href="img/VCLogo.png">
     <link rel="stylesheet" href="css/main-166.css">
     <link rel="stylesheet" href="css/vendors-166.css">
-    <link rel="stylesheet" href="css/master.min.css">
-    <link rel="stylesheet" href="css/header1.css">
-    <link rel="stylesheet" href="css/ssss.css">
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.js"></script>
@@ -132,7 +129,7 @@
 </head>
 
 
-<body class="body-home ">
+<body class="body-home">
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPZ3HBM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     
     <header class="transparent-header">
@@ -171,12 +168,12 @@
 
                     <li class="nav-item has-sub">
                         <a class="nav-link headerTextSize" href="Events.php">الفعاليات والانشطة
-                            <!-- <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6"> -->
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
                                 <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
                             </svg>
                         </a>
                         <ul>
-                            <!-- <li>
+                            <li>
                                 <a href="Events.php">
                                     </span>  الفعاليات الحالية  <span>
                                 </a>
@@ -185,10 +182,10 @@
                                 <a href="upcomingEv.php">
                                     </span> الفعاليات القادمة <span>
                                 </a>
-                            </li> -->
+                            </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link headerTextSize" href="ContactUs.php">
                             <span>تواصل معنا</span>
 
@@ -200,9 +197,9 @@
                         <a class="nav-link headerTextSize" href="https://forms.gle/1kPdPC4cBMiDhBuw7">
                         <span>التقييم</span>
                     </a>
-                    </li>
-                    <!-- <li class="nav-item has-sub">
-                        <a  class="nav-link" href="ContactUs.php">
+                    </li> -->
+                    <li class="nav-item has-sub">
+                        <a  class="nav-link headerTextSize" href="ContactUs.php">
                             تواصل معنا
                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
                                 <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
@@ -218,7 +215,7 @@
                                 <a href="https://forms.gle/1kPdPC4cBMiDhBuw7">
                                     </span> التقييم <span>
                                 </a>
-                            </li> -->
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -447,5 +444,3 @@
             <!--</a>-->
         </div>
     </section>
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

@@ -129,7 +129,7 @@ include('Dynamic/Alert.php');
                                         <div class="item-icon"><img src="img/icons/ico-green-5.svg" alt="img"></div>
                                         <div class="item-content">
                                             <h2>
-                                                ١٠٣
+                                                +١٠٠
                                                 <!-- <asp:Label runat="server" ID="HealthCount">199</asp:Label> -->
                                             </h2>
                                             <h4><?php echo $post['M7']?>   </h4>
@@ -202,7 +202,9 @@ include('Dynamic/Alert.php');
     </div>
 
 </section>
-
+<?php
+include('homeBody/sponsors.php')
+?>
 
 </body>
 
@@ -210,7 +212,6 @@ include('Dynamic/Alert.php');
 </html>
 
 <?php include('Footer/footer.php');
-
 ?>
 
 

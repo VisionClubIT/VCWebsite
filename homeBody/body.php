@@ -32,11 +32,11 @@
               <div class="u-layout-col">
                 <div class="u-container-style u-layout-cell u-size-40 u-layout-cell-1">
                   <div class="u-container-layout u-valign-bottom-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
-                    <img class="u-image u-image-default u-image-1" src="uploads/events/alawaad.jpeg" alt="" data-image-width="1920" data-image-height="1080">
+                    <img class="u-image u-image-default u-image-1" src="uploads/events/waad.png" alt="" data-image-width="1920" data-image-height="1080">
                   </div>
                 </div>
                 <div class="u-container-style u-image u-layout-cell u-size-20 u-image-2" data-image-width="1833" data-image-height="917">
-                  <img class="u-container-layout u-container-layout-2" src="uploads/events/alawaad.jpeg">
+                  <img class="u-container-layout u-container-layout-2" src="uploads/events/waad3.jpeg">
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@
     </section> -->
 
     <?php
-    include('homeBody/eventBlock2.php')
+    include('homeBody/eventBlock.php')
     ?>
     
   

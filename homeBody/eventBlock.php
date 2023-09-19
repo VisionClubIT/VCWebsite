@@ -24,12 +24,12 @@
         /* Make the title and button larger and center them */
         .carousel-caption h1 {
             font-family: "Open-Sans, sans serif";
-            font-size: 8vw; /* Increase the font size */
+            font-size: 6vw; /* Increase the font size */
             text-align: center; /* Center text horizontally */
         }
 
         .carousel-caption a.btn {
-            font-size: 2vw; /* Increase the font size */
+            font-size: 1.5vw; /* Increase the font size */
             background-color: #478ac9;
             color: #ffff;
             border-radius: 32%; /* Make them circular */

@@ -3,6 +3,7 @@ include_once  'Header/header.php';
 
 
 
+
 ?>
 
 <?php
@@ -18,6 +19,7 @@ include_once 'Dynamic/Alert.php';
         </title>
         <link rel="stylesheet" href="css/About.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+        <link rel="stylesheet" href="css/SliderLogo.css" type="text/css">
     </head>
     <body>
         <div>
@@ -145,7 +147,23 @@ $
 
 
 </div>
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img src="gov.jpg" width="100" height="100">
+        </div>
+        <div class="slide">
+            <img src="pcw.png" width="100" height="100">
+        </div>
+        <div class="slide">
+            <img src="ed.png" width="100" height="100">
+        </div>
+    </div>
+</div>
+
+</div>
 <!--add here what u deleted-->
+
 
     </body>
 </html>

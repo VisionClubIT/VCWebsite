@@ -153,10 +153,10 @@ $
             <img src="gov.jpg" width="100" height="100">
         </div>
         <div class="slide">
-            <img src="pcw.png" width="100" height="100">
+            <img src="PcW.jpg" width="100" height="100">
         </div>
         <div class="slide">
-            <img src="ed.png" width="100" height="100">
+            <img src="ED.jpg" width="100" height="100">
         </div>
     </div>
 </div>

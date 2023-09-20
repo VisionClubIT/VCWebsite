@@ -1,5 +1,6 @@
 <?php
 include_once  'Header/header.php';
+require_once ('config/database.php');
 
 
 ?>
@@ -17,6 +18,8 @@ include_once 'Dynamic/Alert.php';
         </title>
         <link rel="stylesheet" href="css/About.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+        <Link rel="stylesheet" href="css/LogoSlider.css" type="text/css"
+        
     </head>
     <body>
         <div>
@@ -143,6 +146,9 @@ $
     </section>
 
 
+</div>
+<div>
+<?php include 'logo-slider.php'; ?>
 </div>
 <!--add here what u deleted-->
 

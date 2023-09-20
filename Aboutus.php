@@ -19,7 +19,9 @@ include_once 'Dynamic/Alert.php';
         </title>
         <link rel="stylesheet" href="css/About.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
-        <link rel="stylesheet" href="css/SliderLogo.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <div>
@@ -147,19 +149,17 @@ $
 
 
 </div>
-<div class="slider">
-    <div class="slide-track">
-        <div class="slide">
-            <img src="gov.jpg" width="100" height="100">
-        </div>
-        <div class="slide">
-            <img src="PcW.jpg" width="100" height="100">
-        </div>
-        <div class="slide">
-            <img src="ED.jpg" width="100" height="100">
-        </div>
+<div class="logo-slider">
+        <?php
+        $logosDir = 'logos/';
+        $logos = scandir($logosDir);
+        foreach ($logos as $logo) {
+            if (is_file($logosDir . $logo)) {
+                echo '<div class="logo"><img src="' . $logosDir . $logo . '" alt="Logo"></div>';
+            }
+        }
+        ?>
     </div>
-</div>
 
 </div>
 <!--add here what u deleted-->

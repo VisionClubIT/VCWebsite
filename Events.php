@@ -1,6 +1,6 @@
 <?php
 include_once  'Header/header.php';
-require_once ('config/database.php');
+require_once ('config/database.php');//db
 ?>
 
 <!DOCTYPE html>
@@ -53,8 +53,8 @@ require_once ('config/database.php');
 
 <div class = "row">      
 <?php
-       $result = mysqli_query($con,"SELECT * FROM `events`"); 
-	    while($row = mysqli_fetch_assoc($result)) {   
+       $result = mysqli_query($con,"SELECT * FROM `events`"); //db
+	    while($row = mysqli_fetch_assoc($result)) {   //db
       
          $tweet= $row['tweet'];
          echo "

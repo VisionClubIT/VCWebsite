@@ -1,5 +1,5 @@
 <?php
-include_once  'Header/headernovideo.php';
+include_once  'headerwhite.php';
 ?>
 
 <?php
@@ -12,6 +12,9 @@ include_once 'Dynamic/Alert.php';
         <title>
             whoAreWe
         </title>
+        
+    <link rel="stylesheet" href="css/main-166.css">
+    <link rel="stylesheet" href="css/vendors-166.css">
     </head>
     <body>
         <div>
@@ -136,6 +139,8 @@ include_once 'Dynamic/Alert.php';
         </div>
         <!--add here what u deleted-->
 
+
     </body>
 </html>
-<?php include_once 'Footer/footer.php'?>
+<?php include_once 'newFooterfull.php'?>
+

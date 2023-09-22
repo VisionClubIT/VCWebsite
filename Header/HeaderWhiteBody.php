@@ -3,10 +3,10 @@
 <div class="header2023White">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <!-- Logo -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" style="justify-content: flex-start;">
                 <img src="img/VCLogo.png" alt="شعار نادي 2030" width="70" height="70">
             </a>
-
+            <div style="justify-content: flex-end;">
             <!-- Toggler for mobile view -->
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- Your custom icon (dots) goes here -->
@@ -31,20 +31,20 @@
 
 
             <!-- Menu and Search Input -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+            <div class="header-menu-search collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                         <!-- Menu Items -->
-                        <li class="nav-item dropdown mr-5">
+                        <li class="nav-item dropdown">
                             <a class="nav-link" id="headerTextSize" href="index.php">
                             الصفحة الرئيسية
                             </a>
                         </li>
-                        <li class="nav-item dropdown mr-5">
+                        <li class="nav-item dropdown">
                             <a class="nav-link" id="headerTextSize" href="aboutus.php">
                                 عن النادي
                             </a>
                         </li>
-                        <li class="nav-item dropdown mr-5">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="headerTextSize" href="Events.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 الفعاليات والأنشطة
                             </a>
@@ -53,7 +53,7 @@
                                 <a class="dropdown-item" id="subPages" href="Events.php">الفعاليات القادمة</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown mr-5">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="headerTextSize" href="ContactUs.php" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 التواصل
                             </a>
@@ -65,7 +65,7 @@
                 </ul>
 
                 <!-- Search -->
-                <div class="d-flex justify-content-end searchDiv">
+                <div class="d-flex searchDiv">
                     <form id="searchForm" class="form-inline d-none mr-2">
                         <input class="form-control" type="search" placeholder="البحث" aria-label="البحث">
                     </form>
@@ -73,6 +73,7 @@
                         <i  class="fa-solid fa-magnifying-glass fa-xl"></i>
                     </button>
                 </div>
+            </div>
             </div>
         </nav>
     </div>

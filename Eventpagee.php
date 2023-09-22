@@ -1,15 +1,13 @@
-<?php
-include_once  'Header/headernoVideo.php';
-
-
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <?php include_once  'Header/headerwhitehead.php'; ?>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -25,6 +23,7 @@ include_once  'Header/headernoVideo.php';
     </style>
 </head>
 <body>
+    <?php include_once  'Header/headerwhitebody.php'; ?>
     <div class="container-fluid">
         <div class="row mt-4">
 
@@ -66,7 +65,7 @@ include_once  'Header/headernoVideo.php';
 
         </div>
     </div>
+    <?php include_once  'Footer/footerbody.php'; ?>
+
 </body>
 </html>
-
-<?php include_once 'footer/footer.php'?>

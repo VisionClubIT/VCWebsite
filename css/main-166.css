@@ -7,7 +7,7 @@ font-family
 nav-right
 animated-link
 font
-footer
+/*footer*/
 slide-index
 nav-item has-sub
 bottom3-line
@@ -2801,7 +2801,6 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline,
-    
 }
 
 article,
@@ -6960,7 +6959,7 @@ header.search-opened .mobile-menu-icon span svg circle {
     pointer-events: visible !important;
     max-height: 25rem !important
 }
-
+/*
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7650,7 +7649,7 @@ footer .footer-bottom .footer-bottom-right ul li a svg path {
 .body-components footer {
     display: none
 }
-
+*/
 .link-with-text-container {
     background-color: #FFFF
 }

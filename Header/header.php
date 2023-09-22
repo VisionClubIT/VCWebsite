@@ -21,6 +21,7 @@
     <meta property="og:site_name" content="2030 رؤية نادي">
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
     
     <style>
         * {
@@ -82,9 +83,11 @@
             font-size: 21px;
             background-color: rgb(200, 186, 97);
         }
-         .headerTextSize{
+        .headerTextSize{
             font-size: 15px !important;
-         }
+        }
+
+         
     </style>
     
     <script type="application/ld+json">
@@ -123,7 +126,7 @@
     <link rel="stylesheet" href="css/main-166.css">
     <link rel="stylesheet" href="css/vendors-166.css">
     
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.esm.js"></script>
+    <!--script type="module" src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.esm.js"></script-->
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.js"></script>
 
 </head>
@@ -167,7 +170,7 @@
                     </li>
 
                     <li class="nav-item has-sub">
-                        <a class="nav-link headerTextSize" href="Events.php">الفعاليات والانشطة
+                        <a class="nav-link headerTextSize" href="#">الفعاليات والانشطة
                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
                                 <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
                             </svg>
@@ -199,7 +202,7 @@
                     </a>
                     </li> -->
                     <li class="nav-item has-sub">
-                        <a  class="nav-link headerTextSize" href="ContactUs.php">
+                        <a  class="nav-link headerTextSize" href="#">
                             تواصل معنا
                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
                                 <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />

@@ -1,11 +1,11 @@
 <?php
 require_once ('config/database.php');
+include_once  'headerwhite.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl>
 <head>
-	<?php include_once  'Header/headerwhitehead.php'; ?>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,6 @@ require_once ('config/database.php');
     
 </head>
 <body> 
-<?php include_once  'Header/headerwhitebody.php'; ?>
 
              <!-- <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('_2022')">2022</button>
@@ -51,10 +50,10 @@ require_once ('config/database.php');
 	// 	}
 		?>
 
-</div>-->
+	</div>-->
 
-<div class = "row">      
-<?php
+	<div class = "row eventsPage">      
+	<?php
        $result = mysqli_query($con,"SELECT * FROM `events`"); 
 	    while($row = mysqli_fetch_assoc($result)) {   
       
@@ -82,9 +81,8 @@ require_once ('config/database.php');
           </div>";
 	 	}
 		?>
-
-</div>
+	</div>
+	<?php include_once 'Footer/footerbody.php'?>
 
 </body>
 </html>
-<?php include_once 'Footer/footer.php'?>

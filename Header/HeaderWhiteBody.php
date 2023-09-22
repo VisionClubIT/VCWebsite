@@ -6,7 +6,7 @@
             <a class="navbar-brand" href="#" style="justify-content: flex-start;">
                 <img src="img/VCLogo.png" alt="شعار نادي 2030" width="70" height="70">
             </a>
-            <div style="justify-content: flex-end;">
+
             <!-- Toggler for mobile view -->
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- Your custom icon (dots) goes here -->
@@ -28,8 +28,7 @@
                     </svg>
                 </span>
             </button>
-
-
+            <div class="header-end" style="justify-content: flex-end;">
             <!-- Menu and Search Input -->
             <div class="header-menu-search collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -75,5 +74,6 @@
                 </div>
             </div>
             </div>
+             
         </nav>
     </div>

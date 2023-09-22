@@ -92,7 +92,7 @@
                             <a class="nav-link" id="footerTextSize" href="index.php">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item mr-5">
-                            <a class="nav-link" id="footerTextSize" href="aboutus2.php">عن النادي</a>
+                            <a class="nav-link" id="footerTextSize" href="aboutus.php">عن النادي</a>
                         </li>
                         <li class="nav-item mr-5 dropdown">
                             <a class="nav-link dropdown-toggle" id="footerTextSize" href="Events.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

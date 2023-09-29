@@ -32,123 +32,116 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.js"></script>
 
     <style type="text/css">
-        @media(-webkit-device-pixel-ratio: 1.75) {
-            html {
-                font-size: 35, 71% !important
-            }
-        }
-
-        @media(-webkit-device-pixel-ratio: 1.5) {
-            html {
-                font-size: 41.67% !important
-            }
-        }
-
-        @media(-webkit-device-pixel-ratio: 1.25) {
-            html {
-                font-size: 50% !important
-            }
-        }
-
-        html {
-            font-size: 100% !important;
-        }
         @font-face {
             font-family: 'Bukra Bold';
             src: url('fonts/29LTBukra-Bold.woff2') format('woff2'); /* Adjust the URL and format if using another type of font like .woff or .otf */
         }
 
-        .header2023White{
-            padding: 0 9rem 0 1rem;
-            margin-top: 4.5rem;
-            height: 11rem;
+        /* Other custom styles */
+        .header2023White {
+            padding: 0 .75rem;
+            margin-top: 1.25rem;
+            height: 6rem;
         }
 
-        @media(max-width: 1439px) {
-            .header2023White {
-                padding: 0 6rem
-            }
-        }
-
-        @media(max-width: 1279px) {
+        @media (max-width: 1279px) {
             .header2023White {
                 padding: 0 5rem;
                 margin-top: 3.2rem;
-                height: 7.5rem
+                height: 7.5rem;
             }
         }
 
-        @media(max-width: 1023px) {
+        @media (max-width: 1023px) {
             .header2023White {
                 padding: 0 2.2rem;
-                margin-top: 2.1rem
+                margin-top: 2.1rem;
             }
         }
 
-
-        .header2023White .navbar{
+        /* Other custom styles */
+        .header2023White .navbar {
             justify-content: space-between;
+            font-family: "Bukra Bold" !important;
         }
-        .header2023White ul{
+        .header2023White .navbar-nav {
             padding: 0;
         }
-        .header2023White li #headerTextSize{
-            font-size: 1.2rem !important;
+        .header2023White .navbar-nav .nav-link {
+            font-size: 15px !important;
             color: #b4bdc1;
             font-weight: 900 !important;
-            font-family:"Bukra Bold" !important;
+            font-family: "Bukra Bold" !important;
             padding: 8px 16px !important;
-            font-size: 1.2rem;
             letter-spacing: .05rem;
             line-height: 1.6rem !important;
-         }
-         .header2023White li #headerTextSize:hover, .header2023White #subPages:hover, .header2023White #searchToggle:hover{
-            color: #24b4ba
-         }
-         .header2023White #subPages{
-            font-size: 11px !important;
-            color: #b4bdc1;
-            font-weight: 700 !important;
-            font-family:"Bukra Bold" !important;
         }
-        .header2023White .custom-toggler {
-            background-color: transparent; /* Make the button transparent */
-            border: none; /* Remove default border */
-            color: #b4bdc1;
-        }
-        
-        .header2023White #searchForm {
-            margin-right: 10px;
-        }
-        .header2023White #searchToggle {
-            color: #b4bdc1;
-        }
-
-        .header2023White .custom-toggler:focus {
-            outline: none; /* Remove focus outline */
-            box-shadow: none; /* Remove focus box-shadow */
-        }
-        
-        @media (max-width: 992px) {
-            .header2023White .navbar-collapse a{
-                text-align: center;
-            }
-            .header2023White #searchForm {
-                margin-right: 0;
-            }
-        }
-
         .header2023White .dropdown {
-            position: relative
+            position: relative;
         }
+        
 
         .header2023White .dropdown .dropdown-menu a {
             display: -webkit-box;
             display: -ms-flexbox;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
-            justify-content: center
+            justify-content: center;
         }
+
+        .header2023White .dropdown a {
+            font-size: 11px !important;
+            color: #b4bdc1;
+            font-weight: 700 !important;
+            font-family: "Bukra Bold" !important;
+        }
+        
+
+        .header2023White .navbar-nav .nav-link:hover,
+        .header2023White .dropdown-item:hover{
+            color: #4895c5cf; /* Change the hover color */
+        }
+        
+
+        .header2023White .custom-toggler {
+            background-color: transparent;
+            border: none;
+            color: #b4bdc1;
+        }
+        
+        .header2023White .custom-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .header2023White #searchForm {
+            margin-right: 10px;
+        }
+
+        .header2023White #searchToggle {
+            color: #b4bdc1;
+            padding-right: 2rem;
+            font-weight: 100;
+        }
+        
+        .header2023White .svg-icon.search-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+
+
+        @media (max-width: 992px) {
+            .header2023White .navbar-collapse a {
+                text-align: center;
+            }
+
+            .header2023White #searchForm {
+                margin-right: 0;
+            }
+        }
+
+        
 
         .header2023White .dropdown .dropdown-menu a:first-child::before {
             content: "";
@@ -158,75 +151,92 @@
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
             height: .2rem;
-            background-color:#9b7653;
-            top: 6rem;
-            z-index: 2
+            background-color: #9b7653;
+            top: 5; /* Change this value to 0 */
+            z-index: 2;
         }
 
-        @media(max-width: 1440px) {
+
+        @media (max-width: 1440px) {
             .header2023White .dropdown .dropdown-menu a:first-child::before {
-                width: calc(100% - 4rem)
+                width: calc(100% - 4rem);
             }
         }
 
-        @media(max-width: 1439px) {
+        @media (max-width: 1439px) {
             .header2023White .dropdown .dropdown-menu a:first-child::before {
-                width: calc(100% - 3rem)
+                width: calc(100% - 3rem);
             }
         }
 
-        @media(max-width: 1279px) {
+        @media (max-width: 1279px) {
             .header2023White .dropdown .dropdown-menu a:first-child::before {
-                display: none
+                display: none;
             }
         }
 
         .header2023White .dropdown:hover a {
-            color: #4895c5cf
-        }
-
-
-        .header2023White .dropdown:hover a {
-            stroke: #933131
+            stroke: #933131;
         }
 
         .header2023White .dropdown:hover .dropdown-menu {
             opacity: 1;
             pointer-events: visible;
-            max-height: 55rem
+            max-height: 55rem;
         }
+
         @media (max-width: 992px) {
             .header2023White .navbar .navbar-brand {
                 order: 1;
             }
+
             .header2023White .navbar .navbar-toggler {
                 order: 2;
             }
+
             .header2023White .navbar .header-end {
                 order: 3;
                 width: 100%;
                 height: 100%;
-
             }
-            .header2023White{
+
+            .header2023White {
                 padding: 0 !important;
             }
-            .header2023White .navbar .header-menu-search{
+
+            .header2023White .navbar .header-menu-search {
                 width: 100vw !important;
                 height: 100vh !important;
                 margin: 0 !important;
                 padding: 0 !important;
-
             }
+            
+            .header2023White .dropdown .dropdown-menu {
+                margin: auto; /* Remove the max-width property */
+                width: fit-content; /* Set width to auto */
+                text-align: center; /* Center-align the content */
+            }
+            .d-flex.searchDiv{
+                margin: 0 20px !important;
+            }
+            
         }
 
 
+        
     </style>
 
-    <script>
-        $(document).ready(function() {
-            $('#searchToggle').on('click', function() {
-                $('#searchForm').toggleClass('d-none');
-            });
+<script>
+    $(document).ready(function() {
+        $('#searchToggle').on('click', function() {
+            $('#searchForm').toggleClass('d-none');
         });
-    </script>
+
+        // Add JavaScript to show dropdown menus on hover
+        $('.navbar-nav .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+        });
+    });
+</script>

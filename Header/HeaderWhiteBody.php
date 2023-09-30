@@ -28,7 +28,7 @@
                 </svg>
             </span>
         </button>
-        <div class="header-end" style="justify-content: flex-end;">
+        <div class="header-end">
             <!-- Menu and Search Input -->
             <div class="header-menu-search collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -65,7 +65,6 @@
 
                 <!-- Search -->
                 <div class="d-flex searchDiv">
-                    <div class="mx-auto">
                     <form id="searchForm" class="form-inline d-none mr-2">
                         <input class="form-control" type="search" placeholder="البحث" aria-label="البحث">
                     </form>
@@ -78,7 +77,6 @@
                             </g>
                         </svg>
                     </button>
-                    </div>
                 </div>
             </div>
         </div>

@@ -79,7 +79,12 @@
         .header2023White .dropdown {
             position: relative;
         }
-        
+
+        .header2023White .dropdown .dropdown-menu{
+            border: none !important;
+            width: 110%;
+        }
+
 
         .header2023White .dropdown .dropdown-menu a {
             display: -webkit-box;
@@ -94,6 +99,7 @@
             color: #b4bdc1;
             font-weight: 700 !important;
             font-family: "Bukra Bold" !important;
+            padding-top: 1rem;
         }
         
 
@@ -152,7 +158,7 @@
             transform: translateX(-50%);
             height: .2rem;
             background-color: #9b7653;
-            top: 5; /* Change this value to 0 */
+            top: 0; /* Change this value to 0 */
             z-index: 2;
         }
 
@@ -216,8 +222,9 @@
                 width: fit-content; /* Set width to auto */
                 text-align: center; /* Center-align the content */
             }
-            .d-flex.searchDiv{
+            .header2023White .searchForm{
                 margin: 0 20px !important;
+                width: 50% !important;
             }
             
         }

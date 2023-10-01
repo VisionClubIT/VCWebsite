@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: #36768c;
+  font-family: 'roboto', sans-serif;
+}
+
+.crad{
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}

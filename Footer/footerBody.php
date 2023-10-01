@@ -46,6 +46,13 @@
                     font-weight: 700 !important;
                     font-family:"Bukra Bold" !important;
             }
+            .footer2023 .dropdown-menu .dropdown-item:hover,
+            .footer2023 ul .nav-item .nav-link:hover,
+            .footer2023 .footer-to-top-btn button svg:hover,
+            .footer2023 a.btn.btn-link.btn-floating.btn-lg.text-light.m-1 svg:hover
+            .footer2023 ul .nav-item .show .nav-link{
+                color: #4895c5cf !important;
+            }
 
             .footer2023 a.btn.btn-link.btn-floating.btn-lg.text-light.m-1 svg{
                 margin: 4px 6px !important;
@@ -101,13 +108,13 @@
                         <ul class="navbar-nav text-center flex-column flex-sm-row mx-auto">
                         
                         <li class="nav-item text-center">
-                            <a class="nav-link" id="footerTextSize" href="index.php">الصفحة الرئيسية</a>
+                            <a class="nav-link"  href="index.php">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="footerTextSize" href="aboutus.php">عن النادي</a>
+                            <a class="nav-link"  href="aboutus.php">عن النادي</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="footerTextSize" href="Events.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle"  href="Events.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             الفعاليات والأنشطة
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -116,7 +123,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="footerTextSize" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             التواصل
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">

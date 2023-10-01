@@ -104,7 +104,9 @@
         
 
         .header2023White .navbar-nav .nav-link:hover,
-        .header2023White .dropdown-item:hover{
+        .header2023White .dropdown-item:hover,
+        .header2023White .custom-toggler:hover,
+        .header2023White #searchToggle:hover i{
             color: #4895c5cf; /* Change the hover color */
         }
         

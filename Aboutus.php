@@ -1,5 +1,5 @@
 <?php
-include_once  'headerwhite.php';
+include_once  'header/header.php';
 ?>
 
 <?php
@@ -142,5 +142,5 @@ include_once 'Dynamic/Alert.php';
 
     </body>
 </html>
-<?php include_once 'newFooterfull.php'?>
+<?php include_once 'Footer/Footer.php'?>
 

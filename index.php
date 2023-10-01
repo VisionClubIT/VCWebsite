@@ -3,7 +3,7 @@
 // require  'config/app.php';
 // $q1 =  $con->query('select * from media order by id ')->fetch_all(MYSQLI_ASSOC);
 // $events = $con->query('select * from events order by id ')->fetch_all(MYSQLI_ASSOC);
-include('Header/header.php');
+include('Header/headerVideoIndex.php');
 ?>
 
 <!-- خاتة الحاوية 1- تعريف رؤية 2030 -->
@@ -505,7 +505,7 @@ include('Header/header.php');
             <?php include('review.php');?> 
         </section> -->                                   
                                             
-        <?php include_once 'newfooterfull.php'?>
+        <?php include_once 'Footer/Footer.php'?>
 <!-- <?php include('review.php');?> -->
 
 <!--       I hope you achieve the best, I believe in that  (:    

@@ -1,6 +1,6 @@
 <?php
 require_once ('config/database.php');
-include_once  'headerwhite.php';
+include_once  'header/header.php';
 ?>
 
 <!DOCTYPE html>

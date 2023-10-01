@@ -28,13 +28,13 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Header Head-->
-    <?php include_once  'Header/headerwhitehead.php'; ?>
+    <?php include_once  'Header/headerHead.php'; ?>
     
     <link rel="stylesheet" href="css/contactUs.css">
 </head>
 <body>
     <!-- Header Body-->
-    <?php include_once  'Header/headerwhiteBody.php'; ?>
+    <?php include_once  'Header/headerBody.php'; ?>
 
     <div class="Contact-container">
         <form  method="POST">

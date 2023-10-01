@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <?php include_once  'Header/headerwhitehead.php'; ?>
+    <?php include_once  'Header/headerhead.php'; ?>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -23,7 +23,7 @@
     </style>
 </head>
 <body>
-    <?php include_once  'Header/headerwhitebody.php'; ?>
+    <?php include_once  'Header/headerbody.php'; ?>
     <div class="container-fluid">
         <div class="row mt-4">
 

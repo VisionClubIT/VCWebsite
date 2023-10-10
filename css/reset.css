@@ -1,0 +1,23 @@
+/* Reset default styles */
+html, body, div, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set a baseline font size and remove any default font styles */
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Normalize anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Set default link styles */
+a:hover {
+    text-decoration: underline;
+}

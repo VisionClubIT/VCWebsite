@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Bukra Bold';
+    src: url('/fonts/29LTBukra-Bold.woff2') format('woff2'); /* Adjust the URL and format if using another type of font like .woff or .otf */
+}
+.header2023White ul{
+    padding: 0;
+}
+.header2023White li #headerTextSize{
+    font-size: 13px !important;
+    color: #b4bdc1;
+    font-weight: 900 !important;
+    font-family:"Bukra Bold" !important;
+ }
+ .header2023White #subPages{
+    font-size: 11px !important;
+    color: #b4bdc1;
+    font-weight: 700 !important;
+    font-family:"Bukra Bold" !important;
+}
+.header2023White .custom-toggler {
+    background-color: transparent; /* Make the button transparent */
+    border: none; /* Remove default border */
+    color: #b4bdc1;
+}
+
+.header2023White #searchForm {
+    margin-right: 10px;
+}
+.header2023White #searchToggle i {
+    color: #b4bdc1;
+}
+
+.header2023White .custom-toggler:focus {
+    outline: none; /* Remove focus outline */
+    box-shadow: none; /* Remove focus box-shadow */
+}
+
+@media (max-width: 992px) {
+    .header2023White .navbar-collapse a{
+        text-align: center;
+    }
+    .header2023White #searchForm {
+        margin-right: 0;
+    }
+}

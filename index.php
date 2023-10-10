@@ -1,5 +1,9 @@
 <?php
-include('Header/header.php');
+// require  'config/database.php';
+// require  'config/app.php';
+// $q1 =  $con->query('select * from media order by id ')->fetch_all(MYSQLI_ASSOC);
+// $events = $con->query('select * from events order by id ')->fetch_all(MYSQLI_ASSOC);
+include('Header/headerVideoIndex.php');
 ?>
 <div>
 <?php
@@ -134,16 +138,16 @@ include('Dynamic/Alert.php');
                                             </h2>
                                             <h4><?php echo $post['M7']?>   </h4>
 
-                                        </div>
-                                    </div>
-                                    <div class="item col-12 col-md-6">
-                                        <div class="item-icon"><img src="img/icons/ico-green-2.svg" alt="img"></div>
-                                        <div class="item-content">
-                                            <h2>
-                                                ٢١
-                                                <!-- <asp:Label runat="server" ID="BuildCount">20</asp:Label> -->
-                                            </h2>
-                                            <h4>  <?php echo $post['M8']?> </h4>
+                                                </div>
+                                            </div>
+                                            <div class="item col-12 col-md-6">
+                                                <div class="item-icon"><img src="img/icons/ico-green-2.svg" alt="img"></div>
+                                                <div class="item-content">
+                                                    <h2>
+                                                        ٢١
+                                                        <!-- <asp:Label runat="server" ID="BuildCount">20</asp:Label> -->
+                                                    </h2>
+                                                    <h4>  <?php echo $post['M8']?> </h4>
 
                                         </div>
                                     </div>
@@ -216,9 +220,4 @@ include('homeBody/sponsors.php')
 
 
 <!--       I hope you achieve the best, I believe in that  (:    
-    
-    
-
-
-
-                                              A. from technical team  .            
+    A. from technical team  . -->       

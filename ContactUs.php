@@ -1,7 +1,4 @@
 <?php
-include_once  'Header/header.php';
-
-
 if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $subject = $_POST['subject'];
@@ -22,24 +19,23 @@ if(isset($_POST['submit'])){
     echo '<script>alert("حصل خطأ عند الارسال، حاول مرة اخرى")</script>';
     echo "<script>location.href='index.php';</script>";
     }
-
 }
-
-
-
-
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="css/main-166.css">
     
+    <!-- Header Head-->
+    <?php include_once  'Header/headerHead.php'; ?>
+    
+    <link rel="stylesheet" href="css/contactUs.css">
 </head>
 <body>
+    <!-- Header Body-->
+    <?php include_once  'Header/headerBody.php'; ?>
+
     <div class="Contact-container">
         <form  method="POST">
             <h3>تواصل معنا</h3>
@@ -49,13 +45,13 @@ if(isset($_POST['submit'])){
             <input type="text" name="subject" placeholder="الموضوع" required>
             <textarea name="message" row="4" placeholder="تفضل، كلنا اذان صاغية لك" ></textarea>
             <button type="submit" name="submit">إرسال</button>
-
-
         </form>
-
     </div>
+
+    <!-- Footer -->
+    <?php include_once 'Footer/footerBody.php'?>
 </body>
-<?php include_once 'Footer/footer.php'?>
+
 </html>
 
 

@@ -12,7 +12,7 @@
 
 
 
-  .card {
+  .eventsPage .card {
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: 310px 130px 60px;
@@ -28,7 +28,7 @@
 
 
 
-  .card-image {
+  .eventsPage .card-image {
     grid-area: image;
     background: no-repeat center / contain;
     border-top-left-radius: 15px;
@@ -40,30 +40,30 @@
 
 
 
-  .card-text {
+  .eventsPage .card-text {
     grid-area: text;
     margin: 15px;
     width: auto;
     height: auto;
   }
-  .card-text .date {
+  .eventsPage .card-text .date {
     color: rgb(169, 162, 144);
     font-size:15px;
     width: auto;
     height: auto;
   }
-  .card-text p {
+  .eventsPage .card-text p {
     color: grey;
     font-size:19px;
     font-weight: 300;
     text-align: center;
   }
-  .card-text h2 {
+  .eventsPage .card-text h2 {
     margin-top:0px;
     font-size:20px;
     line-height: normal;
   }
-  .card-stats {
+  .eventsPage .card-stats {
     grid-area: stats; 
     display: grid;
     border-bottom-left-radius: 15px;
@@ -73,7 +73,7 @@
     height: auto;
 
   }
-  .card-stats .stat {
+  .eventsPage .card-stats .stat {
     padding:10px;
     display: flex;
     align-items: center;
@@ -81,30 +81,30 @@
     flex-direction: column;
     color: white;
   }
-  .card-stats .border {
+  .eventsPage .card-stats .border {
     border: 1px solid rgb(212, 211, 175);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }
-  .card-stats .value{
+  .eventsPage .card-stats .value{
     font-size:22px;
     font-weight: 500;
   }
-  .card-stats .value sup{
+  .eventsPage .card-stats .value sup{
     font-size:12px;
   }
-  .card-stats .type{
+  .eventsPage .card-stats .type{
     font-size:11px;
     font-weight: 300;
     text-transform: uppercase;
   }
-  .card:hover {
+  .eventsPage .card:hover {
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
   }
 
 
-  .content-wrapper {
+  .eventsPage .content-wrapper {
     width: 1050px;
     margin: 0 auto;
   }
@@ -193,7 +193,7 @@
     right: 0;
   }
 
-  .form-head button {
+  .eventsPage .form-head button {
     display: inline-block;
     font : "Prata";
     text-align: center;
@@ -207,7 +207,7 @@
     position: flex;
    
   }
-  .form-head button:hover {
+  .eventsPage .form-head button:hover {
     color: #4e5c70;
     cursor: pointer;
     text-decoration: underline;
@@ -224,20 +224,20 @@
   }
   
   /* Float four columns side by side */
-  .column {
+  .eventsPage .column {
     /* float: left; */
     /* width: 34%; */
     padding: 0 10px;
   }
   
   /* Remove extra left and right margins, due to padding in columns */
-  .row {
+  .eventsPage .row {
     margin: 0 -5px;
 
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  .eventsPage .row:after {
     content: "";
     display: table;
     clear: both;
@@ -245,7 +245,7 @@
   
   /* Style the counter cards */
 
-  .card2 {
+  .eventsPage .card2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     /* padding: 16px; */
     text-align: center;
@@ -269,7 +269,7 @@
   
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
-    .column {
+    .eventsPage .column {
       width: 100%;
       display: block;
       margin-bottom: 20px;

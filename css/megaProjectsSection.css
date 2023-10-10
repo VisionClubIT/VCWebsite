@@ -1,0 +1,670 @@
+
+        .giga-projects-section {
+            overflow-x: hidden
+        }
+
+        @media(min-width: 768px){
+            .giga-projects-section 
+            .container-fluid,
+            .container-xl,
+            .container-lg,
+            .container-md,
+            .container-sm {
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto
+            }
+            }
+        .giga-projects-section .tab-wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100%
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tabs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            height: 100%;
+            padding: 8.7rem 9.6rem 12.4rem 9.6rem;
+            background-size: cover;
+            background-position: center;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            max-width: 62rem;
+            width: 100%
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tabs {
+                padding-bottom: 10.6rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tabs {
+                padding: 6.1rem 0 2.5rem 0;
+                max-width: 100%
+            }
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tabs {
+                padding: 3.5rem 0 1rem 0
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tabs h2 {
+            font-family: "Bukra Bold";
+            color: #fff;
+            margin-bottom: 11.1rem
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tabs h2 {
+                font-family: "Bukra Bold";
+                margin-bottom: 8.9rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tabs h2 {
+                font-family: "Bukra Bold";
+                width: 100%;
+                margin-bottom: 7.1rem;
+                text-align: center
+            }
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tabs h2 {
+                font-family: "Bukra Bold";
+                margin-bottom: 3.4rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tabs .tab-inner-wrapper {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-direction: column;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding: 0 2rem 2rem 2rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tabs .tab {
+            font-size: 3rem;
+            line-height: 7.7rem;
+            font-family: "Bukra Bold";
+            letter-spacing: -0.14rem;
+            color: rgba(255, 255, 255, .3);
+            -webkit-transition: color .3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: color .3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: color .3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: color .3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-decoration: none;
+            position: relative
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tabs .tab {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                font-size: 1.4rem;
+                line-height: 1.15;
+                letter-spacing: normal
+            }
+            .ltr .giga-projects-section .tab-wrapper .tabs .tab:not(:last-child) {
+                margin-right: 5rem
+            }
+            .rtl .giga-projects-section .tab-wrapper .tabs .tab:not(:last-child) {
+                margin-left: 5rem
+            }
+            .ltr .giga-projects-section .tab-wrapper .tabs .tab:first-child {
+                margin-left: auto
+            }
+            .rtl .giga-projects-section .tab-wrapper .tabs .tab:first-child {
+                margin-right: auto
+            }
+            .ltr .giga-projects-section .tab-wrapper .tabs .tab:last-child {
+                margin-right: auto;
+                padding-right: 2.5rem
+            }
+            .rtl .giga-projects-section .tab-wrapper .tabs .tab:last-child {
+                margin-left: auto;
+                padding-left: 2.5rem
+            }
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tabs .tab {
+                white-space: nowrap;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap
+            }
+            .giga-projects-section .tab-wrapper .tabs .tab:not(:last-child) {
+                margin-right: 4rem
+            }
+            .giga-projects-section .tab-wrapper .tabs .tab:last-child {
+                padding-right: 2rem
+            }
+        }
+
+        .rtl .giga-projects-section .tab-wrapper .tabs .tab {
+            letter-spacing: unset !important
+        }
+
+        .giga-projects-section .tab-wrapper .tabs .tab::after {
+            content: "";
+            width: 7rem;
+            height: .3rem;
+            background-color: #fff;
+            opacity: 0;
+            pointer-events: none;
+            -webkit-transition: opacity .3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: opacity .3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: opacity .3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: opacity .3s cubic-bezier(0.165, 0.84, 0.44, 1), transform .3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform .3s cubic-bezier(0.165, 0.84, 0.44, 1)
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tabs .tab::after {
+                width: 100%;
+                margin-top: .7rem
+            }
+        }
+
+        .ltr .giga-projects-section .tab-wrapper .tabs .tab::after {
+            margin-left: 5rem;
+            -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem)
+        }
+
+        @media(max-width: 1279px) {
+            .ltr .giga-projects-section .tab-wrapper .tabs .tab::after {
+                margin-left: 0
+            }
+        }
+
+        .rtl .giga-projects-section .tab-wrapper .tabs .tab::after {
+            margin-right: 5rem;
+            -webkit-transform: translateX(2rem);
+            transform: translateX(2rem)
+        }
+
+        @media(max-width: 1279px) {
+            .rtl .giga-projects-section .tab-wrapper .tabs .tab::after {
+                margin-right: 0
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tabs .tab:hover {
+            color: rgba(255, 255, 255, .7)
+        }
+
+        .giga-projects-section .tab-wrapper .tabs .tab.active {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tabs .tab.active {
+                -webkit-transform: translateX(0) !important;
+                transform: translateX(0) !important
+            }
+        }
+
+        .ltr .giga-projects-section .tab-wrapper .tabs .tab.active {
+            -webkit-transform: translateX(2rem);
+            transform: translateX(2rem)
+        }
+
+        .rtl .giga-projects-section .tab-wrapper .tabs .tab.active {
+            -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem)
+        }
+
+        .giga-projects-section .tab-wrapper .tabs .tab.active::after {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0)
+        }
+
+        .giga-projects-section .tab-wrapper .tabs .view-all-btn-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            margin-top: 12.4rem
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tabs .view-all-btn-container {
+                margin-top: 9.6rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tabs .view-all-btn-container {
+                display: none
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container {
+            width: 100%;
+            position: relative
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail {
+            height: 100%;
+            display: block !important;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            -webkit-transition: opacity 1s ease-in-out, pointer-events;
+            transition: opacity 1s ease-in-out, pointer-events;
+            -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+            opacity: 0;
+            pointer-events: none;
+            display: none;
+
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail {
+                height: 76.9rem
+            }
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail {
+                height: 48.2rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail.active-tab {
+            display: block;
+            opacity: 1;
+            pointer-events: visible;
+            -webkit-transition-delay: 1s;
+            transition-delay: 1s
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail.active-tab .project-content {
+            opacity: 1
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content {
+            z-index: 10;
+            position: relative;
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            overflow: hidden;
+            color: #fff;
+            padding: 0 10rem 7.5rem 10rem;
+            pointer-events: none;
+            -webkit-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+            opacity: 0
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content {
+                padding: 0 7.6rem 5.6rem 7.6rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content {
+                padding: 0 6rem 5rem 6rem
+            }
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content {
+                padding: 3rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content h3 {
+            font-family: "Bukra Bold";
+            font-size: 4.8rem;
+            line-height: 7.7rem;
+            letter-spacing: -0.14rem;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 1;
+            text-align: start !important
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content h3 {
+                font-size: 4rem;
+                line-height: 6.4rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content h3 {
+                font-size: 3.2rem;
+                line-height: 7.7rem;
+                margin-bottom: 2.6rem
+            }
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content h3 {
+                margin-bottom: 2rem;
+                margin-left: 0;
+                font-size: 2.4rem;
+                line-height: 1
+            }
+        }
+
+        .rtl .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content h3 {
+            letter-spacing: unset !important
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content p {
+            color: rgba(255, 255, 255, .7);
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            font-family: "Bukra Bold";
+            margin-bottom: 2.3rem;
+            max-width: 65.4rem;
+            position: relative;
+            z-index: 1
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content p {
+                font-size: 1.3rem;
+                line-height: 1.9rem;
+                margin-bottom: 2rem;
+                max-width: 47.3rem
+            }
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content p {
+                margin-bottom: 1rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content a {
+            margin-top: 3.1rem;
+            position: relative;
+            z-index: 1;
+            pointer-events: all
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content a {
+                margin-top: 1.7rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content a {
+                margin-top: 0
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-content a strong {
+            margin-bottom: 0;
+            color: #fff
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider {
+            position: absolute;
+            top: 0;
+            left: -0.1rem;
+            width: calc(100% + .1rem);
+            height: 100%;
+            z-index: 0
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .project-background {
+            width: 100%;
+            height: 100%;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-stage-outer {
+            height: 100%
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-stage-outer .owl-stage {
+            height: 100%
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-stage-outer .owl-stage .owl-item {
+            height: 100%
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots {
+            position: absolute;
+            z-index: 2
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots {
+                display: none
+            }
+        }
+
+        .ltr .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots {
+            right: 10rem;
+            bottom: 10rem
+        }
+
+        @media(max-width: 1440px) {
+            .ltr .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots {
+                right: 8rem;
+                bottom: 8rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .ltr .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots {
+                right: 5rem;
+                bottom: 7rem
+            }
+        }
+
+        .rtl .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots {
+            left: 10rem;
+            bottom: 10rem
+        }
+
+        @media(max-width: 1440px) {
+            .rtl .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots {
+                left: 8rem;
+                bottom: 8rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .rtl .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots {
+                left: 5rem;
+                bottom: 7rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots .owl-dot:not(:last-child) span {
+            margin-right: 1.4rem
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots .owl-dot:not(:last-child) span {
+                margin-right: 1.1rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots .owl-dot.active span {
+            background-color: #fff;
+            width: 4.3rem
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots .owl-dot.active span {
+                width: 3.6rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots .owl-dot span {
+            width: .8rem;
+            height: .4rem;
+            background-color: rgba(255, 255, 255, .2);
+            -webkit-transition: width .3s cubic-bezier(0.165, 0.84, 0.44, 1), background-color .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: width .3s cubic-bezier(0.165, 0.84, 0.44, 1), background-color .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border-radius: 3px
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-background-slider .owl-dots .owl-dot span {
+                width: .7rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+            position: absolute;
+            top: 8.7rem;
+            z-index: 1
+        }
+
+        @media(max-width: 1440px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+                width: 15rem;
+                top: 5rem;
+                right: 5rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+                top: 3.5rem;
+                right: 3.5rem
+            }
+        }
+
+        @media(max-width: 767px) {
+            .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+                width: 10.5rem
+            }
+        }
+
+        .ltr .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+            right: 10rem
+        }
+
+        @media(max-width: 1440px) {
+            .ltr .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+                right: 5rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .ltr .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+                right: 3.5rem
+            }
+        }
+
+        .rtl .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+            left: 10rem
+        }
+
+        @media(max-width: 1440px) {
+            .rtl .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+                left: 5rem
+            }
+        }
+
+        @media(max-width: 1279px) {
+            .rtl .giga-projects-section .tab-wrapper .tab-container .tab-detail .project-nav-left {
+                left: 3.5rem
+            }
+        }
+
+        .giga-projects-section .tab-wrapper .view-all-btn {
+            font-family: "Bukra Bold";
+            font-size: 1.1rem;
+            color: #fff;
+            padding-bottom: .8rem;
+            border-bottom: .1rem solid #fff;
+            letter-spacing: .07rem
+        }
+
+        .rtl .giga-projects-section .tab-wrapper .view-all-btn {
+            letter-spacing: unset !important
+        }
+
+        .giga-projects-section .tab-wrapper .view-all-btn-mobile-container {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 8rem;
+            display: none
+        }
+
+        @media(max-width: 1279px) {
+            .giga-projects-section .tab-wrapper .view-all-btn-mobile-container {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center
+            }
+        }
+        

@@ -6,7 +6,7 @@ body {
     height: 100%;
 }
 
-.box{
+.eventsPage .box{
     display: flex;
   flex-direction: row-reverse;
   float:right;
@@ -14,7 +14,7 @@ body {
   width: 100%;
 }
 /*style btns*/
-.btn {
+.eventsPage .btn {
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -25,12 +25,12 @@ body {
   }
   
   /* Add a light grey background on mouse-over */
-  .btn:hover {
+  .eventsPage .btn:hover {
     background-color: #666;
   }
   
   /* Add a dark background to the active button */
-  .active {
+  .eventsPage .active {
     background-color: rgba(0,136,169,1);;
     color: white;
   }
@@ -41,7 +41,7 @@ body {
 /*END style btns*/
 
 
-.events-container{
+.eventsPage .events-container{
     font-family: 'Noto Kufi Arabic', sans-serif;
     max-width:1300px;
     width: 100%;
@@ -49,24 +49,24 @@ body {
     overflow: hidden;
 }
 
-.year{
+.eventsPage .year{
     font-size: 35px;
     text-align: right;
     border-bottom: 1px solid #DDDDDD;
     margin-bottom: 48px;
 }
 
-.tag-cont{
+.eventsPage .tag-cont{
     border-top: 1px solid #DDDDDD;
     position: relative;
     display:block;
  }
 
- .show{
+ .eventsPage .show{
     display: block;
  }
 
-.event{
+.eventsPage .event{
     background-color: white;
     display: flex;
     margin: 0px;
@@ -77,7 +77,7 @@ body {
 }
 
 
-.event-right{
+.eventsPage .event-right{
     border-left: 2px solid #DDDDDD;
     min-width: 82px;
     display: flex;
@@ -89,20 +89,20 @@ body {
     text-align: center;
     background-color: white;
 }
-.upcoming{
-    background-color: rgba(153, 205, 50, 0.508);
+.eventsPage .upcoming{
+    background-color: rgba(153, 205, 50, 0.eventsPage .508);
     color: rgb(85, 113, 28);
 }
 
-.date{
+.eventsPage .date{
     font-size: 56px;
 }
-.month{
+.eventsPage .month{
     font-size: 16px;
     font-weight: normal;
 }
 
-.event-left{
+.eventsPage .event-left{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,12 +110,12 @@ body {
     width: 600px;
 }
 
-h3.event-title{ 
+h3.eventsPage .event-title{ 
     font-size: 24px;
     margin: 24px 0px 10px 0px;
 }
 
-.event-location{
+.eventsPage .event-location{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,11 +125,11 @@ h3.event-title{
     font-size: 14px;
     color: #b1b1b1;
 }
-.event-location img{
+.eventsPage .event-location img{
     padding-left:8px;
 }
 
-img.event-Img{
+.eventsPage img .event-Img{
     width: 450px;
     height: auto;
     z-index: -1;
@@ -139,18 +139,18 @@ img.event-Img{
 
 
 @media (max-width:550x) {
-    .event{
+    .eventsPage .event{
         flex-direction: column;
     }
-    .event .event-right{
+    .eventsPage .event .event-right{
         padding: 0;
     }
-    .event .event-right .event-date .date, .event .event-right .event-date .month{
+    .eventsPage .event .event-right .event-date .date, .eventsPage .event .event-right .event-date .month{
         display: inline-block;
         font-size: 24px;
     }
 
-    .event .event-right .event-date{
+    .eventsPage .event .event-right .event-date{
         padding: 10px 0;
     }
 }

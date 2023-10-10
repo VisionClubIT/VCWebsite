@@ -3,7 +3,7 @@
             .footer2023 {
                 background-color: #274365;
                 font-family: 'bukra bold', sans-serif; /* assuming 'bukra-bold' is the font name, adjust accordingly */
-                color: #FFFFFF
+                color: #FFFFFF;
             }
             .footer2023  ul{
                 list-style-type: none;

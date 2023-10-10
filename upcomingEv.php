@@ -11,6 +11,7 @@ include_once  'Header/header.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/Event11.css"/>
 </head>
 <body>
@@ -90,7 +91,7 @@ include_once  'Header/header.php';
     </div>
     
 </body>
-<?php include_once 'footer/footer.php'?>
+<?php include_once 'footer/footerBody.php'?>
 
 </html>
 

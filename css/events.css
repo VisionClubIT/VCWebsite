@@ -1,278 +1,150 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
 
-.body2 {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 360px 360px 360px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 500px;
-  }
-
-
-
-
-  .eventsPage .card {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 310px 130px 60px;
-    grid-template-areas: "image" "text" "stats";
-    border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: roboto;
-    text-align: center;
-    transition: 0.5s ease;
-    margin:30px;
-  }
-
-
-
-  .eventsPage .card-image {
-    grid-area: image;
-    background: no-repeat center / contain;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size:contain;
-    width: auto;
-  height: auto;
-  }
-
-
-
-  .eventsPage .card-text {
-    grid-area: text;
-    margin: 15px;
-    width: auto;
-    height: auto;
-  }
-  .eventsPage .card-text .date {
-    color: rgb(169, 162, 144);
-    font-size:15px;
-    width: auto;
-    height: auto;
-  }
-  .eventsPage .card-text p {
-    color: grey;
-    font-size:19px;
-    font-weight: 300;
-    text-align: center;
-  }
-  .eventsPage .card-text h2 {
-    margin-top:0px;
-    font-size:20px;
-    line-height: normal;
-  }
-  .eventsPage .card-stats {
-    grid-area: stats; 
-    display: grid;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background: rgb(96, 93, 84);
-    width: auto;
-    height: auto;
-
-  }
-  .eventsPage .card-stats .stat {
-    padding:10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-  }
-  .eventsPage .card-stats .border {
-    border: 1px solid rgb(212, 211, 175);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-  .eventsPage .card-stats .value{
-    font-size:22px;
-    font-weight: 500;
-  }
-  .eventsPage .card-stats .value sup{
-    font-size:12px;
-  }
-  .eventsPage .card-stats .type{
-    font-size:11px;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-  .eventsPage .card:hover {
-    transform: scale(1.15);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  }
-
-
-  .eventsPage .content-wrapper {
-    width: 1050px;
-    margin: 0 auto;
-  }
-  header {
-    border-bottom: 1px solid #EEEEEE;
-  }
-  div#wrapperHeader {
-    width: 70%;;
-    height:100px; /* height of the background image? */
-    text-align:left;
-     }
-     
-     div#wrapperHeader div#header_img {
-    width:1000px;
-    height:200px;
-    margin:0 auto;
-     }
-     
-     div#wrapperHeader div#header_img img {
-    width: 140px;; /* the width of the logo image */
-    height: 120px;; /* the height of the logo image */
-    margin:0 auto;
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   
-     }
+}
 
-  header .content-wrapper {
-    display: flex;
-    
-  }
-  header h1 {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
-    font-size: 20px;
-    margin: 0;
-    padding: 20px 0;
-  }
-  header nav , .nav {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
-    justify-content: center;
-    align-items: center;
-  }
-  header nav a ,.nav{
-    text-decoration: none;
-    color: #555555;
-    padding: 10px 10px;
-    margin: 0 10px;
-  }
-  header nav a:hover {
-    border-bottom: 1px solid #aaa;
-  }
-  header .link-icons {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-  }
-  header .link-icons a {
-    text-decoration: none;
-    color: #394352;
-    padding: 0 10px;
-  }
-  header .link-icons a:hover {
-    color: #4e5c70;
-  }
-  header .link-icons a i {
-    font-size: 18px;
-  }
-  header .link-icons a span {
-    display: inline-block;
-    text-align: center;
-    background-color: #63748e;
-    border-radius: 50%;
-    color: #FFFFFF;
-    font-size: 12px;
-    line-height: 16px;
-    width: 16px;
-    height: 16px;
-    font-weight: bold;
-    position: absolute;
-    top: 22px;
-    right: 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+    /* Adjusted CSS for the promotional event */
+    .promotional-event {
+      background-image: url('<?php echo $backgroundImage; ?>') center center/cover no-repeat;
+      height: 400px; /* Increase the height of the promotional container as needed */
+      position: relative; /* Relative positioning for overlay */
+      display: flex; /* To vertically align content */
+      justify-content: center; /* To horizontally align content */
+      align-items: center; /* To vertically align content */
   }
 
-  .eventsPage .form-head button {
-    display: inline-block;
-    font : "Prata";
-    text-align: center;
-    background-color:#F3F2EC;
-    color: #4e5c70;
-    font-size: 14px;
-    line-height: 16px;
-    width: 16px;
-    height: 16px;
-    font-weight: bold;
-    position: flex;
-   
-  }
-  .eventsPage .form-head button:hover {
-    color: #4e5c70;
-    cursor: pointer;
-    text-decoration: underline;
-  }  
-/* ---------------------------------- */
-
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: roboto;
-    grid-template-columns: 330px 330px 330px;
-  }
-  
-  /* Float four columns side by side */
-  .eventsPage .column {
-    /* float: left; */
-    /* width: 34%; */
-    padding: 0 10px;
-  }
-  
-  /* Remove extra left and right margins, due to padding in columns */
-  .eventsPage .row {
-    margin: 0 -5px;
-
-  }
-  
-  /* Clear floats after the columns */
-  .eventsPage .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the counter cards */
-
-  .eventsPage .card2 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    /* padding: 16px; */
-    text-align: center;
-    background-color: #f1f1f1;
-
-    display: grid;
-    max-width: fit-content;
-    grid-template-columns: 310px;
-    /* grid-template-columns: 275px;   space, width of the card */
-    grid-template-rows: 300px ;
-    grid-template-areas: "image" "text" "stats";
-    border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: roboto;
-    text-align: center;
-    transition: 0.5s ease;
-    margin:20px;
-  }
-
-  
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .eventsPage .column {
+  /* Grey overlay for text */
+  .promotional-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+      height: 100%;
+      background: rgba(35, 38, 100, 0.226); /* Adjust the opacity as needed */
+      z-index: 1; /* Place overlay above the background image */
   }
 
+  /* Transparent grey rectangle */
+  .promo-rectangle {
+      background: rgba(79, 77, 77, 0.5); /* Adjust the opacity and color as needed */
+      width: 80%; /* Adjust the width as needed */
+      margin: 0 auto; /* Center the rectangle horizontally */
+      padding: 20px; /* Adjust the padding as needed */
+      text-align: center;
+      z-index: 2; /* Place the rectangle above the overlay */
+  }
+
+  /* Text styles for the promotional event */
+  .promotional-event .event-details {
+      z-index: 3; /* Place text above the rectangle */
+      text-align: center;
+      color: #fff; /* Text color */
+  }
+
+  .promotional-event h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  .promotional-event p {
+      font-size: 16px;
+      margin-bottom: 20px;
+  }
+
+  .promotional-event .event-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+  }
+
+  .promotional-event .event-button:hover {
+      background-color: #5e666e;
+  }
+/* Past Events */
+.past-events {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.past-events h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: right; /* Align text to the right */
+}
+
+.event-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.event-card .event-image {
+  flex: 1;
+  width: 100%; /* Ensure the image takes up the full width of the container */
+  height: auto; /* Allow the height to adjust proportionally */
+  max-width: 100%; /* Prevent images from exceeding their original size */
+  max-height: 100%; /* Prevent images from exceeding their original size */
+  background-size: contain; /* Fit the image within the container */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.event-card .event-details {
+  flex: 2;
+  padding: 20px;
+  text-align: right; /* Align text to the right */
+}
+
+.event-card .event-date {
+  font-size: 14px;
+  color: #777;
+  text-align: right; /* Align text to the right */
+}
+
+.event-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: right; /* Align text to the right */
+}
+
+.event-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: right; /* Align text to the right */
+}
+
+.event-card .event-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.event-card .event-link:hover {
+  background-color: #5e666e;
+}

@@ -208,8 +208,12 @@ include('Dynamic/Alert.php');
 </section>
 
 <section>
-<!-- <?php include('review.php');
-?> -->
+
+
+<?php include('homeBody/sponsors.php');
+
+?>
+
                                             </section>
 
 
@@ -231,8 +235,7 @@ include('Dynamic/Alert.php');
 
 
 </html>
-<!-- <?php include('review.php');
-?> -->
+
 <?php include('Footer/footer.php');
 
 ?>

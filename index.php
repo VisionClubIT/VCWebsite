@@ -149,45 +149,45 @@ include('Dynamic/Alert.php');
                                                     </h2>
                                                     <h4>  <?php echo $post['M8']?> </h4>
 
-                                        </div>
-                                    </div>
-                                    <div class="item col-12 col-md-6">
-                                        <div class="item-icon"><img src="img/icons/ico-green-3.svg" alt="img"></div>
-                                        <div class="item-content">
-                                            <h2>
-                                                ٦٦٠٠
-                                                <!-- <asp:Label runat="server" ID="AreaCount">150</asp:Label> -->
-                                            </h2>
-                                            <h4>  <?php echo $post['M9']?></h4>
-                                            <script>
-                                                var project = setInterval(projectDone, 500)
-                                                var clients = setInterval(happyClients, 1000)
-                                                var coffee = setInterval(cupsCoffee, 150)
-                                                let count1 = 1;
-                                                let count2 = 1;
-                                                let count3 = 1;
-                                                function projectDone() {
-                                                    count1++
-                                                    document.querySelector("#HealthCount").innerHTML = count1
-                                                    if (count1 == 200) {
-                                                        clearInterval(project)
-                                                    }
-                                                }
-                                                function happyClients() {
-                                                    count2++
-                                                    document.querySelector("#BuildCount").innerHTML = count2
-                                                    if (count2 == 200) {
-                                                        clearInterval(clients)
-                                                    }
-                                                }
-                                                function cupsCoffee() {
-                                                    count3++
-                                                    document.querySelector("#AreaCount").innerHTML = count3
-                                                    if (count3 == 198) {
-                                                        clearInterval(coffee)
-                                                    }
-                                                }
-                                            </script>
+                                                </div>
+                                            </div>
+                                            <div class="item col-12 col-md-6">
+                                                <div class="item-icon"><img src="img/icons/ico-green-3.svg" alt="img"></div>
+                                                <div class="item-content">
+                                                    <h2>
+                                                        ٦٦٠٠
+                                                        <!-- <asp:Label runat="server" ID="AreaCount">150</asp:Label> -->
+                                                    </h2>
+                                                    <h4>  <?php echo $post['M9']?></h4>
+                                                    <script>
+                                                        var project = setInterval(projectDone, 500)
+                                                        var clients = setInterval(happyClients, 1000)
+                                                        var coffee = setInterval(cupsCoffee, 150)
+                                                        let count1 = 1;
+                                                        let count2 = 1;
+                                                        let count3 = 1;
+                                                        function projectDone() {
+                                                            count1++
+                                                            document.querySelector("#HealthCount").innerHTML = count1
+                                                            if (count1 == 200) {
+                                                                clearInterval(project)
+                                                            }
+                                                        }
+                                                        function happyClients() {
+                                                            count2++
+                                                            document.querySelector("#BuildCount").innerHTML = count2
+                                                            if (count2 == 200) {
+                                                                clearInterval(clients)
+                                                            }
+                                                        }
+                                                        function cupsCoffee() {
+                                                            count3++
+                                                            document.querySelector("#AreaCount").innerHTML = count3
+                                                            if (count3 == 198) {
+                                                                clearInterval(coffee)
+                                                            }
+                                                        }
+                                                    </script>
 
                                         </div>
                                     </div>
@@ -206,16 +206,35 @@ include('Dynamic/Alert.php');
     </div>
 
 </section>
-<?php
-include('homeBody/sponsors.php')
-?>
+
+<section>
+<!-- <?php include('review.php');
+?> -->
+                                            </section>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
 
 </body>
 
 
 </html>
-
+<!-- <?php include('review.php');
+?> -->
 <?php include('Footer/footer.php');
+
 ?>
 
 

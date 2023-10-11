@@ -8,7 +8,7 @@ body, h1, h2, h3, p, ul, li {
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  
+  color: #333;
 }
 
 .container {
@@ -16,67 +16,66 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-    /* Adjusted CSS for the promotional event */
-    .promotional-event {
-      background-image: url('<?php echo $backgroundImage; ?>') center center/cover no-repeat;
-      height: 400px; /* Increase the height of the promotional container as needed */
-      position: relative; /* Relative positioning for overlay */
-      display: flex; /* To vertically align content */
-      justify-content: center; /* To horizontally align content */
-      align-items: center; /* To vertically align content */
-  }
 
-  /* Grey overlay for text */
-  .promotional-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(35, 38, 100, 0.226); /* Adjust the opacity as needed */
-      z-index: 1; /* Place overlay above the background image */
-  }
+/* Adjusted CSS for the promotional event */
+.promotional-event {
+  background-image: url('<?php echo $backgroundImage; ?>');
+  height: 400px; /* Increase the height of the promotional container as needed */
+  position: relative; /* Relative positioning for overlay */
+  display: flex; /* To vertically align content */
+  justify-content: center; /* To horizontally align content */
+  align-items: center; /* To vertically align content */
+  text-align: center; /* Center text */
+  color: #fff; /* Text color */
+}
 
-  /* Transparent grey rectangle */
-  .promo-rectangle {
-      background: rgba(79, 77, 77, 0.5); /* Adjust the opacity and color as needed */
-      width: 80%; /* Adjust the width as needed */
-      margin: 0 auto; /* Center the rectangle horizontally */
-      padding: 20px; /* Adjust the padding as needed */
-      text-align: center;
-      z-index: 2; /* Place the rectangle above the overlay */
-  }
+/* Grey overlay for text */
+.promotional-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 13, 104, 0.226); /* Adjust the opacity as needed */
+  z-index: 1; /* Place overlay above the background image */
+}
 
-  /* Text styles for the promotional event */
-  .promotional-event .event-details {
-      z-index: 3; /* Place text above the rectangle */
-      text-align: center;
-      color: #fff; /* Text color */
-  }
+/* Transparent grey rectangle */
+.promo-rectangle {
+  background: rgba(79, 77, 77, 0.5); /* Adjust the opacity and color as needed */
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the rectangle horizontally */
+  padding: 20px; /* Adjust the padding as needed */
+  text-align: center;
+  z-index: 2; /* Place the rectangle above the overlay */
+}
 
-  .promotional-event h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-  }
+/* Text styles for the promotional event */
+.promotional-event .event-details {
+  z-index: 3; /* Place text above the rectangle */
+  font-size: 24px; /* Font size for the title */
+  margin-bottom: 10px;
+}
 
-  .promotional-event p {
-      font-size: 16px;
-      margin-bottom: 20px;
-  }
+.promotional-event p {
+  font-size: 16px; /* Font size for description */
+  margin-bottom: 20px;
+}
 
-  .promotional-event .event-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
-  }
+.promotional-event .event-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
 
-  .promotional-event .event-button:hover {
-      background-color: #5e666e;
-  }
+.promotional-event .event-button:hover {
+  background-color: #5e666e;
+}
+
 /* Past Events */
 .past-events {
   background-color: #fff;
@@ -84,12 +83,13 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  text-align: right; /* Align text to the right */
+  color: #333; /* Text color */
 }
 
 .past-events h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  text-align: right; /* Align text to the right */
 }
 
 .event-card {
@@ -98,6 +98,8 @@ body {
   border-radius: 5px;
   margin-bottom: 20px;
   overflow: hidden;
+  text-align: right; /* Align text to the left */
+  color: #333; /* Text color */
 }
 
 .event-card .event-image {
@@ -114,25 +116,21 @@ body {
 .event-card .event-details {
   flex: 2;
   padding: 20px;
-  text-align: right; /* Align text to the right */
 }
 
 .event-card .event-date {
   font-size: 14px;
   color: #777;
-  text-align: right; /* Align text to the right */
 }
 
 .event-card h3 {
   font-size: 20px;
   margin: 10px 0;
-  text-align: right; /* Align text to the right */
 }
 
 .event-card p {
   font-size: 16px;
   margin-bottom: 10px;
-  text-align: right; /* Align text to the right */
 }
 
 .event-card .event-link {
@@ -147,4 +145,25 @@ body {
 
 .event-card .event-link:hover {
   background-color: #5e666e;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .promotional-event {
+    height: auto;
+  }
+  
+  .promo-rectangle {
+    width: 100%; /* Full width on small screens */
+  }
+  
+  .promotional-event h2,
+  .promotional-event p {
+    font-size: 18px; /* Adjust font size for small screens */
+  }
+  
+  .promotional-event .event-button {
+    padding: 10px 15px; /* Adjust button padding for small screens */
+    font-size: 16px; /* Adjust button font size for small screens */
+  }
 }

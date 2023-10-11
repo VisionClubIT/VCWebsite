@@ -1,115 +1,100 @@
 <?php
-include_once  'Header/header.php';
-require_once ('config/database.php');//db
+include_once 'Header/header.php';
+require_once('config/database.php');
+
+// Function to retrieve hierarchy data
+function getHierarchyData($year, $role, $con) {
+    $query = "SELECT * FROM ourTeam WHERE year = $year AND role = '$role'";
+    $result = mysqli_query($con, $query);
+    return mysqli_fetch_assoc($result);
+}
+
+// Get the latest year
+$query = "SELECT MAX(year) AS latest_year FROM ourTeam";
+$result = mysqli_query($con, $query);
+$row = mysqli_fetch_assoc($result);
+$latestYear = $row['latest_year'];
+
+// Define roles for the main block
+$Presidency = ["الرئيس", "نائب الرئيس"];
+$leaders = ["قائد الفريق التقني", "قائد فريق العلاقات العامة", "قائد التنظيم والدعم اللوجستي", "قائد فريق الإعلام والتسويق", "قائد الإدارة القانونية", "قائد فريق الموارد البشرية", "قائد فريق الأداء والجودة", "قائد الإدارة المالية"];
+
 ?>
-
-
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
-		<meta name="viewport"content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Binary Tree Structure</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/ourTeam.css">
-	</head>
-	<body class="all" class="bodyTeam">
-       <!-- Background block with text and overlay -->
-    <div class="background-block" style="background-image: url('uploads/ourTeam.jpeg')">
-        <div class="overlay"></div> <!-- Transparent grey overlay -->
-        <div class="background-content">
-            <h1>Welcome to Our Tree Structure</h1>
-            <p>Explore our organization's hierarchy below.</p>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Binary Tree Structure</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/ourTeam.css">
+</head>
+<body class="all bodyTeam">
+<!-- Background block with text and overlay -->
+<div class="background-block" style="background-image: url('uploads/ourTeam.jpeg')">
+    <div class="overlay"></div> <!-- Transparent grey overlay -->
+    <div class="background-content">
+        <h1>"نكون معاً هذه هي البداية، والبقاء معاً هو التقدم، والعمل معاً هو النجاح"</h1>
+    </div>
+</div>
+
+<!-- Main Block -->
+<div class="container">
+    <div class="row">
+        <div class="tree">
+            <ul>
+                <?php
+                // Loop through presidency
+                foreach ($Presidency as $role) {
+                    $data = getHierarchyData($latestYear, $role, $con);
+                    if ($data) {
+                        echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a>";
+                            echo "<ul>";
+                        
+                    }
+                }
+
+                 // Loop through leaders
+                 foreach ($leaders as $role) {
+                    $data = getHierarchyData($latestYear, $role, $con);
+                    if ($data) {
+                        echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a>";  
+                    }
+                }
+                // Close ul elements
+                echo str_repeat("</ul></li></li>", count($leaders) - 1);
+                ?>
+            </ul>
         </div>
     </div>
-		<div class="container">
-			<div class="row">
-				<div class="tree">
-					<ul>
-						<li> <a href="#"><img src="uploads/profilePicDefault.webp">رئيس النادي<span>عبدالعزيز الحماد</span></a>
-						<ul>
-							<li><a href="#"><img src="uploads/profilePicDefault.webp">نائب الرئيس<span>البندري المقيّل</span></a>
-							  <ul>
-                  <li> <a href="#"><img src="uploads/profilePicDefault.webp"><span>Great Grand Child</span></a> </li>
-                  <li> <a href="#"><img src="uploads/profilePicDefault.webp"><span>Great Grand Child</span></a> </li>
-                  <li> <a href="#"><img src="uploads/profilePicDefault.webp"><span>Great Grand Child</span></a> </li>
-                  <li> <a href="#"><img src="uploads/profilePicDefault.webp"><span>Great Grand Child</span></a> </li>
-                  <li> <a href="#"><img src="uploads/profilePicDefault.webp"><span>Great Grand Child</span></a> </li>
-                  <li> <a href="#"><img src="uploads/profilePicDefault.webp"><span>Great Grand Child</span></a> </li>
-                  <li> <a href="#"><img src="uploads/profilePicDefault.webp"><span>Great Grand Child</span></a> </li>
-                  <li> <a href="#"><img src="uploads/profilePicDefault.webp"><span>Great Grand Child</span></a> </li>
-							  </ul>
-						</li>
-					</li>
-				</ul>
-	</div>
-</div>
 </div>
 <hr>
 
-   <!-- Horizontal line to separate the main team hierarchy -->
+<!-- Horizontal line to separate the main team hierarchy -->
 <div class="separator"></div>
 
 <!-- Four horizontal blocks at the bottom of the page -->
 <div class="horizontal-blocks">
-    <!-- Block 1 -->
-    <div class="block">
-        <span class="year">2022</span>
-        <ul class="tree">
-                <li> <a href="#"><img src="uploads/profilePicDefault.webp">رئيس النادي<span>عبدالعزيز الحماد</span></a>
-                    <ul>
-                        <li><a href="#"><img src="uploads/profilePicDefault.webp">نائب الرئيس<span>البندري المقيّل</span></a>
-                            
-                        </li>
-                    </ul>
-                </li>
-        </ul>
-    </div>
-
-    <!-- Block 2 -->
-    <div class="block">
-        <span class="year">2021</span>
-        <ul class="tree">
-                <li> <a href="#"><img src="uploads/profilePicDefault.webp">رئيس النادي<span>عبدالعزيز الحماد</span></a>
-                    <ul>
-                        <li><a href="#"><img src="uploads/profilePicDefault.webp">نائب الرئيس<span>البندري المقيّل</span></a>
-                           
-                        </li>
-                    </ul>
-                </li>
-        </ul>
-    </div>
-
-    <!-- Block 3 -->
-    <div class="block">
-        <span class="year">2020</span>
-        <ul class="tree">
-                <li> <a href="#"><img src="uploads/profilePicDefault.webp">رئيس النادي<span>عبدالعزيز الحماد</span></a>
-                    <ul>
-                        <li><a href="#"><img src="uploads/profilePicDefault.webp">نائب الرئيس<span>البندري المقيّل</span></a>
-                         
-                        </li>
-                    </ul>
-                </li>
-         </ul>
-    </div>
-
-    <!-- Block 4 -->
-    <div class="block">
-        <span class="year">2019</span>
-        <ul class="tree">
-                <li> <a href="#"><img src="uploads/profilePicDefault.webp">رئيس النادي<span>عبدالعزيز الحماد</span></a>
-                    <ul>
-                        <li><a href="#"><img src="uploads/profilePicDefault.webp">نائب الرئيس<span>البندري المقيّل</span></a>
-                     
-                        </li>
-                    </ul>
-                </li>
-    </ul>
-    </div>
+    <?php
+    for ($i = 0; $i < 4; $i++) {
+        $blockYear = $latestYear - $i - 1;
+        echo "<div class='block'><span class='year'>$blockYear</span><ul class='tree'>";
+        foreach (['الرئيس', 'نائب الرئيس'] as $role) {
+            $data = getHierarchyData($blockYear, $role, $con);
+            if ($data && $role == 'الرئيس') {
+                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a><ul>";
+            }
+            if ($data && $role == 'نائب الرئيس') {
+                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>
+                </ul>
+            </li>";
+            }
+        }
+        echo "</ul></div>";
+    }
+    ?>
 </div>
-
 </body>
 </html>
 

@@ -18,7 +18,6 @@ $latestYear = $row['latest_year'];
 // Define roles for the main block
 $Presidency = ["الرئيس", "نائب الرئيس"];
 $leaders = ["قائد الفريق التقني", "قائد فريق العلاقات العامة", "قائد التنظيم والدعم اللوجستي", "قائد فريق الإعلام والتسويق", "قائد الإدارة القانونية", "قائد فريق الموارد البشرية", "قائد فريق الأداء والجودة", "قائد الإدارة المالية"];
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -30,9 +29,9 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/ourTeam.css">
 </head>
-<body class="all bodyTeam">
+<body class="all bodyTeam custom-page">
 <!-- Background block with text and overlay -->
-<div class="background-block" style="background-image: url('uploads/ourTeam.jpeg')">
+<div class="custom-page background-block" style="background-image: url('uploads/ourTeam.jpeg')">
     <div class="overlay"></div> <!-- Transparent grey overlay -->
     <div class="background-content">
         <h1>"نكون معاً هذه هي البداية، والبقاء معاً هو التقدم، والعمل معاً هو النجاح"</h1>
@@ -99,3 +98,4 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 </html>
 
 <?php include_once 'Footer/footer.php'?>
+

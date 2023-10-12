@@ -93,7 +93,7 @@
                 }
             }
         </style>
-        <footer class="footer2023 text-center text-white">    <!-- Navbar -->
+        <footer class="footer2023 text-center text-white" style="margin: 0;">    <!-- Navbar -->
             <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row" style="padding-top:10px">
 
                 <!-- Logo -->

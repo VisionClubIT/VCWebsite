@@ -213,7 +213,6 @@
             }
 
             .header2023White .navbar .header-menu-search {
-                width: 100vw !important;
                 height: 100vh !important;
                 margin: 0 !important;
                 padding: 0 !important;

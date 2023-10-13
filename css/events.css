@@ -21,8 +21,8 @@ body {
 .promotional-event {
   background-image: url('<?php echo $backgroundImage; ?>');
   height: 400px; /* Increase the height of the promotional container as needed */
-  position: relative; /* Relative positioning for overlay */
-  display: flex; /* To vertically align content */
+  /*position: relative;  Relative positioning for overlay REMOVE
+  display: flex; To vertically align content REMOVE*/
   justify-content: center; /* To horizontally align content */
   align-items: center; /* To vertically align content */
   text-align: center; /* Center text */
@@ -31,7 +31,7 @@ body {
 
 /* Grey overlay for text */
 .promotional-overlay {
-  position: absolute;
+  /* position: absolute;  */
   top: 0;
   left: 0;
   width: 100%;

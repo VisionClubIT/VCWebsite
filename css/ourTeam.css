@@ -193,27 +193,20 @@
     border-color: #94a0b4;
 }
 
-/* ... Your existing CSS ... */
 
-/* ... Your existing CSS ... */
 
 /* Flex container for horizontal blocks */
 .horizontal-blocks {
-    display: flex;
-    flex-wrap: wrap; /* Allow blocks to wrap to the next line on smaller screens */
-    justify-content: space-between; /* Distribute the blocks evenly on all screen sizes */
-    align-items: center;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Maintain 4 blocks on one row */
+    gap: 20px; /* Add some space between blocks */
 }
 
 /* Updated styling for each block */
 .block {
-    flex: 1 1 calc(25% - 20px); /* Distribute available space evenly for all screen sizes */
     text-align: center;
-    margin: 0 10px;
     padding: 10px;
-
-    margin-bottom: 20px;
+   
 }
 
 /* Year styling */
@@ -223,7 +216,16 @@
     color: #777;
 }
 
-/* Media Query for Smaller Screens (Optional) */
+/* Media Query for 2 blocks per row on smaller screens */
 @media (max-width: 768px) {
-    /* You can add specific styles for smaller screens if needed */
+    .horizontal-blocks {
+        grid-template-columns: repeat(2, 1fr); /* Display 2 blocks on one row */
+    }
+}
+
+/* Media Query for 1 block per row on even smaller screens */
+@media (max-width: 480px) {
+    .horizontal-blocks {
+        grid-template-columns: repeat(1, 1fr); /* Display 1 block on one row */
+    }
 }

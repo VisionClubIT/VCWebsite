@@ -1,16 +1,51 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* CSS for top block */
-.custom-page .background-block {
-    background-image: url('uploads/ourTeam.jpeg'); /* Replace with your background image URL */
+/* Custom CSS for your page */
+.container-bg {
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 60vh; /* Decreased height */
-    position: relative; /* To position the overlay */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    height: 60vh;
+    position: relative;
+    text-align: center;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.container-bg .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Grey overlay with 50% transparency */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+
+}
+
+.text {
+    color: #fff; /* Text color */
+    text-align: center;
+    max-width: 80%; /* Adjust as needed */
+    line-height: 1.2;
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Center the text perfectly */
+    z-index: 2; /* Place text on top of the overlay */
+}
+
+
+
+.subtitle {
+    font-size: 30px; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #333; /* Your desired color */
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
 
 /* Additional CSS to style the small text */
 .custom-page .small-text {
@@ -18,36 +53,7 @@
     color: #777; /* Your desired color */
 }
 
-/* ... Your other CSS ... */
 
-
-/* Add transparent grey overlay */
-.custom-page .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Transparent grey */
-}
-
-/* Text styles */
-.custom-page .background-content {
-    position: relative;
-    z-index: 1; /* Place text above overlay */
-    text-align: center;
-    color: #fff; /* Text color on the background block */
-    padding: 20px; /* Add padding for better readability */
-}
-
-.background-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px; /* Adjust spacing */
-}
-
-.background-content p {
-    font-size: 18px;
-}
 
 /* CSS for main hierarchy */
 .all {
@@ -149,11 +155,14 @@
 }
 
 .tree li a img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px !important;
     border-radius: 100px;
     margin: auto;
+}
+.tree li a{
+    font-size: 10px;
 }
 
 .tree li a span {
@@ -161,7 +170,7 @@
     border-radius: 5px;
     color: #666;
     padding: 8px;
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -184,26 +193,27 @@
     border-color: #94a0b4;
 }
 
+/* ... Your existing CSS ... */
+
+/* ... Your existing CSS ... */
+
 /* Flex container for horizontal blocks */
 .horizontal-blocks {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow blocks to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Distribute the blocks evenly on all screen sizes */
     align-items: center;
     margin-top: 20px;
 }
 
 /* Updated styling for each block */
 .block {
-    flex: 1 1 calc(25% - 20px); /* Distribute available space evenly, and adjust width as needed */
+    flex: 1 1 calc(25% - 20px); /* Distribute available space evenly for all screen sizes */
     text-align: center;
     margin: 0 10px;
-}
+    padding: 10px;
 
-
-/* Horizontal line to separate the main team hierarchy */
-.separator {
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 /* Year styling */
@@ -211,4 +221,9 @@
     font-size: 14px;
     font-weight: bold;
     color: #777;
+}
+
+/* Media Query for Smaller Screens (Optional) */
+@media (max-width: 768px) {
+    /* You can add specific styles for smaller screens if needed */
 }

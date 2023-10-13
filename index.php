@@ -15,7 +15,6 @@ include('homeBody/body.php');
     <link rel="stylesheet" href="css/vendors-166.css">
     <link rel="stylesheet" href="css/master.min.css">
     <link rel="stylesheet" href="css/header1.css">
-    <link rel="stylesheet" href="css/ssss.css">
 
 
 <?php

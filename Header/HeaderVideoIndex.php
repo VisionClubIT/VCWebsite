@@ -3,7 +3,6 @@
 <head>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     
     <title>
        نادي رؤية 2030
@@ -20,8 +19,6 @@
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="2030 رؤية نادي">
     
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
     
     <style>
         * {

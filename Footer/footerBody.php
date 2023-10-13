@@ -87,8 +87,10 @@
                 .footer2023 ul {
                     align-items: center;
                 }
-                .footer2023 ul .nav-item {
+                .footer2023 .navbar-nav .nav-item {
                     margin: 0;
+                    margin-bottom: 1rem;
+
 
                 }
             }
@@ -107,7 +109,7 @@
                     <div class="footer-navbar navbar navbar-light mx-auto text-center justify-content-center">
                         <ul class="navbar-nav text-center flex-column flex-sm-row mx-auto">
                         
-                        <li class="nav-item text-center">
+                        <li class="nav-item">
                             <a class="nav-link"  href="index.php">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item">

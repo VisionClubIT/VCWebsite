@@ -375,11 +375,11 @@
 
 
                             <picture>
-                                <source media="(max-width: 376px)" srcset="media/header.gif">
-                                <source media="(max-width: 768px)" srcset="media/header.gif">
-                                <source media="(max-width: 1440px)" srcset="media/header.gif">
-                                <source srcset="media/header.gif">
-                                <img src="media/header.gif" alt=" ">
+                                <source media="(max-width: 376px)" srcset="img/theline.webp">
+                                <source media="(max-width: 768px)" srcset="img/theline.webp">
+                                <source media="(max-width: 1440px)" srcset="img/theline.webp">
+                                <source srcset="img/theline.webp">
+                                <img src="img/theline.webp" alt=" ">
                             </picture>
                             <h2 class="">
                                  يبني المستقبل من وليد حاضره، على أرض ماضيه

@@ -24,17 +24,29 @@
 
 }
 
+/* ... Your existing CSS ... */
+
+/* Text styling */
 .text {
-    color: #fff; /* Text color */
+    color: #fff;
     text-align: center;
-    max-width: 80%; /* Adjust as needed */
-    line-height: 1.2;
-    position: absolute; /* Position it absolutely */
-    top: 50%; /* Vertically center the text */
-    left: 50%; /* Horizontally center the text */
-    transform: translate(-50%, -50%); /* Center the text perfectly */
-    z-index: 2; /* Place text on top of the overlay */
+    max-width: 80%;
+    font-size: 36px;
+    line-height: 1.3;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+/* Media Query for responsive text size */
+@media (max-width: 768px) {
+    .text {
+        font-size: 24px; /* Adjust the font size as needed for smaller screens */
+    }
+}
+
 
 
 

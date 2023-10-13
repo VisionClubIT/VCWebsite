@@ -8,7 +8,7 @@
 <div>
 <?php
 include('homeBody/body.php');
-?>
+?> 
 </div>
 
     <link rel="stylesheet" href="css/main-166.css">

@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $txt = "You have received an e-mail from ".$name." ,email address: ".$mailFrom."\n\n".$message;
 
     if (mail($mailTo, $subject, $txt, $Headers)){
-        echo "<script>alert("تم الارسال! ، شكرًا لتواصلكم معنا")</script>";
+        echo "<script>alert('تم الارسال! ، شكرًا لتواصلكم معنا')</script>";
         echo "<script>location.href='index.php';</script>";
         
         

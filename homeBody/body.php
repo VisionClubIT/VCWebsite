@@ -1,10 +1,10 @@
 
-    <link rel="stylesheet" href="homeBody/nicepage.css" media="screen">
+<link rel="stylesheet" href="homeBody/nicepage.css" media="screen">
 <link rel="stylesheet" href="homeBody/Page-2.css" media="screen">
-    <!-- <script class="u-script" type="text/javascript" src="homeBody/jquery.js" defer=""></script> -->
-    <script class="u-script" type="text/javascript" src="homeBody/nicepage.js" defer=""></script>
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
+<!-- <script class="u-script" type="text/javascript" src="homeBody/jquery.js" defer=""></script> -->
+<script class="u-script" type="text/javascript" src="homeBody/nicepage.js" defer=""></script>
+<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+<link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
     
     
     

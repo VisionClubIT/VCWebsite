@@ -32,7 +32,7 @@
             font-size: 1.5vw; /* Increase the font size */
             background-color: #478ac9;
             color: #ffff;
-            border-radius: 32%; /* Make them circular */
+            
             margin-bottom: 30%;
         }
 

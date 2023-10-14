@@ -81,6 +81,8 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
     for ($i = 0; $i < 4; $i++) {
         $blockYear = $latestYear - $i - 1;
         $prevYear = $blockYear-1;
+
+        
         echo "<div class='block'><span class='year'>$prevYear/$blockYear</span><ul class='tree'>";
         foreach (['الرئيس', 'نائب الرئيس'] as $role) {
             $data = getHierarchyData($blockYear, $role, $con);
@@ -95,6 +97,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
         }
         echo "</ul></div>";
     }
+    
     ?>
 </div>
 </body>

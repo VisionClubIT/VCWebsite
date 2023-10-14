@@ -37,30 +37,21 @@
             src: url('fonts/29LTBukra-Bold.woff2') format('woff2'); /* Adjust the URL and format if using another type of font like .woff or .otf */
         }
 
+        .menu-open {
+            overflow: hidden; /* This prevents scrolling when the menu is open */
+        }
         /* Other custom styles */
         .header2023White {
             padding: 0 .75rem;
-            margin-top: 1.25rem;
-            height: 6rem;
-        }
-
-        @media (max-width: 1279px) {
-            .header2023White {
-                padding: 0 5rem;
-                margin-top: 3.2rem;
-                height: 7.5rem;
-            }
-        }
-
-        @media (max-width: 1023px) {
-            .header2023White {
-                padding: 0 2.2rem;
-                margin-top: 2.1rem;
-            }
+            padding-top: 1.25rem;
+            margin-bottom: 2.5rem;
+            height: 7rem;
+            box-shadow: 0px 0 10px #b4bdc1; /* Updated box-shadow with a blue color */
         }
 
         /* Other custom styles */
         .header2023White .navbar {
+            padding: 0;
             justify-content: space-between;
             font-family: "Bukra Bold" !important;
         }
@@ -209,11 +200,11 @@
             }
 
             .header2023White {
-                padding: 0 !important;
+                padding: 1rem 0 !important;
+
             }
 
             .header2023White .navbar .header-menu-search {
-                width: 100vw !important;
                 height: 100vh !important;
                 margin: 0 !important;
                 padding: 0 !important;
@@ -223,6 +214,9 @@
                 margin: auto; /* Remove the max-width property */
                 width: fit-content; /* Set width to auto */
                 text-align: center; /* Center-align the content */
+            }
+            .header2023White .navbar-nav .nav-item{
+                margin-bottom: 1rem;
             }
             .header2023White .searchForm{
                 margin: 0 20px !important;
@@ -246,6 +240,20 @@
             $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
         }, function() {
             $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+        });
+    });
+    
+    $(document).ready(function () {
+        // Function to toggle the mobile menu
+        $(".navbar-toggler").click(function () {
+            $(".header-menu-search").toggleClass("menu-open");
+
+            // Disable scrolling when the menu is open
+            if ($(".header-menu-search").hasClass("menu-open")) {
+                $("body").css("overflow", "hidden");
+            } else {
+                $("body").css("overflow", "");
+            }
         });
     });
 </script>

@@ -3,7 +3,6 @@
 <head>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     
     <title>
        نادي رؤية 2030
@@ -20,13 +19,11 @@
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="2030 رؤية نادي">
     
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
     
     <style>
         * {
           margin: 0;
-          padding: 0;
+          padding: 0; 
           box-sizing: border-box;
 
          }
@@ -123,8 +120,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/VCLogo.png">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="img/VCLogo.png">
-    <link rel="stylesheet" href="css/main-166.css">
-    <link rel="stylesheet" href="css/vendors-166.css">
     
     <!--script type="module" src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.esm.js"></script-->
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.js"></script>
@@ -139,22 +134,21 @@
         <div class="nav-left ">
             <a href="#">
                 <img class="logo" src="img/VCLogo.png" alt=" ">
-                <!-- <div class="bottom-line"></div> -->
             </a>
-            <ul class="lang-selection-list">
+            <!-- <ul class="lang-selection-list">
                 <li class="lang-selection-item">
                     <a class="lang-selection-link" href="javascript:;">
-                    <!-- AR <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6"> -->
+                    <-- AR <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6"> ->
                     <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
                     </svg>
-                    <!-- <div class="bottom3-line"></div> -->
+                    <-- <div class="bottom3-line"></div> ->
                     </a>
                     <ul>
                         <li></li> 
-                        <li><!-- <a href="/">EN</a> --></li>
+                        <li><-- <a href="/">EN</a> -></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
         <div class="nav-right">
@@ -188,19 +182,6 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link headerTextSize" href="ContactUs.php">
-                            <span>تواصل معنا</span>
-
-                        </a>
-                    </li>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link headerTextSize" href="https://forms.gle/1kPdPC4cBMiDhBuw7">
-                        <span>التقييم</span>
-                    </a>
-                    </li> -->
                     <li class="nav-item has-sub">
                         <a  class="nav-link headerTextSize" href="#">
                             تواصل معنا
@@ -335,8 +316,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <ol>
-                        </ol>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 <?php
-include_once 'Header/header.php';
 require_once('config/database.php'); // Include your database configuration
 
 // Query to select the data for the latest date event
@@ -29,6 +28,8 @@ if ($r && mysqli_num_rows($r) > 0) {
 <html lang="ar" dir="rtl">
 
 <head>
+    <?php include_once 'Header/headerhead.php';?>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
@@ -37,9 +38,10 @@ if ($r && mysqli_num_rows($r) > 0) {
     <script src="js/filterEv.js"></script>
 </head>
 
-<body>
+<body class="bg-white" style="margin:0">
+    <?php include_once 'Header/headerbody.php';?>
+    <div class="promotional-event">
 
-<div class="promotional-event">
         <div class="promotional-overlay"></div> <!-- Grey overlay for text -->
         <div class="promo-rectangle">
             <div class="event-details">

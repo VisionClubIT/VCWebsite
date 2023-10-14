@@ -1,32 +1,25 @@
 <?php
-// require  'config/database.php';
-// require  'config/app.php';
-// $q1 =  $con->query('select * from media order by id ')->fetch_all(MYSQLI_ASSOC);
-// $events = $con->query('select * from events order by id ')->fetch_all(MYSQLI_ASSOC);
-include('Header/headerVideoIndex.php');
+    // require  'config/database.php';
+    // require  'config/app.php';
+    // $q1 =  $con->query('select * from media order by id ')->fetch_all(MYSQLI_ASSOC);
+    // $events = $con->query('select * from events order by id ')->fetch_all(MYSQLI_ASSOC);
+    include('Header/headerVideoIndex.php');
 ?>
 <div>
 <?php
 include('homeBody/body.php');
-?>
+?> 
 </div>
 
     <link rel="stylesheet" href="css/main-166.css">
     <link rel="stylesheet" href="css/vendors-166.css">
     <link rel="stylesheet" href="css/master.min.css">
     <link rel="stylesheet" href="css/header1.css">
-    <link rel="stylesheet" href="css/ssss.css">
 
 
 <?php
 include('Dynamic/Alert.php');
 ?>
-
-
-
-
-
- 
 
 <section>
         <!-- <section Align="center" class=" c-block b-header">
@@ -60,58 +53,47 @@ include('Dynamic/Alert.php');
                       </article>
                 
         </section> 
-              
 
-
-<style>
+    <style>
 
    .b-heade .op{
    width: 10%;
    display: flex;
    margin-bottom: 18rem;
-}
-.b-heade .oo{
-   width: 20%;
-   margin-top: -300px;
-   margin-right: 20px;
-}
+    }
+    .b-heade .oo{
+    width: 20%;
+    margin-top: -300px;
+    margin-right: 20px;
+    }
 
-.b-heade .uu{
-   width: 20%;
-   margin-top: -200px;
-   margin-left: 20px;
-}
-@media screen and (max-width: 768px) {
-   .b-heade .op{
-   width: 10%;
-   display: flex;
-   margin-bottom: 15rem;
+    .b-heade .uu{
+    width: 20%;
+    margin-top: -200px;
+    margin-left: 20px;
+    }
+    @media screen and (max-width: 768px) {
+        .b-heade .op{
+        width: 10%;
+        display: flex;
+        margin-bottom: 15rem;
+        }
 
+        .b-heade .oo{
+        width: 20%;
+        margin-top: -200px;
+        margin-right: 20px;
+        }
 
-}
-
-.b-heade .oo{
-   width: 20%;
-   margin-top: -200px;
-   margin-right: 20px;
-}
-
-.b-heade .uu{
-   width: 20%;
-   margin-top: -45px;
-   margin-left: 20px;
-}
-}
+        .b-heade .uu{
+        width: 20%;
+        margin-top: -45px;
+        margin-left: 20px;
+        }
+    }
 
    </style>
-
-
-
-
-
 </section>
-
-
         <div id="divstatistics" runat="server"  class="fadeIn">
             <div class="section section-facts p-0">
                 <div class="container">
@@ -127,7 +109,6 @@ include('Dynamic/Alert.php');
                         </div>
                         <div class="col-md-7 side-two">
                             <div class="w-100">
-
                                 <div class="facts-cont-box">
                                     <div class="item col-12 col-md-6">
                                         <div class="item-icon"><img src="img/icons/ico-green-5.svg" alt="img"></div>
@@ -188,58 +169,27 @@ include('Dynamic/Alert.php');
                                                             }
                                                         }
                                                     </script>
-
                                         </div>
                                     </div>
-                
                                 </div>
                             </div>
                         </div>
-                     
                     </div>
                 </div>
-  
             </div>
         </div>
-
-
     </div>
-
 </section>
-
 <section>
-
-
-<?php include('homeBody/sponsors.php');
-
-?>
-
-                                            </section>
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
+    <?php include('homeBody/sponsors.php');?>
+</section>
 </body>
-
-
 </html>
 
-<?php include('Footer/footer.php');
-
-?>
+<?php include('Footer/footer.php');?>
 
 
-<!--       I hope you achieve the best, I believe in that  (:    
-    A. from technical team  . -->       
+<!--       
+    I hope you achieve the best, I believe in that  (:    
+    A. from technical team  . 
+-->       

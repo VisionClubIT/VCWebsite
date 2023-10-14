@@ -21,8 +21,8 @@ body {
 .promotional-event {
   background-image: url('<?php echo $backgroundImage; ?>');
   height: 400px; /* Increase the height of the promotional container as needed */
-  position: relative; /* Relative positioning for overlay */
-  display: flex; /* To vertically align content */
+  position: relative;  /* Relative positioning for overlay REMOVE */
+  display: flex; /* To vertically align content REMOVE */
   justify-content: center; /* To horizontally align content */
   align-items: center; /* To vertically align content */
   text-align: center; /* Center text */
@@ -31,13 +31,23 @@ body {
 
 /* Grey overlay for text */
 .promotional-overlay {
-  position: absolute;
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(19, 13, 104, 0.226); /* Adjust the opacity as needed */
   z-index: 1; /* Place overlay above the background image */
+}
+@media (max-width: 992px) {
+  .promotional-event {
+    position: static; /* Reset the position property for mobile view */
+    display: block; /* Reset the display property for mobile view */
+  }
+
+  .promotional-overlay {
+    position: static; /* Reset the position property for mobile view */
+  }
 }
 
 /* Transparent grey rectangle */

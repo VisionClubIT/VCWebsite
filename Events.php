@@ -40,8 +40,7 @@ if ($r && mysqli_num_rows($r) > 0) {
 
 <body class="bg-white" style="margin:0">
     <?php include_once 'Header/headerbody.php';?>
-    <div class="promotional-event">
-
+    <div class="promotional-event" style="background-image: url('<?php echo $backgroundImage; ?>'); ">
         <div class="promotional-overlay"></div> <!-- Grey overlay for text -->
         <div class="promo-rectangle">
             <div class="event-details">
@@ -51,6 +50,8 @@ if ($r && mysqli_num_rows($r) > 0) {
             </div>
         </div>
     </div>
+</div>
+    
 
     <div class="past-events">
         

@@ -29,12 +29,12 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/ourTeam.css">
 </head>
-<body class="all bodyTeam custom-page">
-<!-- Background block with text and overlay -->
-<div class="custom-page background-block" style="background-image: url('uploads/ourTeam.jpeg')">
-    <div class="overlay"></div> <!-- Transparent grey overlay -->
-    <div class="background-content">
-        <h1>"نكون معاً هذه هي البداية، والبقاء معاً هو التقدم، والعمل معاً هو النجاح"</h1>
+<body>
+    <!-- Container with background image, text, and overlay -->
+    <div class="container-bg custom-page" style="background-image: url('uploads/groupPhoto.jpeg');">
+    <div class="background-content custom-page">
+        <div class="overlay"></div>
+        <h1 class="text">"نكون معاً هذه هي البداية، والبقاء معاً هو التقدم، والعمل معاً هو النجاح"</h1>
     </div>
 </div>
 
@@ -42,6 +42,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 <div class="container">
     <div class="row">
         <div class="tree">
+        <h2 class="subtitle">فريق عمل نادي رؤية ٢٠٣٠</h2>
             <ul>
                 <?php
                 // Loop through presidency
@@ -72,13 +73,17 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 
 <!-- Horizontal line to separate the main team hierarchy -->
 <div class="separator"></div>
+<h2 class="subtitle">رئاسة النادي خلال السنوات</h2>
 
 <!-- Four horizontal blocks at the bottom of the page -->
 <div class="horizontal-blocks">
     <?php
     for ($i = 0; $i < 4; $i++) {
         $blockYear = $latestYear - $i - 1;
-        echo "<div class='block'><span class='year'>$blockYear</span><ul class='tree'>";
+        $prevYear = $blockYear-1;
+
+        
+        echo "<div class='block'><span class='year'>$prevYear/$blockYear</span><ul class='tree'>";
         foreach (['الرئيس', 'نائب الرئيس'] as $role) {
             $data = getHierarchyData($blockYear, $role, $con);
             if ($data && $role == 'الرئيس') {
@@ -92,6 +97,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
         }
         echo "</ul></div>";
     }
+    
     ?>
 </div>
 </body>

@@ -1,4 +1,4 @@
-.swiper-pagination
+/* .swiper-pagination
 giga-projects
 0e0e0e
 quote
@@ -7,13 +7,14 @@ font-family
 nav-right
 animated-link
 font
-/*footer*/
+footer
 slide-index
 nav-item has-sub
 bottom3-line
 strong
 #24b4ba
 b-hero__bottom-line
+{} */
 @media(min-width: 768px){
 .wp-block-group__inner-container
 .container {
@@ -24,7 +25,7 @@ b-hero__bottom-line
     margin-left: auto
 }
 }
-.button
+/* .button */
 @media(min-width: 576px) {
     .container {
         max-width: 540px
@@ -5117,7 +5118,6 @@ header.mobile-menu-opened .nav-list .nav-item ul {
 .nav-left ul a,
 .nav-right ul a {
     font-family: "Bukra Bold";
-    font-size: 1.2rem;
     letter-spacing: .05rem;
     line-height: 1.6rem;
     -webkit-transition: color .6s ease-in-out;
@@ -5309,7 +5309,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
 
 .nav-left .lang-selection-list .lang-selection-item ul {
     position: absolute;
-    top: 2rem;
+    top: 0.5rem;
     left: 0;
     pointer-events: none;
     width: 100%;
@@ -5451,7 +5451,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
     z-index: 2
 }
 
-@media(max-width: 1440px) {
+/* @media(max-width: 1440px) {
     .nav-right nav .nav-list .nav-item.has-sub ul li:first-child::before {
         width: calc(100% - 4rem)
     }
@@ -5461,7 +5461,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
     .nav-right nav .nav-list .nav-item.has-sub ul li:first-child::before {
         width: calc(100% - 3rem)
     }
-}
+} */
 
 @media(max-width: 1279px) {
     .nav-right nav .nav-list .nav-item.has-sub ul li:first-child::before {
@@ -5545,7 +5545,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
     pointer-events: none;
     opacity: 1;
     position: absolute;
-    top: 2rem;
+    top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, .9);
     border-radius: 10px;
@@ -5553,8 +5553,10 @@ header.mobile-menu-opened .nav-list .nav-item ul {
     overflow: hidden
 }
 
-.ltr .nav-right nav .nav-list .nav-item ul {
-    padding-left: 2rem
+.nav-right nav .nav-list .nav-item ul {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    text-align: center;
 }
 
 @media(max-width: 1919px) {
@@ -5569,9 +5571,6 @@ header.mobile-menu-opened .nav-list .nav-item ul {
     }
 }
 
-.rtl .nav-right nav .nav-list .nav-item ul {
-    padding-right: 2.5rem
-}
 
 @media(max-width: 1919px) {
     .rtl .nav-right nav .nav-list .nav-item ul {
@@ -5585,13 +5584,20 @@ header.mobile-menu-opened .nav-list .nav-item ul {
     }
 }
 
-.nav-right nav .nav-list .nav-item ul li {
+.nav-right nav .nav-list .nav-item ul li{
     width: 100%;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    font-size: 13px !important
+}
+.nav-right nav .nav-list .nav-item ul li a{
+    font-size: 13px !important
 }
 
+
 .nav-right nav .nav-list .nav-item ul li:first-child {
-    padding-top: 9rem
+    padding-top: 9rem;
+    font-size: 13px !important
+
 }
 
 .nav-right nav .nav-list .nav-item ul li a {
@@ -5607,7 +5613,9 @@ header.mobile-menu-opened .nav-list .nav-item ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    line-height: 2rem
+    line-height: 2rem;
+    font-size: 13px !important
+
 }
 
 @media(max-width: 1279px) {
@@ -5615,7 +5623,8 @@ header.mobile-menu-opened .nav-list .nav-item ul {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
-        flex-direction: row
+        font-size: 13px !important;
+        flex-direction: row;
     }
 }
 
@@ -5949,7 +5958,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        font-size: 1.7rem;
+        font-size: 13px !important;
         line-height: 2.2rem !important
     }
     header nav .nav-list .nav-item ul li a:hover {
@@ -5959,7 +5968,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
 
 @media(max-width: 1279px)and (max-width: 1023px) {
     header nav .nav-list .nav-item ul li a {
-        font-size: 1.2rem;
+        font-size: 13px !important;
         line-height: 1.6rem
     }
 }

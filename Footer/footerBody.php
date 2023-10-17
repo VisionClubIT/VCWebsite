@@ -20,6 +20,10 @@
             }
 
 
+            .footer2023 .navbar-light .navbar-nav .show>.nav-link {
+                color: #4895c5cf !important;
+
+            }
             .footer2023 ul .nav-item .nav-link{
                     font-size: 15px !important;
                     color: #FFFFFF;
@@ -141,14 +145,6 @@
                     <div class="footer-social-media-icons pt-4 d-flex flex-column align-items-center justify-content-center">
                         <!-- Section: Social media -->
                         <section class="mb-4">
-                        <!-- Facebook -->
-                        <a
-                            class="btn btn-link btn-floating btn-lg text-light m-1"
-                            href="#!"
-                            role="button"
-                            data-mdb-ripple-color="dark"
-                            ><i class="fab fa-facebook-f"></i
-                        ></a>
 
                         <!-- Twitter -->
                         <a
@@ -175,14 +171,6 @@
                             role="button"
                             data-mdb-ripple-color="dark"
                             ><i class="fab fa-linkedin"></i
-                        ></a>
-                        <!-- Github -->
-                        <a
-                            class="btn btn-link btn-floating btn-lg text-light m-1"
-                            href="#!"
-                            role="button"
-                            data-mdb-ripple-color="dark"
-                            ><i class="fab fa-github"></i
                         ></a>
                         </section>
                         <!-- Section: Social media -->

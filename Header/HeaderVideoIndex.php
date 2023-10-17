@@ -20,73 +20,6 @@
     <meta property="og:site_name" content="2030 رؤية نادي">
     
     
-    <style>
-        * {
-          margin: 0;
-          padding: 0; 
-          box-sizing: border-box;
-
-         }
-         .btn1 {
-            font-size: 15px;
-          text-decoration: none;
-          padding: 20px 45px;
-          background-color: rgb(209, 215, 111);
-          color: rgb(0, 72, 135);
-          border-radius: 40px;
-          font-family: "Bukra Bold";
-          font-weight: bolder;
-         }
-         .video-container{
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 99999;
-          background-color: rgba(114, 139, 116, 0.915);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          opacity: 0;
-          pointer-events: none;
-          transition: all 0.3s;
-         }
-         .video-container .close{
-          position: absolute;
-          top: 15%;
-          right: 25px;
-          font-size: 25px;
-          cursor: pointer;
-          color: rgb(217, 53, 25);
-
-         }
-         .video-container video{
-          width: 90%;
-          max-width: 800px;
-          transform: scale(0);
-          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          outline: none;
-          transition: all 0.3;
-         }
-         .video-container.show{
-          pointer-events: all;
-          opacity: 1;
-         }
-         .video-container.show video{
-          transform: scale(1);
-         }
-        .mobile-menu-social .aaa  {
-            font-size: 21px;
-            background-color: rgb(200, 186, 97);
-        }
-        .headerTextSize{
-            font-size: 15px !important;
-        }
-
-         
-    </style>
-    
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -97,7 +30,7 @@
             "sameAs": ["https://www.facebook.com/Saudi2030/", "https://twitter.com/saudivision2030", "https://www.instagram.com/saudivision2030/", "https://www.youtube.com/channel/UC3pvQeDObhT0nGC58txGnzg"]
         }
     </script>
-    
+    <!-- <script src="js/core-166.js"></script>  -->
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -120,9 +53,29 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/VCLogo.png">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="img/VCLogo.png">
+    <link rel="stylesheet" href="css/main-166.css">
+    <link rel="stylesheet" href="css/videoHeader.css">
     
-    <!--script type="module" src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.esm.js"></script-->
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const header = document.querySelector('header');
+
+            if (header.classList.contains('mobile-menu-opened')) {
+                header.classList.remove('mobile-menu-opened');
+            } else {
+                header.classList.add('mobile-menu-opened');
+            }
+
+            // Toggle the display of the mobile menu
+            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
+
 
 </head>
 
@@ -134,18 +87,19 @@
         <div class="nav-left ">
             <a href="#">
                 <img class="logo" src="img/VCLogo.png" alt=" ">
+                <!-- <div class="bottom-line"></div> -->
             </a>
             <!-- <ul class="lang-selection-list">
                 <li class="lang-selection-item">
                     <a class="lang-selection-link" href="javascript:;">
-                    <-- AR <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6"> ->
+                    AR <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
                     <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
                     </svg>
-                    <-- <div class="bottom3-line"></div> ->
+                    <div class="bottom3-line"></div>
                     </a>
                     <ul>
                         <li></li> 
-                        <li><-- <a href="/">EN</a> -></li>
+                        <li><a href="/">EN</a></li>
                     </ul>
                 </li>
             </ul> -->
@@ -171,13 +125,13 @@
                         </a>
                         <ul>
                             <li>
-                                <a href="Events.php">
-                                    </span>  الفعاليات الحالية  <span>
+                                <a href="Events.php" style="font-size: 1.5rem">
+                                      الفعاليات الحالية  
                                 </a>
                             </li>
                             <li>
-                                <a href="upcomingEv.php">
-                                    </span> الفعاليات القادمة <span>
+                                <a href="upcomingEv.php" style="font-size: 1.5rem">
+                                     الفعاليات القادمة
                                 </a>
                             </li>
                         </ul>
@@ -191,13 +145,13 @@
                         </a>
                         <ul>
                             <li>
-                                <a style=color:#212121 href="ContactUs.php">
-                                    </span>  التواصل  <span>
+                                <a href="ContactUs.php" style="font-size: 1.5rem">
+                                      التواصل 
                                 </a>
                             </li>
                             <li>
-                                <a href="https://forms.gle/1kPdPC4cBMiDhBuw7">
-                                    </span> التقييم <span>
+                                <a href="https://forms.gle/1kPdPC4cBMiDhBuw7" style="font-size: 1.5rem">
+                                     التقييم
                                 </a>
                             </li>
                         </ul>
@@ -228,7 +182,7 @@
                 </ul>
                 <p class="mobile-menu-copy">&copy;2030 نادي الرؤية </p>
             </nav>
-            <div class="search-container shown">
+            <!-- <div class="search-container shown">
                 <a class="search-link" href="javascript:;">
                     <svg class="search-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 22.7714C17.9489 22.7714 22.7714 17.9489 22.7714 12C22.7714 6.05113 17.9489 1.22862 12 1.22862C6.05114 1.22862 1.22863 6.05113 1.22863 12C1.22863 17.9489 6.05114 22.7714 12 22.7714Z" stroke="white" stroke-width="2" />
@@ -241,9 +195,9 @@
                         </g>
                     </svg>
                 </a>
-            </div>
-            <div class="mobile-menu-icon">
-                <a href="javascript:;">
+            </div> -->
+            <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                <a href="#">
                     <span>
                         <strong>القائمة</strong>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -271,7 +225,7 @@
                 </a>
             </div>
         </div>
-        <div class="search-opened-container">
+        <!-- <div class="search-opened-container">
             <div class="inner-container">
                 <div class="top">
                     <input id="keyword" type="text" placeholder="البحث" val="" maxlength="100" data-ajax-method="POST" data-ajax-url="/search">
@@ -316,12 +270,14 @@
                                 </a>
                             </li>
                         </ul>
+                        <ol>
+                        </ol>
                     </div>
                 </div>
             </div>
             <div class="search-close-layer">
             </div>
-        </div>
+        </div> -->
     </header>
     <section class="hero-section home-hero-section">
         <div class="home-hero-section-inner">
@@ -334,7 +290,6 @@
                                 <video class="hero-video" autoplay muted playsinline src="" data-video-1920="" data-video-768=""  data-video-376="">
                                 </video>
                             </div>
-        <!-- Section inside H2 which hold h1 -->
                             <h2  class="c-block__title b-hero__title b-hero__title--med c-content-block__title" >
                                 <section class="home" id="home">
                                     <span data-aos="fade-up" data-aos-delay="500">
@@ -370,7 +325,7 @@
                         <div class="home-hero-slider-item">
                             <picture>
                                 <source media="(max-width: 376px)" srcset="media/hh0c0vvl/copy-of-_ssg8457.jpg">
-                                <source media="(max-width: 768px)" srcset="media/ftbbtoaw/hm-banner-07.jpg"><!--king salman pic-->
+                                <source media="(max-width: 768px)" srcset="media/ftbbtoaw/hm-banner-07.jpg">
                                 <source media="(max-width: 1440px)" srcset="media/hh0c0vvl/copy-of-_ssg8457.jpg">
                                 <source srcset="media/hh0c0vvl/copy-of-_ssg8457.jpg">
                                 <img src="media/hh0c0vvl/copy-of-_ssg8457.jpg" alt=" ">
@@ -408,8 +363,7 @@
                 </div>
                 <div class="swiper-pagination">
                     <div class="button swiper-button-prev">
-                        <!-- <div class="bottom2-line"></div>
-                        <div class="bottom1-line"></div> -->
+                        
                         <span></span>
                         <img src="img/Ellipse 4.svg" />
                     </div>
@@ -417,12 +371,5 @@
                         <img src="img/Ellipse 4.svg" /><span></span>
                     </div>
                 </div>
-                <!-- <div class="slide-index">
-                    <span class="current-slide"></span> / <span class="total-slide"></span>
-                </div> -->
-            </div>
-            <!--            <a href="javascript:;" class="scroll-to-explore">-->
-            <!--حرك الفأرة لأسفل-->
-            <!--</a>-->
         </div>
     </section>

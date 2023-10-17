@@ -114,29 +114,34 @@
                         </a>
                     </li>
                     <li class="nav-item has-sub">
-                        <a class="nav-link headerTextSize" href="Aboutus.php" >عن النادي</a>
+                        <a class="nav-link headerTextSize" href="Events.php" >الفعاليات والانشطة</a>
                     </li>
 
                     <li class="nav-item has-sub">
-                        <a class="nav-link headerTextSize" href="#">الفعاليات والانشطة
+                        <a class="nav-link headerTextSize" href="#">عن النادي
                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
                                 <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
                             </svg>
                         </a>
                         <ul>
                             <li>
-                                <a href="Events.php" style="font-size: 1.5rem">
-                                      الفعاليات الحالية  
+                                <a href="Aboutus.php" style="font-size: 1.5rem">
+                                    الرسالة والرؤية  
                                 </a>
                             </li>
                             <li>
-                                <a href="upcomingEv.php" style="font-size: 1.5rem">
-                                     الفعاليات القادمة
+                                <a href="ourTeam.php" style="font-size: 1.5rem">
+                                     الهيكل التنظيمي
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item has-sub">
+                    <li class="nav-item">
+                        <a class="nav-link headerTextSize" href="ContactUs.php">
+                            <span>تواصل معنا</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item has-sub">
                         <a  class="nav-link headerTextSize" href="#">
                             تواصل معنا
                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
@@ -155,7 +160,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
 
                 <ul class="mobile-menu-social">

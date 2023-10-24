@@ -149,11 +149,12 @@
                         <!-- Section: Social media -->
                         <section class="mb-4">
 
-                        <!-- Twitter -->
+                        <!-- Twitter/x -->
                         <a
                             class="btn btn-link btn-floating btn-lg text-light m-1"
                             href="https://twitter.com/ksuvc2030"
                             role="button"
+                            target="_blank"
                             data-mdb-ripple-color="dark"
                             ><i class="fab fa-twitter"></i
                         ></a>
@@ -162,6 +163,7 @@
                         <a
                             class="btn btn-link btn-floating btn-lg text-light m-1"
                             href="https://www.instagram.com/ksuvc2030"
+                            target="_blank"
                             role="button"
                             data-mdb-ripple-color="dark"
                             ><i class="fab fa-instagram"></i
@@ -172,6 +174,7 @@
                             class="btn btn-link btn-floating btn-lg text-light m-1"
                             href="https://www.linkedin.com/company/visionclub2030/"
                             role="button"
+                            target="_blank"
                             data-mdb-ripple-color="dark"
                             ><i class="fab fa-linkedin"></i
                         ></a>

@@ -26,6 +26,7 @@ if(isset($_POST['submit'])){
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
     
     <!-- Header Head-->
     <?php include_once  'Header/headerHead.php'; ?>

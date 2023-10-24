@@ -56,7 +56,7 @@ if ($r && mysqli_num_rows($r) > 0) {
         
         <div class="event-list">
             <?php
-            $result = mysqli_query($con, "SELECT * FROM `events`");
+            $result = mysqli_query($con, "SELECT * FROM `events`order by date desc");
             while ($row = mysqli_fetch_assoc($result)) {
                 $tweet = $row['tweet'];
             ?>

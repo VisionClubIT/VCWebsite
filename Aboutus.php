@@ -8,10 +8,10 @@ include_once  'header/header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/About.css">
-    <title>Top Container with Cards</title>
+    <title>الرسالة و الرؤية</title>
 </head>
 <body>
-    <div class="top-container">
+    <!-- <div class="top-container">
         <div class="card">
             <img src="img/Saudi_Vision_2030_logo 1.svg" alt="Card 1">
             <h3>دعم</h3>
@@ -24,13 +24,14 @@ include_once  'header/header.php';
             <img src="img/a.svg" alt="Card 3">
             <h3>تمكين</h3>
         </div>
-    </div>
-
+    </div> -->
+    <?php include_once 'aboutComponent.php'?>
+  
      <!-- team cards -->
-    <div class="team-cards-container">
+    <!-- <div class="team-cards-container"> -->
     <!-- IT team -->
-    <div class="team-card">
-      <div class="team-card-inner">
+    <!-- <div class="team-card"> -->
+      <!-- <div class="team-card-inner">
         <div class="team-card-front">
           <img src="uploads/teamIcons/IT.png" alt="Image">
           <div class="card-title">الفريق التقني</div>
@@ -39,9 +40,9 @@ include_once  'header/header.php';
           <p>This is the back of the team card.</p>
         </div>
       </div>
-    </div>
+    </div> -->
         <!-- finance team -->
-        <div class="team-card">
+        <!-- <div class="team-card">
       <div class="team-card-inner">
         <div class="team-card-front">
           <img src="uploads/teamIcons/FINANCE.png" alt="Image">
@@ -50,9 +51,9 @@ include_once  'header/header.php';
           <p>This is the back of the team card.</p>
         </div>
       </div>
-    </div>
+    </div> -->
         <!--Human resources-->
-        <div class="team-card">
+        <!-- <div class="team-card">
       <div class="team-card-inner">
         <div class="team-card-front">
           <img src="uploads/teamIcons/HR.png" alt="Image">
@@ -61,9 +62,9 @@ include_once  'header/header.php';
           <p>This is the back of the team card.</p>
         </div>
       </div>
-    </div>
+    </div> -->
         <!--Law  -->
-        <div class="team-card">
+        <!-- <div class="team-card">
       <div class="team-card-inner">
         <div class="team-card-front">
           <img src="uploads/teamIcons/LAW.png" alt="Image">
@@ -72,9 +73,9 @@ include_once  'header/header.php';
           <p>This is the back of the team card.</p>
         </div>
       </div>
-    </div>
+    </div> -->
         <!-- public realtions team -->
-        <div class="team-card">
+        <!-- <div class="team-card">
       <div class="team-card-inner">
         <div class="team-card-front">
           <img src="uploads/teamIcons/PR.png" alt="Image">
@@ -83,9 +84,9 @@ include_once  'header/header.php';
           <p>This is the back of the team card.</p>
         </div>
       </div>
-    </div>
+    </div> -->
         <!-- marketing and media  -->
-        <div class="team-card">
+        <!-- <div class="team-card">
       <div class="team-card-inner">
         <div class="team-card-front">
           <img src="uploads/teamIcons/MM.png" alt="Image">
@@ -94,9 +95,9 @@ include_once  'header/header.php';
           <p>This is the back of the team card.</p>
         </div>
       </div>
-    </div>
+    </div> -->
         <!--logistics team -->
-        <div class="team-card">
+        <!-- <div class="team-card">
       <div class="team-card-inner">
         <div class="team-card-front">
           <img src="uploads/teamIcons/PL.png" alt="Image">
@@ -105,9 +106,9 @@ include_once  'header/header.php';
           <p>This is the back of the team card.</p>
         </div>
       </div>
-    </div>
+    </div> -->
         <!--quality team -->
-        <div class="team-card">
+        <!-- <div class="team-card">
       <div class="team-card-inner">
         <div class="team-card-front">
           <img src="uploads/teamIcons/QA.png" alt="Image">
@@ -117,8 +118,8 @@ include_once  'header/header.php';
         </div>
       </div>
     </div>
-    <!-- Repeat the card div 7 more times -->
-  </div>
+    
+  </div> -->
 
 </body>
 </html>

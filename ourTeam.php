@@ -25,7 +25,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Binary Tree Structure</title>
+    <title>الهيكل التنظيمي</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/ourTeam.css">
 </head>
@@ -59,7 +59,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
                  foreach ($leaders as $role) {
                     $data = getHierarchyData($latestYear, $role, $con);
                     if ($data) {
-                        echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a>";  
+                        echo "<li class='leader-item'><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>";
                     }
                 }
                 // Close ul elements

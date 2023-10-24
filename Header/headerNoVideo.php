@@ -113,11 +113,11 @@
                             </a>
                         </li>
                         <li class="nav-item has-sub">
-                            <a class="nav-link headerTextSize" href="Aboutus.php" >عن النادي</a>
+                            <a class="nav-link headerTextSize" href="Events.php" >الفعاليات والانشطة</a>
                         </li>
 
                         <li class="nav-item has-sub">
-                            <a class="nav-link headerTextSize" href="Events.php">الفعاليات والانشطة
+                            <a class="nav-link headerTextSize" href="Aboutus.php">عن النادي
                                 <!-- <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6"> -->
                                     <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
                                 </svg>
@@ -125,12 +125,12 @@
                             <ul>
                                 <li>
                                     <a href="Events.php">
-                                        </span>  الفعاليات الحالية  <span>
+                                        </span>الرسالة والرؤية<span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="upcomingEv.php">
-                                        </span> الفعاليات القادمة <span>
+                                        </span>الهيكل التنظيمي<span>
                                     </a>
                                 </li>
                             </ul>
@@ -149,6 +149,9 @@
                         </a>
                         </li> -->
                         <li class="nav-item has-sub">
+                            <a class="nav-link headerTextSize" href="Events.php" >تواصل معنا</a>
+                        </li>
+                        <!-- <li class="nav-item has-sub">
                             <a  class="nav-link headerTextSize" href="ContactUs.php">
                                 تواصل معنا
                                 <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
@@ -167,7 +170,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
 
                     <ul class="mobile-menu-social">

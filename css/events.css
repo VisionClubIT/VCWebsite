@@ -1,3 +1,7 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Noto+Kufi+Arabic:wght@300&family=Roboto+Condensed:wght@300&family=Tajawal&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Montserrat:wght@300;800&family=Noto+Kufi+Arabic:wght@300&family=Roboto+Condensed:wght@300&family=Tajawal&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Montserrat:wght@300;800&family=Noto+Kufi+Arabic:wght@300&family=Roboto+Condensed:wght@300&family=Tajawal&display=swap');
 /* Reset some default styles for better consistency */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
@@ -71,6 +75,7 @@ body {
   margin-bottom: 20px;
 }
 
+
 .promotional-event .event-button {
   display: inline-block;
   padding: 10px 20px;
@@ -101,27 +106,52 @@ body {
   margin-bottom: 20px;
 }
 
+.eventdes{
+  font-family: 'Tajawal', sans-serif;
+  margin-right:15px;
+}
+
+.eventname{
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-weight:bold;
+  color:#545454;
+
+}
 .event-card {
-  display: flex;
+  /*display: flex;*/
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   margin-bottom: 20px;
   overflow: hidden;
   text-align: right; /* Align text to the left */
   color: #333; /* Text color */
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  transition: background-color 400ms;
+
+}
+
+.event-card:hover{
+  background-color:aliceblue;
 }
 
 .event-card .event-image {
   flex: 1;
   width: 100%; /* Ensure the image takes up the full width of the container */
-  height: auto; /* Allow the height to adjust proportionally */
+  height: 100%; /* Allow the height to adjust proportionally */
   max-width: 100%; /* Prevent images from exceeding their original size */
   max-height: 100%; /* Prevent images from exceeding their original size */
-  background-size: contain; /* Fit the image within the container */
-  background-repeat: no-repeat;
-  background-position: center;
+float:right;
+
 }
 
+.image{
+  width:15%;
+  height:15%;
+  border:none;
+}
 .event-card .event-details {
   flex: 2;
   padding: 20px;
@@ -129,7 +159,7 @@ body {
 
 .event-card .event-date {
   font-size: 14px;
-  color: #777;
+  color: #2D85B5;
 }
 
 .event-card h3 {
@@ -145,11 +175,16 @@ body {
 .event-card .event-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #333;
+  background-color:#7ca674;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 16px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight:bold;
+  transition:400ms;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .event-card .event-link:hover {

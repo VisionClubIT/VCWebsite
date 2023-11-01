@@ -31,6 +31,7 @@ body {
   align-items: center; /* To vertically align content */
   text-align: center; /* Center text */
   color: #fff; /* Text color */
+  font-family: 'Noto Kufi Arabic', sans-serif;
 }
 
 /* Grey overlay for text */
@@ -108,7 +109,6 @@ body {
 
 .eventdes{
   font-family: 'Tajawal', sans-serif;
-  margin-right:15px;
 }
 
 .eventname{
@@ -139,19 +139,22 @@ body {
 
 .event-card .event-image {
   flex: 1;
-  width: 100%; /* Ensure the image takes up the full width of the container */
-  height: 100%; /* Allow the height to adjust proportionally */
+  width: 180px; /* Ensure the image takes up the full width of the container */
+  height: 180px; /* Allow the height to adjust proportionally */
   max-width: 100%; /* Prevent images from exceeding their original size */
   max-height: 100%; /* Prevent images from exceeding their original size */
-float:right;
+  background-size: contain; /* Fit the image within the container */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  float:right;
 
 }
 
-.image{
-  width:15%;
-  height:15%;
-  border:none;
+.card-content{
+  margin-right:50px;
 }
+
 .event-card .event-details {
   flex: 2;
   padding: 20px;

@@ -117,26 +117,29 @@
                             <a class="nav-link"  href="index.php">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="aboutus.php">عن النادي</a>
+                            <a class="nav-link"  href="Events.php">الفعاليات والأنشطة</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"  href="Events.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            الفعاليات والأنشطة
+                            <a class="nav-link dropdown-toggle"  href="Aboutus.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            عن النادي
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" id="subPages" href="Events.php">الفعاليات الحالية</a>
-                            <a class="dropdown-item" id="subPages" href="Events.php">الفعاليات القادمة</a>
+                            <a class="dropdown-item" id="subPages" href="Aboutus.php">الرسالة والرؤية</a>
+                            <a class="dropdown-item" id="subPages" href="ourTeam.php">الهيكل التنظيمي</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="ContactUs.php">تواصل معنا</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            التواصل
+                            تواصل معنا
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <a class="dropdown-item" id="subPages" href="ContactUs.php">تواصل معنا</a>
                             <a class="dropdown-item" id="subPages" href="https://forms.gle/1kPdPC4cBMiDhBuw7">التقييم</a>
                             </div>
-                        </li>
+                        </li> -->
                         </ul>
                     </div>
                     <!-- Navbar ends -->
@@ -146,11 +149,12 @@
                         <!-- Section: Social media -->
                         <section class="mb-4">
 
-                        <!-- Twitter -->
+                        <!-- Twitter/x -->
                         <a
                             class="btn btn-link btn-floating btn-lg text-light m-1"
                             href="https://twitter.com/ksuvc2030"
                             role="button"
+                            target="_blank"
                             data-mdb-ripple-color="dark"
                             ><i class="fa-brands fa-x-twitter"></i>
                         </a>
@@ -159,6 +163,7 @@
                         <a
                             class="btn btn-link btn-floating btn-lg text-light m-1"
                             href="https://www.instagram.com/ksuvc2030"
+                            target="_blank"
                             role="button"
                             data-mdb-ripple-color="dark"
                             ><i class="fab fa-instagram"></i
@@ -169,6 +174,7 @@
                             class="btn btn-link btn-floating btn-lg text-light m-1"
                             href="https://www.linkedin.com/company/visionclub2030/"
                             role="button"
+                            target="_blank"
                             data-mdb-ripple-color="dark"
                             ><i class="fab fa-linkedin"></i
                         ></a>

@@ -39,28 +39,33 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" id="headerTextSize" href="aboutus.php">
-                            عن النادي
+                        <a class="nav-link" id="headerTextSize" href="Events.php">
+                        الفعاليات والأنشطة
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="headerTextSize" href="Events.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            الفعاليات والأنشطة
+                        <a class="nav-link dropdown-toggle" id="headerTextSize" href="Aboutus.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           عن النادي
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" id="subPages" href="Events.php">الفعاليات الحالية</a>
-                            <a class="dropdown-item" id="subPages" href="Events.php">الفعاليات القادمة</a>
+                            <a class="dropdown-item" id="subPages" href="Aboutus.php">الرسالة والرؤية</a>
+                            <a class="dropdown-item" id="subPages" href="ourTeam.php">الهيكل التنظيمي</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
+                        <a class="nav-link" id="headerTextSize" href="ContactUs.php">
+                        تواصل معنا
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="headerTextSize" href="ContactUs.php" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            التواصل
+                            تواصل معنا
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                             <a class="dropdown-item" id="subPages" href="ContactUs.php">تواصل معنا</a>
                             <a class="dropdown-item" id="subPages" href="https://forms.gle/1kPdPC4cBMiDhBuw7">التقييم</a>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
 
                 <!-- Search -->

@@ -32,7 +32,6 @@
             font-size: 1.5vw; /* Increase the font size */
             background-color: #478ac9;
             color: #ffff;
-            border-radius: 32%; /* Make them circular */
             margin-bottom: 30%;
         }
 
@@ -71,6 +70,16 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5); /* Adjust the alpha (0.5 for 50% transparency) */
+        }
+         /* Media query for smaller screens */
+         @media (max-width: 768px) {
+            .carousel-caption h1 {
+                font-size: 9vw; /* Increase font size for smaller screens */
+            }
+
+            .carousel-caption a.btn {
+                font-size: 4vw; /* Increase button font size for smaller screens */
+            }
         }
     </style>
 </head>

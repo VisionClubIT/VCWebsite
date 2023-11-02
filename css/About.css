@@ -1,190 +1,115 @@
-body{
+/* Reset default margin and padding */
+* {
     margin: 0;
-    /* padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.sec1{
-    margin: 0;
-    padding: 0;
-    height: 100vh; 
+/* Apply a background color to the top container */
+.top-container {
+    background-color: #0077b6; /* You can change the color to your preference */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
-.sec2{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    height: 100vh; 
+
+/* Style for the top container cards */
+.top-container .card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 300px;
+    width: 30%;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.top-container .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top-container .card h3 {
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Style for the team cards */
+.team-cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Wrap to the next row if necessary */
+}
+
+.team-card {
+    flex: 1; /* Distribute available space equally among cards */
+    max-width: 3000px; /* Maximum card width */
+    height: 200px; /* Fixed card height */
+    perspective: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    margin: 10px; /* Add margin to separate cards */
+}
+
+.team-card:hover .team-card-inner {
+    transform: rotateY(180deg);
+}
+
+.team-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.card-title {
+    background: #333;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 0px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    text-align: center;
     
 }
 
-.slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-.slides input{
-    display: none;
-}
-.slide{
-   width: 20%;
-   transition: 500px; 
-}
-.slide img{
-    width: 800px;
-    height: 500px;
-}
-
-.navigation-manual{
-position: absolute;
-width: 800px;
-margin-top: -40px;
-display: flex;
-justify-content: center;
-}
-.manual-btn{
-    border: 2px solid rgba(135, 177, 154, 0.747);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transform: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background:  rgba(135, 177, 154, 0.747);
-}
-
-#radio1:checked ~ .F{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .F{
-    margin-left: -20%;
-}
-#radio3:checked ~ .F{
-    margin-left: -40%;
-}
-
-
-/* automatic */
-
-.navigation-auto {
-   position: absolute;
-   display: flex;
-   width: 800px;
-   justify-content: center;
-   margin-top: 460px;
-   border-radius: 50%;
-}
-.navigation-auto div{
-     border: 2px solid rgba(135, 177, 154, 0.747);
-     padding: 5px;
-     border: 10px;
-     transition: 1s;
-     border-radius: 50%;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 45px;
-    border-radius: 50%;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background: rgba(135, 177, 154, 0.747);
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: rgba(135, 177, 154, 0.747);
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: rgba(135, 177, 154, 0.747);
-}
-
-.whoAreWe{
+.team-card-front, .team-card-back {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: aliceblue;
-
-}
-
-.container {
+    backface-visibility: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-    height: 100vh;
-}
-.horizontal-scroll10{
-    width: 600px;
-    height: 80px;
-    background-color: aliceblue;
-    border:  1px solid #fff;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    overflow: hidden;
+    background: #f2f2f2;
+    border-radius: 10px;
 }
 
-
-.horizontal-scroll10 .btn-scroll {
-    background-color: rgb(72, 141, 166);
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
-    padding: 7px 8px;
-    border: 0;
-    border-radius: 50%;
-    margin: 15 5px;
-    z-index: 1;
-    cursor: pointer;
-    transition: 1s;
-
+.team-card-back {
+    transform: rotateY(180deg);
+    background: #61a5b0;
+    color: #fff;
+    text-align: center;
 }
 
-
-.storys-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: absolute;
-    left: 0;
+.team-card img {
+    max-width: 100%;
+    max-height: 100%;
+    position: center;
 }
 
-.story-circle{
-    width: 100px;
-    height: 100px;
-    margin: 15px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transform: rotateZ(45deg);
- }
- 
- .story-circle img{
-     height: 70px;
-     width: 70px;
-     border-radius: 50%;
-     border: 2px solid #fff;
-     transform: rotateZ(-45deg);
- 
- }
- 

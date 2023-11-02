@@ -32,6 +32,7 @@ if ($r && mysqli_num_rows($r) > 0) {
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفعاليات و الأنشطة</title>
 	<link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/events.css?v=<?php echo time(); ?>">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -40,23 +41,24 @@ if ($r && mysqli_num_rows($r) > 0) {
 
 <body class="bg-white" style="margin:0">
     <?php include_once 'Header/headerbody.php';?>
-    <div class="promotional-event">
-
+    <div class="promotional-event" style="background-image: url('<?php echo $backgroundImage; ?>'); ">
         <div class="promotional-overlay"></div> <!-- Grey overlay for text -->
         <div class="promo-rectangle">
             <div class="event-details">
                 <h2><?php echo $eventName; ?></h2>
                 <p><?php echo $eventDescription; ?></p>
-                <a href="<?php echo $eventTweet; ?>" class="event-button"><?php echo $buttonText; ?></a>
+                <a href="<?php echo $eventTweet; ?>" target = "_blank" class="event-button"><?php echo $buttonText; ?></a>
             </div>
         </div>
     </div>
+</div>
+    
 
     <div class="past-events">
         
         <div class="event-list">
             <?php
-            $result = mysqli_query($con, "SELECT * FROM `events`");
+            $result = mysqli_query($con, "SELECT * FROM `events`order by date desc");
             while ($row = mysqli_fetch_assoc($result)) {
                 $tweet = $row['tweet'];
             ?>

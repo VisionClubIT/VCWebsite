@@ -16,7 +16,7 @@ $row = mysqli_fetch_assoc($result);
 $latestYear = $row['latest_year'];
 
 // Define roles for the main block
-$Presidency = ["الرئيس", "نائب الرئيس"];
+$Presidency = ["الرئيس", "نائب الرئيس","رئيس و مؤسس النادي"];
 $leaders = ["قائد الفريق التقني", "قائد فريق العلاقات العامة", "قائد التنظيم والدعم اللوجستي", "قائد فريق الإعلام والتسويق", "قائد الإدارة القانونية", "قائد فريق الموارد البشرية", "قائد فريق الأداء والجودة", "قائد الإدارة المالية"];
 ?>
 
@@ -25,16 +25,16 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Binary Tree Structure</title>
+    <title>الهيكل التنظيمي</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/ourTeam.css">
 </head>
-<body class="all bodyTeam custom-page">
-<!-- Background block with text and overlay -->
-<div class="custom-page background-block" style="background-image: url('uploads/ourTeam.jpeg')">
-    <div class="overlay"></div> <!-- Transparent grey overlay -->
-    <div class="background-content">
-        <h1>"نكون معاً هذه هي البداية، والبقاء معاً هو التقدم، والعمل معاً هو النجاح"</h1>
+<body>
+    <!-- Container with background image, text, and overlay -->
+    <div class="container-bg custom-page" style="background-image: url('uploads/groupPhoto.jpeg');">
+    <div class="background-content custom-page">
+        <div class="overlay"></div>
+        <h1 class="text">"نكون معاً هذه هي البداية، والبقاء معاً هو التقدم، والعمل معاً هو النجاح"</h1>
     </div>
 </div>
 
@@ -42,6 +42,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 <div class="container">
     <div class="row">
         <div class="tree">
+        <h2 class="subtitle">فريق عمل نادي رؤية ٢٠٣٠</h2>
             <ul>
                 <?php
                 // Loop through presidency
@@ -58,7 +59,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
                  foreach ($leaders as $role) {
                     $data = getHierarchyData($latestYear, $role, $con);
                     if ($data) {
-                        echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a>";  
+                        echo "<li class='leader-item'><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>";
                     }
                 }
                 // Close ul elements
@@ -72,26 +73,34 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 
 <!-- Horizontal line to separate the main team hierarchy -->
 <div class="separator"></div>
+<h2 class="subtitle">رئاسة النادي خلال السنوات</h2>
 
 <!-- Four horizontal blocks at the bottom of the page -->
 <div class="horizontal-blocks">
     <?php
     for ($i = 0; $i < 4; $i++) {
         $blockYear = $latestYear - $i - 1;
-        echo "<div class='block'><span class='year'>$blockYear</span><ul class='tree'>";
-        foreach (['الرئيس', 'نائب الرئيس'] as $role) {
+        $prevYear = $blockYear-1;
+
+        
+        echo "<div class='block'><span class='year'>$prevYear/$blockYear</span><ul class='tree'>";
+        foreach (['الرئيس','رئيس و مؤسس النادي','نائبة الرئيس', 'نائب الرئيس'] as $role) {
             $data = getHierarchyData($blockYear, $role, $con);
-            if ($data && $role == 'الرئيس') {
+            if ($data && $role == 'الرئيس' || $data && $role == 'رئيس و مؤسس النادي') {
                 echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a><ul>";
             }
+           
             if ($data && $role == 'نائب الرئيس') {
-                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>
-                </ul>
-            </li>";
+                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>";
             }
+            if ($data && $role == 'نائبة الرئيس'){
+                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>";
+            }
+        
         }
         echo "</ul></div>";
     }
+    
     ?>
 </div>
 </body>

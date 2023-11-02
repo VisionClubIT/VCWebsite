@@ -92,22 +92,7 @@
         <div class="nav-left ">
             <a href="#">
                 <img class="logo" src="img/VCLogo.png" alt=" ">
-                <!-- <div class="bottom-line"></div> -->
             </a>
-            <!-- <ul class="lang-selection-list">
-                <li class="lang-selection-item">
-                    <a class="lang-selection-link" href="javascript:;">
-                    AR <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
-                    <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
-                    </svg>
-                    <div class="bottom3-line"></div>
-                    </a>
-                    <ul>
-                        <li></li> 
-                        <li><a href="/">EN</a></li>
-                    </ul>
-                </li>
-            </ul> -->
         </div>
 
         <div class="nav-right">
@@ -123,12 +108,12 @@
                     </li>
 
                     <li class="nav-item has-sub">
-                        <a class="nav-link headerTextSize" href="aboutUs.php">عن النادي
+                        <a class="nav-link headerTextSize" href="#">عن النادي
                             <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
                                 <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
                             </svg>
                         </a>
-                        <ul>
+                        <ul class="nav-sub">
                             <li>
                                 <a href="Aboutus.php" style="font-size: 1.5rem">
                                     الرسالة والرؤية  
@@ -146,42 +131,8 @@
                             <span>تواصل معنا</span>
                         </a>
                     </li>
-                    <!-- <li class="nav-item has-sub">
-                        <a  class="nav-link headerTextSize" href="#">
-                            تواصل معنا
-                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 6">
-                                <path d="M1212.078,103.984l4,4,4-4" transform="translate(-1211.371 -103.277)" fill="none" stroke="#fff" stroke-width="2" />
-                            </svg>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="ContactUs.php" style="font-size: 1.5rem">
-                                      التواصل 
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://forms.gle/1kPdPC4cBMiDhBuw7" style="font-size: 1.5rem">
-                                     التقييم
-                                </a>
-                            </li>
-                        </ul>
-                    </li> -->
                 </ul>
             </nav>
-            <!-- <div class="search-container shown">
-                <a class="search-link" href="javascript:;">
-                    <svg class="search-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 22.7714C17.9489 22.7714 22.7714 17.9489 22.7714 12C22.7714 6.05113 17.9489 1.22862 12 1.22862C6.05114 1.22862 1.22863 6.05113 1.22863 12C1.22863 17.9489 6.05114 22.7714 12 22.7714Z" stroke="white" stroke-width="2" />
-                        <path d="M20 20L23.4553 23.1908" stroke="white" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                        <g id="Kapat" transform="translate(-1704.189 -111.728)">
-                            <path d="M1318.475-2573.151l-22,22" transform="translate(409.836 2687)" fill="none" stroke="#d4b264fe" stroke-linecap="round" stroke-width="3" />
-                            <path d="M22,0,0,22" transform="translate(1706.311 135.849) rotate(-90)" fill="none" stroke="#d4b264fe" stroke-linecap="round" stroke-width="3" />
-                        </g>
-                    </svg>
-                </a>
-            </div> -->
             <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
                 <a href="#">
                     <span>
@@ -211,65 +162,12 @@
                 </a>
             </div>
         </div>
-        <!-- <div class="search-opened-container">
-            <div class="inner-container">
-                <div class="top">
-                    <input id="keyword" type="text" placeholder="البحث" val="" maxlength="100" data-ajax-method="POST" data-ajax-url="/search">
-                    <button>
-                    ابحث
-                    <svg xmlns="http://www.w3.org/2000/svg" width="85" height="84" viewBox="0 0 85 84">
-                        <g transform="translate(3 2.385)">
-                            <g id="Next-Low" transform="translate(-1193 -866.168)">
-                                <g id="Group_51" data-name="Group 51" transform="translate(1183.943 862.494)">
-                                    <g id="Group_14" data-name="Group 14" transform="translate(48.864 3.592) rotate(45)" opacity="1">
-                                        <path id="Path_28" data-name="Path 28" d="M0,55.425,55.642,0" transform="translate(0.058 0.928)" fill="none" stroke="#d4b264fe" stroke-linecap="round" stroke-width="3" />
-                                        <path id="Path_29" data-name="Path 29" d="M1.7.683,45.968,0V43.374" transform="translate(10.859 0.058)" fill="none" stroke="#d4b264fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    </button>
-                    <p class="search-result-text"></p>
-                </div>
-                <div class="bottom">
-                    <div class="search-results">
-                        <ul>
-                            <li>
-                                <a href="javascript:;" data-json-property="All" class="active">
-                                    الكل (<span class="count count-all"></span>)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-json-property="Vision2030">
-                                    رؤية 2030 (<span class="count count-vision-2030"></span>)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-json-property="AboutTheKingdom">
-                                    محتوى(<span class="count count-about-the-kingdom"></span>)
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" data-json-property="NewsAndMedia">
-                                    (<span class="count count-news-and-media"></span>)
-                                </a>
-                            </li>
-                        </ul>
-                        <ol>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="search-close-layer">
-            </div>
-        </div> -->
     </header>
     <section class="hero-section home-hero-section">
         <div class="home-hero-section-inner">
             <div class="home-hero-slider swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <!-- <div class="swiper-wrapper"> -->
+                    <!-- <div class="swiper-slide"> -->
                         <div class="home-hero-slider-item">
                             <div class="hero-video-container">
                                 <div class="video-overlay"></div>
@@ -278,9 +176,9 @@
                             </div>
                             <h2  class="c-block__title b-hero__title b-hero__title--med c-content-block__title" >
                                 <section class="home" id="home">
-                                    <span data-aos="fade-up" data-aos-delay="500">
-                                        <h1><span class="auto-input"></span></h1>
-                                    </span>
+                                    <span data-aos="fade-up" data-aos-delay="500"></span>
+                                    <h1><span class="auto-input"></span></h1>
+                                    
                                     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
                                     <script>
                                         var typed = new Typed(".auto-input", {
@@ -306,8 +204,8 @@
                             </h2>
                             <a href="javascript:;" class="animated-link" style="opacity:0;"><strong></strong></a>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+                    <!-- </div> -->
+                    <!-- <div class="swiper-slide">
                         <div class="home-hero-slider-item">
                             <picture>
                                 <source media="(max-width: 376px)" srcset="media/hh0c0vvl/copy-of-_ssg8457.jpg">
@@ -346,8 +244,8 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-pagination">
+                </div> -->
+                <!-- <div class="swiper-pagination">
                     <div class="button swiper-button-prev">
                         
                         <span></span>
@@ -356,6 +254,7 @@
                     <div class="button swiper-button-next">
                         <img src="img/Ellipse 4.svg" /><span></span>
                     </div>
-                </div>
+                </div> -->
+            </div>
         </div>
     </section>

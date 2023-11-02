@@ -5065,7 +5065,7 @@ header.transparent-header a svg path {
 
 header.mobile-menu-opened nav {
     -webkit-transform: translateX(-100%) !important;
-    transform: translateX(-100%) !important
+    transform: translateX(-100%) !important;
 }
 
 header.mobile-menu-opened .nav-left a {

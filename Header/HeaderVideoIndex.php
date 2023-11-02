@@ -66,10 +66,13 @@
 
             if (header.classList.contains('mobile-menu-opened')) {
                 header.classList.remove('mobile-menu-opened');
+                // add overflow-auto when users close the modal
+                $('body').css("overflow", "");
             } else {
                 header.classList.add('mobile-menu-opened');
+                // add overflow-hidden when users open the modal
+                $('body').css("overflow", "hidden");
             }
-
             // Toggle the display of the mobile menu
             mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
         }
@@ -157,30 +160,6 @@
                         </ul>
                     </li>
                 </ul>
-
-                <ul class="mobile-menu-social">
-                    <li>
-                        <a href="https://www.linkedin.com/company/visionclub2030/" target="_blank">
-                            <ion-icon class="aaa"  name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://twitter.com/ksuvc2030" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19">
-                                <path d="M743.942,396.365a13.931,13.931,0,0,1-21.44,11.728,10.167,10.167,0,0,0,1.181.06,9.8,9.8,0,0,0,6.076-2.091,4.9,4.9,0,0,1-4.575-3.394,6.184,6.184,0,0,0,.924.076,5.167,5.167,0,0,0,1.288-.167,4.895,4.895,0,0,1-3.924-4.8v-.06a4.926,4.926,0,0,0,2.212.621,4.9,4.9,0,0,1-1.515-6.546,13.915,13.915,0,0,0,10.09,5.122,5.584,5.584,0,0,1-.121-1.121,4.9,4.9,0,0,1,8.47-3.349,9.631,9.631,0,0,0,3.106-1.182,4.881,4.881,0,0,1-2.152,2.7,9.816,9.816,0,0,0,2.818-.758,10.512,10.512,0,0,1-2.454,2.531C743.942,395.94,743.942,396.152,743.942,396.365Z" transform="translate(-722.502 -390.895)" fill="#d4b264fe" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ksuvc2030" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22">
-                                <path d="M829.034,404.733a5.792,5.792,0,0,1-6.068,6.069c-1.726.1-6.9.1-8.623,0a5.79,5.79,0,0,1-6.068-6.069c-.1-1.726-.1-6.9,0-8.623a5.779,5.779,0,0,1,6.068-6.063c1.725-.1,6.9-.1,8.623,0a5.789,5.789,0,0,1,6.068,6.068C829.132,397.839,829.132,403.007,829.034,404.733Zm-1.81-4.31c0-1.52.126-4.785-.42-6.161a3.525,3.525,0,0,0-1.987-1.987c-1.371-.541-4.64-.42-6.161-.42s-4.785-.127-6.162.42a3.528,3.528,0,0,0-1.986,1.987c-.541,1.372-.42,4.64-.42,6.161s-.127,4.785.42,6.161a3.528,3.528,0,0,0,1.986,1.987c1.372.541,4.641.42,6.162.42s4.785.126,6.161-.42a3.527,3.527,0,0,0,1.987-1.987C827.35,405.214,827.224,401.944,827.224,400.424Zm-3.209,0a5.359,5.359,0,1,1-5.359-5.359A5.35,5.35,0,0,1,824.015,400.424Zm-1.875,0a3.484,3.484,0,1,0-3.484,3.484A3.487,3.487,0,0,0,822.14,400.424Zm2.095-4.329a1.25,1.25,0,1,1,1.25-1.249A1.247,1.247,0,0,1,824.235,396.1Z" transform="translate(-808.201 -389.973)" fill="#d4b264fe" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <p class="mobile-menu-copy">&copy;2030 نادي الرؤية </p>
             </nav>
             <!-- <div class="search-container shown">
                 <a class="search-link" href="javascript:;">

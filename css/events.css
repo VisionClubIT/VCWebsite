@@ -15,6 +15,7 @@ body {
   color: #333;
 }
 
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -93,7 +94,7 @@ body {
 
 /* Past Events */
 .past-events {
-  background-color: #fff;
+  background-color: #F7F8F8;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -146,9 +147,12 @@ body {
   background-size: contain; /* Fit the image within the container */
   background-repeat: no-repeat;
   background-position: center;
-
+  background-color:#a4acbea2;
+  border-radius:180px;
   float:right;
-
+  margin-left: 20px;
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 .card-content{

@@ -120,7 +120,7 @@ body {
 }
 .event-card {
   /*display: flex;*/
-  border: 1px solid #ddd;
+  border: 1px solid #a4acbea2;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   margin-bottom: 20px;
@@ -130,12 +130,14 @@ body {
   width:1000px;
   margin-left:auto;
   margin-right:auto;
-  transition: background-color 400ms;
+
+  transition: background-color 400ms, box-shadow 400ms;
 
 }
 
 .event-card:hover{
-  background-color:aliceblue;
+  background-color:rgb(241, 246, 251);
+  box-shadow: 1px 1px 20px 2px rgb(194, 193, 193);
 }
 
 .event-card .event-image {

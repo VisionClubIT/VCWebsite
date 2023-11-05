@@ -25,7 +25,7 @@ body {
 /* Adjusted CSS for the promotional event */
 .promotional-event {
   background-image: url('<?php echo $backgroundImage; ?>');
-  height: 400px; /* Increase the height of the promotional container as needed */
+  height: 700px; /* Increase the height of the promotional container as needed */
   position: relative;  /* Relative positioning for overlay REMOVE */
   display: flex; /* To vertically align content REMOVE */
   justify-content: center; /* To horizontally align content */
@@ -94,7 +94,7 @@ body {
 
 /* Past Events */
 .past-events {
-  background-color: #F7F8F8;
+  background-color: #2743652c;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -120,6 +120,7 @@ body {
 }
 .event-card {
   /*display: flex;*/
+  background-color: #f0f0f0;
   border: 1px solid #a4acbea2;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -153,8 +154,9 @@ body {
   border-radius:180px;
   float:right;
   margin-left: 20px;
-  margin-top:5px;
+  margin-top:8px;
   margin-bottom:5px;
+  margin-right:20px;
 }
 
 .card-content{

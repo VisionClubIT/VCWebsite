@@ -170,7 +170,7 @@
                     <!-- <div class="swiper-slide"> -->
                         <div class="home-hero-slider-item">
                             <div class="hero-video-container">
-                                <div class="video-overlay"></div>
+                                <!-- <div class="video-overlay"></div> -->
                                 <video class="hero-video" autoplay muted playsinline src="" data-video-1920="" data-video-768=""  data-video-376="">
                                 </video>
                             </div>
@@ -199,7 +199,7 @@
                                 <source srcset="img/theline.webp">
                                 <img src="img/theline.webp" alt=" ">
                             </picture>
-                            <p dir="rtl" style="text-align: right; color: white !important; font-size: 5rem !important; font-family: 'bukra bold';">
+                            <p class="over-video-text">
                                  يبني المستقبل من وليد حاضره، <br>على أرض ماضيه
                             </p>
                             <a href="javascript:;" class="animated-link" style="opacity:0;"><strong></strong></a>

@@ -16998,7 +16998,7 @@ footer .footer-bottom .footer-bottom-right ul li a svg path {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-}
+}   
 
 @media(max-width: 1279px) {
     .home-hero-section-inner .swiper-pagination {
@@ -17024,7 +17024,18 @@ footer .footer-bottom .footer-bottom-right ul li a svg path {
     -ms-flex-align: center;
     align-items: center
 }
-
+@media(max-width: 700px) {
+    .home-hero-section-inner .home-hero-slider-item .over-video-text{
+        text-align: center !important; 
+        font-size: 2rem !important; 
+    }
+}
+.home-hero-section-inner .home-hero-slider-item .over-video-text{
+    text-align: right; 
+    color: white !important; 
+    font-size: 5rem; 
+    font-family: 'bukra bold';
+}
 .home-hero-section-inner .swiper-pagination .button:hover {
     background-color: rgba(0, 0, 0, 0) !important;
     opacity: 1

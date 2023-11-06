@@ -5,5 +5,5 @@
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
 </head>
 <body>
-    <?php include_once  'FooterBody.php'; ?>
+    <?php include_once  'footerBody.php'; ?>
 </body>

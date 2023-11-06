@@ -119,7 +119,7 @@ p {
       </div>
     </div>
     <div class="box box4">
-        <img src="Img/endSem.jpg" alt="Image 1">
+        <img src="uploads/events/diriyah.jpeg" alt="Image 1">
     </div>
     <div class="box box5">
         <div class="box-content">

@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="2030 رؤية نادي">
 
     
-    <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.4.2/js/all.js"></script>
 
 
     <!-- JS, Popper.js, and jQuery -->

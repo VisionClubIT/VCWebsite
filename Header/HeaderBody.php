@@ -44,7 +44,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="headerTextSize" href="Aboutus.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="headerTextSize" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            عن النادي
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -57,18 +57,9 @@
                         تواصل معنا
                         </a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="headerTextSize" href="ContactUs.php" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            تواصل معنا
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" id="subPages" href="ContactUs.php">تواصل معنا</a>
-                            <a class="dropdown-item" id="subPages" href="https://forms.gle/1kPdPC4cBMiDhBuw7">التقييم</a>
-                        </div>
-                    </li> -->
                 </ul>
 
-                <!-- Search -->
+                <!-- Search
                 <div class="d-flex searchDiv">
                     <form id="searchForm" class="form-inline d-none mr-2">
                         <input class="form-control" type="search" placeholder="البحث" aria-label="البحث">
@@ -82,7 +73,7 @@
                             </g>
                         </svg>
                     </button>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>

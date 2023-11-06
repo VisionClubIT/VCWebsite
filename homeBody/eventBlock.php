@@ -9,7 +9,7 @@
     <style>
         /* Adjust the height of the container */
         .carousel-item {
-            height: 600px; /* Decrease the height */
+            height: 700px; /* Decrease the height */
             position: relative;
             
         }

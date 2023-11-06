@@ -186,7 +186,7 @@ include('Dynamic/Alert.php');
 </section>
 </body>
 </html>
-
+<link rel="stylesheet" href="css/reset.css">
 <?php include('Footer/footer.php');?>
 
 

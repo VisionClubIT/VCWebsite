@@ -1,5 +1,5 @@
 <?php
-include_once  'header/header.php';
+include_once  'Header/header.php';
 ?>
 
 <!DOCTYPE html>

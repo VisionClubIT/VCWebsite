@@ -29,13 +29,13 @@ if(isset($_POST['submit'])){
     <title>تواصل معنا</title>
     
     <!-- Header Head-->
-    <?php include_once  'Header/headerHead.php'; ?>
+    <?php include_once  'Header/HeaderHead.php'; ?>
     
     <link rel="stylesheet" href="css/contactUs.css">
 </head>
 <body>
     <!-- Header Body-->
-    <?php include_once  'Header/headerBody.php'; ?>
+    <?php include_once  'Header/HeaderBody.php'; ?>
 
     <div class="Contact-container">
         <form  method="POST">

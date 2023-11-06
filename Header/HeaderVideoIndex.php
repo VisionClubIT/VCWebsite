@@ -199,9 +199,9 @@
                                 <source srcset="img/theline.webp">
                                 <img src="img/theline.webp" alt=" ">
                             </picture>
-                            <h2 class="">
-                                 يبني المستقبل من وليد حاضره، على أرض ماضيه
-                            </h2>
+                            <p dir="rtl" style="text-align: right; color: white !important; font-size: 5rem !important; font-family: 'bukra bold';">
+                                 يبني المستقبل من وليد حاضره، <br>على أرض ماضيه
+                            </p>
                             <a href="javascript:;" class="animated-link" style="opacity:0;"><strong></strong></a>
                         </div>
                     <!-- </div> -->

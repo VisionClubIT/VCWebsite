@@ -3,18 +3,19 @@
     // require  'config/app.php';
     // $q1 =  $con->query('select * from media order by id ')->fetch_all(MYSQLI_ASSOC);
     // $events = $con->query('select * from events order by id ')->fetch_all(MYSQLI_ASSOC);
-    include('Header/headerVideoIndex.php');
+    include('Header/HeaderVideoIndex.php');
 ?>
 <div>
 <?php
 include('homeBody/body.php');
 ?> 
 </div>
-
+<meta name="description" content="نادي طلابي طموح تأسس عام ٢٠١٨، تحت اشراف مكتب إدارة التحول والمبادرات بجماعة الملك سعود، يهدف إلى التعريف ونشر الوعي برؤية المملكة ودور الشباب في تحقيقها، من خلال دعم الطاقات وتحفيزها لتكوين مجتمع ريادي متوافق مع أهداف رؤيتنا الغالية رؤية ٢٠٣٠" />
     <link rel="stylesheet" href="css/main-166.css">
     <link rel="stylesheet" href="css/vendors-166.css">
     <link rel="stylesheet" href="css/master.min.css">
     <link rel="stylesheet" href="css/header1.css">
+    <title>الرئيسية</title>
 
 
 <?php

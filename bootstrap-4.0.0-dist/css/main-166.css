@@ -1,6 +1,5 @@
 .swiper-pagination
 giga-projects
-0e0e0e
 quote
 .nav-left
 font-family
@@ -22,8 +21,7 @@ b-hero__bottom-line
     margin-right: auto;
     margin-left: auto
 }
-.button
-@media(min-width: 576px) {
+.button @media(min-width: 576px) {
     .container {
         max-width: 540px
     }
@@ -5057,7 +5055,8 @@ header.transparent-header a svg path {
 
 header.mobile-menu-opened nav {
     -webkit-transform: translateX(-100%) !important;
-    transform: translateX(-100%) !important
+    transform: translateX(-100%) !important;
+    overflow: hidden;
 }
 
 header.mobile-menu-opened .nav-left a {
@@ -5109,7 +5108,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
 .nav-left ul a,
 .nav-right ul a {
     font-family: "Bukra Bold";
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     letter-spacing: .05rem;
     line-height: 1.6rem;
     -webkit-transition: color .6s ease-in-out;
@@ -5301,7 +5300,7 @@ header.mobile-menu-opened .nav-list .nav-item ul {
 
 .nav-left .lang-selection-list .lang-selection-item ul {
     position: absolute;
-    top: 2rem;
+    top: 0.5rem;
     left: 0;
     pointer-events: none;
     width: 100%;

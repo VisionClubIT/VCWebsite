@@ -16,7 +16,7 @@ $row = mysqli_fetch_assoc($result);
 $latestYear = $row['latest_year'];
 
 // Define roles for the main block
-$Presidency = ["الرئيس", "نائب الرئيس"];
+$Presidency = ["الرئيس", "نائب الرئيس","رئيس و مؤسس النادي"];
 $leaders = ["قائد الفريق التقني", "قائد فريق العلاقات العامة", "قائد التنظيم والدعم اللوجستي", "قائد فريق الإعلام والتسويق", "قائد الإدارة القانونية", "قائد فريق الموارد البشرية", "قائد فريق الأداء والجودة", "قائد الإدارة المالية"];
 ?>
 
@@ -25,7 +25,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Binary Tree Structure</title>
+    <title>الهيكل التنظيمي</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/ourTeam.css">
 </head>
@@ -59,7 +59,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
                  foreach ($leaders as $role) {
                     $data = getHierarchyData($latestYear, $role, $con);
                     if ($data) {
-                        echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a>";  
+                        echo "<li class='leader-item'><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>";
                     }
                 }
                 // Close ul elements
@@ -84,16 +84,19 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
 
         
         echo "<div class='block'><span class='year'>$prevYear/$blockYear</span><ul class='tree'>";
-        foreach (['الرئيس', 'نائب الرئيس'] as $role) {
+        foreach (['الرئيس','رئيس و مؤسس النادي','نائبة الرئيس', 'نائب الرئيس'] as $role) {
             $data = getHierarchyData($blockYear, $role, $con);
-            if ($data && $role == 'الرئيس') {
+            if ($data && $role == 'الرئيس' || $data && $role == 'رئيس و مؤسس النادي') {
                 echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a><ul>";
             }
+           
             if ($data && $role == 'نائب الرئيس') {
-                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>
-                </ul>
-            </li>";
+                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>";
             }
+            if ($data && $role == 'نائبة الرئيس'){
+                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>";
+            }
+        
         }
         echo "</ul></div>";
     }

@@ -26,15 +26,16 @@ if(isset($_POST['submit'])){
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
     
     <!-- Header Head-->
-    <?php include_once  'Header/headerHead.php'; ?>
+    <?php include_once  'Header/HeaderHead.php'; ?>
     
     <link rel="stylesheet" href="css/contactUs.css">
 </head>
 <body>
     <!-- Header Body-->
-    <?php include_once  'Header/headerBody.php'; ?>
+    <?php include_once  'Header/HeaderBody.php'; ?>
 
     <div class="Contact-container">
         <form  method="POST">

@@ -64,6 +64,7 @@ body {
   margin: 0 auto; /* Center the rectangle horizontally */
   padding: 20px; /* Adjust the padding as needed */
   text-align: center;
+  font-family: 'Tajawal', sans-serif;
   z-index: 2; /* Place the rectangle above the overlay */
 }
 
@@ -85,7 +86,10 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  font-weight:bold;
   font-size: 18px;
+  font-family: 'Tajawal', sans-serif;
+  transition:background-color 500ms;
 }
 
 .promotional-event .event-button:hover {
@@ -151,19 +155,22 @@ body {
 
 .eventname{
   font-family: 'Noto Kufi Arabic', sans-serif;
+  font-weight:bold;
+  color:#545454;
 }
 
 .eventdes{
   font-family: 'Tajawal', sans-serif;
+  color:#545454
 }
 
 .event-card .event-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color:#7ca674;
+  background-color:#274365;
   color: #fff;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 16px;
   font-family: 'Tajawal', sans-serif;
   font-weight:bold;

@@ -65,10 +65,10 @@ if ($r && mysqli_num_rows($r) > 0) {
                 <div class="event-card">
                     <div class="event-image" style="background-image: url(<?php echo $row['image_events']; ?>);"></div>
                     <div class="event-details">
-                        <span class="event-date"><?php echo $row['date']; ?></span>
-                        <h3><?php echo $row['name']; ?></h3>
-                        <p><?php echo $row['description']; ?></p>
-                        <a href="<?php echo $tweet; ?>" class="event-link"><?php echo $row['buttonText']; ?></a>
+                       <div class=card-content> <span class="event-date"><?php echo $row['date']; ?></span>
+                        <h3 class="eventname"><?php echo $row['name']; ?></h3>
+                        <p class="eventdes"><?php echo $row['description']; ?></p>
+                        <a href="<?php echo $tweet; ?>" class="event-link"><?php echo $row['buttonText']; ?></a></div>
                     </div>
                 </div>
             <?php

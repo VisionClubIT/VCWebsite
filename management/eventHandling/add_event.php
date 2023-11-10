@@ -5,7 +5,7 @@ require_once('database.php');
 // Get data from the form submission
 $eventName = $_POST['eventName'];
 $eventDate = $_POST['eventDate'];
-$eventDescription = $_POST['eventDescription'];
+$eventDescription = $_POST['eventDescription'];  
 $eventTweet = $_POST['eventTweet'];
 $eventImage = $_POST['eventImage'];
 $eventButtonText = $_POST['eventButtonText'];
@@ -22,11 +22,13 @@ $con->close();
 // Check if the query was successful
 if ($result) {
     // Event added successfully, redirect back to EventsTable.php with success message
-    header("Location: EventsTable.php?success=Event added successfully");
-    exit();
+    $queryString =  $_SERVER['QUERY_STRING'];   
+    header("Location:http://localhost/vcwebsite/EventsTable.php?success=Event added successfully".$queryString);
+    die();
 } else {
     // Error adding event, redirect back to EventsTable.php with error message
-    header("Location: EventsTable.php?error=" . urlencode('Error adding event: ' . $stmt->error));
-    exit();
+    $queryString =  $_SERVER['QUERY_STRING'];   
+    header("Location:http://localhost/vcwebsite/EventsTable.php?EventsTable.php?error=" . urlencode('Error adding event: ' . $stmt->error).$queryString);
+    die();
 }
 ?>

@@ -6,6 +6,7 @@
             Login
         </title>
         <link rel="stylesheet" href="loginstyle.css">
+        <link rel="shortcut icon" href="media/Logo.color.png" type="image/x-icon">
     </head>
 
     <body>

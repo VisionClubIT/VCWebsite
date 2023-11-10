@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Event Management</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v6.4.2/js/all.js"></script>
+    <script src="management/eventHandling/EventFunctions.js"></script>
 
 
     <link rel="stylesheet" href="management/css/styles.css">
-    <script src="management/eventHandling/EventFunctions.js"></script>
+
 </head>
 <body>
     <div class="container-fluid admin-view">
@@ -40,7 +48,7 @@
                             </div>
                             <div class="modal-body">
                                 <!-- Add Event Form -->
-                                <form id="addEventForm" action="management/eventHandling/add_event.php" method="post">
+                                <form id="addEventForm" action="management/eventHandling/add_event.php" method="post" enctype="multipart/form-data">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="eventName">Name</label>
@@ -48,7 +56,7 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="eventDate">Date</label>
-                                            <input type="text" class="form-control" id="eventDate" name="eventDate" required>
+                                            <input type="text" class="form-control datepicker" id="eventDate" name="eventDate" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -58,11 +66,11 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="eventTweet">Tweet</label>
-                                            <input type="text" class="form-control" id="eventTweet" name="eventTweet" required>
+                                            <input type="url" class="form-control" id="eventTweet" name="eventTweet" placeholder="Enter a valid URL" required>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="eventImage">Image URL</label>
-                                            <input type="text" class="form-control" id="eventImage" name="eventImage" required>
+                                            <label for="eventImage">Image File</label>
+                                            <input type="file" class="form-control-file" id="eventImage" name="eventImage" accept="image/*" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -117,14 +125,18 @@
                                             <button class="btn btn-outline-primary btn-sm mb-1" onclick="editEvent(<?php echo $row['id']; ?>)">
                                                 <i class="fas fa-edit"></i> Edit
                                             </button>
-                                            <button class="btn btn-outline-danger btn-sm" onclick="confirmDelete(<?php echo $row['id']; ?>)">
-                                                <i class="fas fa-trash-alt"></i> Delete
-                                            </button>
+                                            <form id="deleteForm_<?php echo $row['id']; ?>" action="management/eventHandling/delete_event.php" method="post">
+                                                <input type="hidden" name="eventId" value="<?php echo $row['id']; ?>">
+                                                <button class="btn btn-outline-danger btn-sm" onclick="confirmDelete(<?php echo $row['id']; ?>)">
+                                                    <i class="fas fa-trash-alt"></i> Delete
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                     <tr id="editForm_<?php echo $row['id']; ?>" style="display: none;">
                                         <td colspan="7">
-                                            <form id="eventForm_<?php echo $row['id']; ?>" onsubmit="saveEvent(<?php echo $row['id']; ?>); return false;">
+                                            <form id="eventForm_<?php echo $row['id']; ?>" action="management/eventHandling/update_event.php" method="post" enctype="multipart/form-data">
+                                                <input type="hidden" name="eventId" value="<?php echo $row['id']; ?>">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                         <label for="eventName_<?php echo $row['id']; ?>">Name</label>
@@ -132,7 +144,7 @@
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="eventDate_<?php echo $row['id']; ?>">Date</label>
-                                                        <input type="text" class="form-control" id="eventDate_<?php echo $row['id']; ?>" name="eventDate" value="<?php echo $row['date']; ?>" required>
+                                                        <input type="text" class="form-control datepicker" id="eventDate_<?php echo $row['id']; ?>" name="eventDate" value="<?php echo $row['date']; ?>" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -142,11 +154,11 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                         <label for="eventTweet_<?php echo $row['id']; ?>">Tweet</label>
-                                                        <input type="text" class="form-control" id="eventTweet_<?php echo $row['id']; ?>" name="eventTweet" value="<?php echo $row['tweet']; ?>" required>
+                                                        <input type="url" class="form-control" id="eventTweet_<?php echo $row['id']; ?>" name="eventTweet" value="<?php echo $row['tweet']; ?>" placeholder="Enter a valid URL" required>
                                                     </div>
                                                     <div class="form-group col-md-6">
-                                                        <label for="eventImage_<?php echo $row['id']; ?>">Image URL</label>
-                                                        <input type="text" class="form-control" id="eventImage_<?php echo $row['id']; ?>" name="eventImage" value="<?php echo $row['image_events']; ?>" required>
+                                                        <label for="newEventImage">New Image File</label>
+                                                        <input type="file" class="form-control-file" id="newEventImage" name="newEventImage" accept="image/*">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -177,7 +189,5 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

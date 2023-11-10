@@ -8,11 +8,11 @@
         });
 
         // Add validation for tweet URL
-        $('#addEventForm').submit(function () {
-            var tweetUrl = $('#eventTweet').val();
+        $('#addMemberForm').submit(function () {
+            var tweetUrl = $('#MemberTweet').val();
             if (tweetUrl && !isValidUrl(tweetUrl)) {
                 alert('Please enter a valid Tweet URL.');
-                return false; // Prevent form submission
+                return false; // PrMember form submission
             }
         });
 
@@ -23,94 +23,94 @@
         }
     });
 
-function addEvent() {
+function addMember() {
     // Get form data
     var formData = {
-        eventName: $('#eventName').val(),
-        eventDate: $('#eventDate').val(),
-        eventDescription: $('#eventDescription').val(),
-        eventTweet: $('#eventTweet').val(),
-        eventImage: $('#eventImage').val(),
-        eventButtonText: $('#eventButtonText').val()
+        MemberName: $('#MemberName').val(),
+        MemberDate: $('#MemberDate').val(),
+        MemberDescription: $('#MemberDescription').val(),
+        MemberTweet: $('#MemberTweet').val(),
+        MemberImage: $('#MemberImage').val(),
+        MemberButtonText: $('#MemberButtonText').val()
     };
 
-    // Perform AJAX request to add event
+    // Perform AJAX request to add Member
     $.ajax({
         type: 'POST',
-        url: 'add_event.php', // Replace with the actual PHP script to handle adding events
+        url: 'add_Member.php', // Replace with the actual PHP script to handle adding Members
         data: formData,
         success: function(response) {
             // Handle success, e.g., close the modal, refresh the table, etc.
-            $('#addEventModal').modal('hide');
+            $('#addMemberModal').modal('hide');
             console.error('Success');
 
-            // You may want to refresh the table or perform other actions after adding the event
+            // You may want to refresh the table or perform other actions after adding the Member
         },
         error: function(error) {
             // Handle error, e.g., display an error message
-            console.error('Error adding event:', error);
+            console.error('Error adding Member:', error);
         }
     });
 }
-function confirmDelete(eventId) {
-    var confirmation = confirm("Are you sure you want to delete this event?");
+function confirmDelete(MemberId) {
+    var confirmation = confirm("Are you sure you want to delete this Member?");
     if (confirmation) {
         // If the user confirms, submit the form
-        document.getElementById('deleteForm_' + eventId).submit();
+        document.getElementById('deleteForm_' + MemberId).submit();
     }
 }
 
 
-function deleteEvent(eventId) {
-    // Use AJAX to send a request to delete_event.php (create this file)
-    fetch('localhost/VCWebsite/management/eventHandling/delete_event.php', {
+function deleteMember(MemberId) {
+    // Use AJAX to send a request to delete_Member.php (create this file)
+    fetch('localhost/VCWebsite/management/MemberHandling/delete_Member.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: 'eventId=' + eventId,
+        body: 'MemberId=' + MemberId,
     })
     .then(response => response.text())
     .then(data => {
         // Handle the response as needed
         if (data === 'success') {
             // If deletion was successful, remove the row from the table
-            $('#eventRow_' + eventId).remove();
+            $('#MemberRow_' + MemberId).remove();
             console.log('success');
         } else {
             // Handle errors or display a message
-            alert('Failed to delete event.');
+            alert('Failed to delete Member.');
             console.error('fail');
         }
     })
     .catch(error => {
-        console.error('Error deleting event:', error);
+        console.error('Error deleting Member:', error);
     });
 }
 
 
-function editEvent(eventId) {
-    // Hide the row with event details
-    $('#eventRow_' + eventId).hide();
+function editMember(MemberId) {
+    // Hide the row with Member details
+    $('#MemberRow_' + MemberId).hide();
     
     // Show the edit form
-    $('#editForm_' + eventId).show();
+    $('#editForm_' + MemberId).show();
 }
 
-function cancelEdit(eventId) {
+function cancelEdit(MemberId) {
     // Hide the edit form
-    $('#editForm_' + eventId).hide();
+    $('#editForm_' + MemberId).hide();
 
-    // Show the row with event details
-    $('#eventRow_' + eventId).show();
+    // Show the row with Member details
+    $('#MemberRow_' + MemberId).show();
 }
 
-function saveEvent(eventId) {
-    // Use AJAX to send a request to update_event.php (create this file)
+function saveMember(MemberId) {
+    // Use AJAX to send a request to update_Member.php (create this file)
     $.ajax({
-        url: 'update_event.php',
+        url: 'update_Member.php',
         method: 'POST',
-        data: $('#eventForm_' + eventId).serialize(),
+        data: $('#MemberForm_' + MemberId).serialize(),
         success: function(response) {
             // Handle the response as needed
             if (response === 'success') {
@@ -119,7 +119,7 @@ function saveEvent(eventId) {
                 location.reload();
             } else {
                 // Handle errors or display a message
-                alert('Failed to update event.');
+                alert('Failed to update Member.');
             }
         }
     });

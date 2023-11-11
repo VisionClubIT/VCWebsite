@@ -19,7 +19,7 @@
            <br>
            <a href=verfication.php class="forgot"> forgot password?</a>
            <br>
-           <button class="login-button"> Log in</button>
+           <input type="submit" name="submit" value="Log In" class="login-button">
            </div>
         </div>
 

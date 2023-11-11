@@ -16,7 +16,7 @@
            <div class="input">
            <input type="email" placeholder="email" class="email">
            <br>
-           <button class="login-button"> Verify</button>
+           <input type="submit" name="submit" value="Verify" class="login-button">
            </div>
         </div>
 

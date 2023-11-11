@@ -68,7 +68,7 @@ if ($r && mysqli_num_rows($r) > 0) {
                        <div class=card-content> <span class="event-date"><?php echo $row['date']; ?></span>
                         <h3 class="eventname"><?php echo $row['name']; ?></h3>
                         <p class="eventdes"><?php echo $row['description']; ?></p>
-                        <a href="<?php echo $tweet; ?>" class="event-link"><?php echo $row['buttonText']; ?></a></div>
+                        <a target="_blank" href="<?php echo $tweet; ?>" class="event-link"><?php echo $row['buttonText']; ?></a></div>
                     </div>
                 </div>
             <?php

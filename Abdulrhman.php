@@ -55,7 +55,7 @@
 	right: 0;
 	}
 	
-	.card-title{
+	.card-title-ab{
 	text-transform: uppercase;
 	font-size: 50px;
 	font-weight: 500;

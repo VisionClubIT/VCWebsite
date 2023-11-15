@@ -5,7 +5,7 @@
     overflow: hidden;
     border: 8px solid #fff;
     position:relative;
-    display: flex;
+    display: grid;
   }
 
   .card-img {

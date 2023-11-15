@@ -1,5 +1,5 @@
 <?php
-include_once  'header/header.php';
+include_once  'Header/header.php';
 ?>
 <style>
         
@@ -19,6 +19,7 @@ include_once  'header/header.php';
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <body>
+
 
 
 	
@@ -67,6 +68,7 @@ include_once  'header/header.php';
 			
 		</div>  
 	</div>
+
 
   <div class="card">
 		<img src="uploads/Teams/mediaAndMarkting.png" class="card-img" alt="">

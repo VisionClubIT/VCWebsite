@@ -1,0 +1,54 @@
+/* Add your color set here */
+
+body {
+    background-color: #f8f9fc;
+}
+.admin-view #sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+}
+
+.admin-view #events-table {
+    margin-top: 20px;
+}
+table {
+    direction: rtl;
+
+    width: 100%; /* Set the table width to 100% */
+}
+
+th, td {
+    text-align: right;
+}
+#decription-col{
+    min-width: 300px;
+}
+
+.admin-view .nav-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    transition: background-color 0.3s;
+}
+
+.admin-view .nav-link-container:hover {
+    background-color: #000000; /* Adjust the background color on hover */
+}
+.admin-view a.nav-link {
+    color: white;
+}
+.admin-view .nav-link-container:hover a{
+    color: #e0e0e0 !important;
+}

@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="img/VCLogo.png">
 
     
-    <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.4.2/js/all.js"></script>
 
 
     <!-- JS, Popper.js, and jQuery -->

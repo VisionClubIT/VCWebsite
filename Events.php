@@ -28,7 +28,7 @@ if ($r && mysqli_num_rows($r) > 0) {
 <html lang="ar" dir="rtl">
 
 <head>
-    <?php include_once 'Header/headerhead.php';?>
+    <?php include_once 'Header/HeaderHead.php';?>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@ if ($r && mysqli_num_rows($r) > 0) {
 </head>
 
 <body class="bg-white" style="margin:0">
-    <?php include_once 'Header/headerbody.php';?>
+    <?php include_once 'Header/HeaderBody.php';?>
     <div class="promotional-event" style="background-image: url('<?php echo $backgroundImage; ?>'); ">
         <div class="promotional-overlay"></div> <!-- Grey overlay for text -->
         <div class="promo-rectangle">
@@ -65,10 +65,10 @@ if ($r && mysqli_num_rows($r) > 0) {
                 <div class="event-card">
                     <div class="event-image" style="background-image: url(<?php echo $row['image_events']; ?>);"></div>
                     <div class="event-details">
-                        <span class="event-date"><?php echo $row['date']; ?></span>
-                        <h3><?php echo $row['name']; ?></h3>
-                        <p><?php echo $row['description']; ?></p>
-                        <a href="<?php echo $tweet; ?>" class="event-link"><?php echo $row['buttonText']; ?></a>
+                       <div class=card-content> <span class="event-date"><?php echo $row['date']; ?></span>
+                        <h3 class="eventname"><?php echo $row['name']; ?></h3>
+                        <p class="eventdes"><?php echo $row['description']; ?></p>
+                        <a target="_blank" href="<?php echo $tweet; ?>" class="event-link"><?php echo $row['buttonText']; ?></a></div>
                     </div>
                 </div>
             <?php
@@ -77,7 +77,7 @@ if ($r && mysqli_num_rows($r) > 0) {
         </div>
     </div>
 
-    <?php include_once 'Footer/footerbody.php' ?>
+    <?php include_once 'Footer/footerBody.php' ?>
 
 </body>
 

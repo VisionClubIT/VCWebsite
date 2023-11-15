@@ -146,7 +146,7 @@ p {
   <title>Component</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+
 </head>
 <!-- <body>
 <div class="component-header">
@@ -171,7 +171,7 @@ p {
       </div>
     </div>
     <div class="box box4">
-        <img src="Img/endSem.jpg" alt="Image 1">
+        <img src="uploads/events/diriyah.jpeg" alt="Image 1">
     </div>
     <div class="box box5">
         <div class="box-content">

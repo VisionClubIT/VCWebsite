@@ -9,7 +9,7 @@
     <style>
         /* Adjust the height of the container */
         .carousel-item {
-            height: 600px; /* Decrease the height */
+            height: 700px; /* Decrease the height */
             position: relative;
             
         }
@@ -23,8 +23,9 @@
 
         /* Make the title and button larger and center them */
         .carousel-caption h1 {
+            padding-top:40%
             font-family: "Open-Sans, sans serif";
-            font-size: 6vw; /* Increase the font size */
+            font-size: 5vw; /* Increase the font size */
             text-align: center; /* Center text horizontally */
         }
 

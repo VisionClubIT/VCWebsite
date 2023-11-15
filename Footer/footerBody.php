@@ -156,8 +156,8 @@
                             role="button"
                             target="_blank"
                             data-mdb-ripple-color="dark"
-                            ><i class="fab fa-twitter"></i
-                        ></a>
+                            ><i class="fa-brands fa-x-twitter"></i>
+                        </a>
 
                         <!-- Instagram -->
                         <a

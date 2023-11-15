@@ -1,14 +1,18 @@
 <?php
 include_once  'header/header.php';
 ?>
+<style>
+        
 
+
+        </style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/About.css">
-    <link rel="stylesheet" href="Abdulrhman.css">
+    <link rel="stylesheet" href="css/About2.css">
     <title>الرسالة و الرؤية</title>
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,117 +22,9 @@ include_once  'header/header.php';
 
 
 	
-
-
-    <!-- <div class="top-container">
-        <div class="card">
-            <img src="img/Saudi_Vision_2030_logo 1.svg" alt="Card 1">
-            <h3>دعم</h3>
-        </div>
-        <div class="card">
-            <img src="img/IMG_8873 1.svg" alt="Card 2">
-            <h3>تفعيل</h3>
-        </div>
-        <div class="card">
-            <img src="img/a.svg" alt="Card 3">
-            <h3>تمكين</h3>
-        </div>
-    </div> -->
     <?php include_once 'aboutComponent.php'?>
-  
-     <!-- team cards -->
-    <!-- <div class="team-cards-container"> -->
-    <!-- IT team -->
-    <!-- <div class="team-card"> -->
-      <!-- <div class="team-card-inner">
-        <div class="team-card-front">
-          <img src="uploads/teamIcons/IT.png" alt="Image">
-          <div class="card-title">الفريق التقني</div>
-        </div>
-        <div class="team-card-back">
-          <p>This is the back of the team card.</p>
-        </div>
-      </div>
-    </div> -->
-        <!-- finance team -->
-        <!-- <div class="team-card">
-      <div class="team-card-inner">
-        <div class="team-card-front">
-          <img src="uploads/teamIcons/FINANCE.png" alt="Image">
-        </div>
-        <div class="team-card-back">
-          <p>This is the back of the team card.</p>
-        </div>
-      </div>
-    </div> -->
-        <!--Human resources-->
-        <!-- <div class="team-card">
-      <div class="team-card-inner">
-        <div class="team-card-front">
-          <img src="uploads/teamIcons/HR.png" alt="Image">
-        </div>
-        <div class="team-card-back">
-          <p>This is the back of the team card.</p>
-        </div>
-      </div>
-    </div> -->
-        <!--Law  -->
-        <!-- <div class="team-card">
-      <div class="team-card-inner">
-        <div class="team-card-front">
-          <img src="uploads/teamIcons/LAW.png" alt="Image">
-        </div>
-        <div class="team-card-back">
-          <p>This is the back of the team card.</p>
-        </div>
-      </div>
-    </div> -->
-        <!-- public realtions team -->
-        <!-- <div class="team-card">
-      <div class="team-card-inner">
-        <div class="team-card-front">
-          <img src="uploads/teamIcons/PR.png" alt="Image">
-        </div>
-        <div class="team-card-back">
-          <p>This is the back of the team card.</p>
-        </div>
-      </div>
-    </div> -->
-        <!-- marketing and media  -->
-        <!-- <div class="team-card">
-      <div class="team-card-inner">
-        <div class="team-card-front">
-          <img src="uploads/teamIcons/MM.png" alt="Image">
-        </div>
-        <div class="team-card-back">
-          <p>This is the back of the team card.</p>
-        </div>
-      </div>
-    </div> -->
-        <!--logistics team -->
-        <!-- <div class="team-card">
-      <div class="team-card-inner">
-        <div class="team-card-front">
-          <img src="uploads/teamIcons/PL.png" alt="Image">
-        </div>
-        <div class="team-card-back">
-          <p>This is the back of the team card.</p>
-        </div>
-      </div>
-    </div> -->
-        <!--quality team -->
-        <!-- <div class="team-card">
-      <div class="team-card-inner">
-        <div class="team-card-front">
-          <img src="uploads/teamIcons/QA.png" alt="Image">
-        </div>
-        <div class="team-card-back">
-          <p>This is the back of the team card.</p>
-        </div>
-      </div>
-    </div>
-    
-  </div> -->
+   
+
 
   <div class="component-header">
     <h1>
@@ -173,7 +69,7 @@ include_once  'header/header.php';
 	</div>
 
   <div class="card">
-		<img src="uploads\Teams\media and markting.png" class="card-img" alt="">
+		<img src="uploads/Teams/mediaAndMarkting.png" class="card-img" alt="">
 		<div class="card-body"> 
 			<h1 class="card-title-ab">فريق الاعلام و التسويق</h1>
 			<P class="card-info">فريق الاعلام والتسويق
@@ -183,7 +79,7 @@ include_once  'header/header.php';
 		</div>  
 	</div>
   <div class="card">
-		<img src="uploads\Teams\performance and quality.png" class="card-img" alt="">
+		<img src="uploads/Teams/performanceAndQuality.png" class="card-img" alt="">
 		<div class="card-body"> 
 			<h1 class="card-title-ab">فريق الاداء و الجودة</h1>
 			<P class="card-info">فريق الاداء والجودة 
@@ -194,7 +90,7 @@ include_once  'header/header.php';
 	</div>
 
   <div class="card">
-		<img src="uploads\Teams\public relations.png" class="card-img" alt="">
+		<img src="uploads/Teams/publicRelations.png" class="card-img" alt="">
 		<div class="card-body"> 
 			<h1 class="card-title-ab">فريق العلاقات العامة</h1>
 			<P class="card-info">فريق العلاقات العامة
@@ -215,7 +111,7 @@ include_once  'header/header.php';
 	</div>
 
   <div class="card">
-		<img src="uploads\Teams\human resources.png" class="card-img" alt="">
+		<img src="uploads/Teams/humanResources.png" class="card-img" alt="">
 		<div class="card-body"> 
 			<h1 class="card-title-ab">فريق الموارد البشرية</h1>
 			<P class="card-info">فريق الموارد البشرية

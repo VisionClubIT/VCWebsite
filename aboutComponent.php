@@ -85,6 +85,58 @@ p {
   }
 }
 
+/* vision , mission */
+        .about {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            color: #000;
+        }
+        
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: "bukra bold";
+        }
+        .desc{
+
+            color: grey;
+            font-family: "Arial";
+   
+ 
+        }
+
+        .divider {
+            border-left: 1px solid #000;
+            height: 100px;
+            margin: 0 20px;
+            color: grey;
+            
+        }
+
+        .mission {
+            padding: 20px;
+            text-align: center;
+            
+        }
+
 </style>
 
 
@@ -96,7 +148,7 @@ p {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<!-- <body>
 <div class="component-header">
       <h1>نادي رؤية ٢٠٣٠</h1>
       <p>بطموحنا نحقق رؤيتنا</p>
@@ -136,5 +188,33 @@ p {
 
   <br>
   <br>
+</body> -->
+
+<body>
+<div class="component-header">
+      <h1>نادي رؤية ٢٠٣٠</h1>
+      <p>بطموحنا نحقق رؤيتنا</p>
+</div>
+<div class="about">
+    <div class="container">
+        <div class="content">
+            <div class="title">الرؤية</div>
+            <p class="desc">تمكين طلاب وطالبات جامعة الملك سعود للمشاركة في تحقيق رؤية المملكة العربية السعودية ٢٠٣٠</p>
+        </div>
+        <div class="divider"></div>
+        <div class="mission">
+            <div class="title">الرسالة</div>
+            <p class="desc">دعم الطاقات وتحفيزها لتكوين مجتمع ريادي متوافق مع اهداف رؤية المملكة العربية السعودية ٢٠٣٠</p>
+        </div>
+        <div class="divider"></div>
+        <div class="mission">
+            <div class="title">الهدف</div>
+            <p class="desc">تفعيل دور الشباب بما يتوافق مع سوق العمل حالياً ومستقبلياً
+                        عن طريق إقامة برامج وورش عمل تدريبية و مجالس حوارية التي تسهم في تطوير مهاراتهم</p>
+        </div>
+        
+    </div>
+    </div>
+    <hr>
 </body>
 </html>

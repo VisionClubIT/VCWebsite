@@ -15,6 +15,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="2030 رؤية نادي">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/VCLogo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/VCLogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/VCLogo.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/VCLogo.png">
 
     
     <script defer src="https://use.fontawesome.com/releases/v6.4.2/js/all.js"></script>

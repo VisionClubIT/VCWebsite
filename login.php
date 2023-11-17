@@ -37,10 +37,10 @@ if (isset( $_POST["submit"] )){
         <div class="card"><form action=# method="post">
            <img src="media/Logo.color.png" class="logo">
            <div class="input">
-           <div style="position: absolute; padding-top: 55px; padding-left: 8px; color:  #769570;">E-mail</div>
+           <div style="position: absolute; padding-top: 22px; padding-left: 8px; color:  #769570;">E-mail</div>
            <input type="email" name="email" placeholder="email" class="email">
            <br>
-           <div style="position: absolute; padding-top: 55px; padding-left: 8px; color:  #769570;">Password</div>
+           <div style="position: absolute; padding-top: 22px; padding-left: 8px; color:  #769570;">Password</div>
            <input type="password" name ="password" placeholder="password" class="password">
            <br>
            <a href=verfication.php class="forgot"> forgot password?</a>

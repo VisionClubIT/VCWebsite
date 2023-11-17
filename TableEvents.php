@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <label for="eventTweet">Tweet</label>
+                                            <label for="eventTweet">Link</label>
                                             <input type="url" class="form-control" id="eventTweet" name="eventTweet" placeholder="Enter a valid URL" required>
                                         </div>
                                         <div class="form-group col-md-6">
@@ -106,7 +106,7 @@
                                 <tr>
                                     <th>Name</th>
                                     <th>Description</th>
-                                    <th>Tweet</th>
+                                    <th>Link</th>
                                     <th>Date</th>
                                     <th>Image</th>
                                     <th>Button Text</th>
@@ -156,7 +156,7 @@
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
-                                                        <label for="eventTweet_<?php echo $row['id']; ?>">Tweet</label>
+                                                        <label for="eventTweet_<?php echo $row['id']; ?>">Link</label>
                                                         <input type="url" class="form-control" id="eventTweet_<?php echo $row['id']; ?>" name="eventTweet" value="<?php echo $row['tweet']; ?>" placeholder="Enter a valid URL" required>
                                                     </div>
                                                     <div class="form-group col-md-6">

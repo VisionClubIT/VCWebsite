@@ -94,18 +94,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result) {
         // Event updated successfully, redirect back to TableEvents.php with success message
         $queryString = $_SERVER['QUERY_STRING'];
-        header("Location:http://localhost/vcwebsite/TableEvents.php?success=Event: $eventId updated successfully" . $queryString);
+        header("Location:/TableEvents.php?success=Event: $eventId updated successfully" . $queryString);
         die();
     } else {
         // Error updating event, redirect back to TableEvents.php with error message
         $queryString = $_SERVER['QUERY_STRING'];
-        header("Location:http://localhost/vcwebsite/TableEvents.php?error=Event: $eventId update Failed" . $queryString);
+        header("Location:/TableEvents.php?error=Event: $eventId update Failed" . $queryString);
         die();
     }
 } else {
     // Wrong access, redirect back to TableEvents.php with error message
     $queryString = $_SERVER['QUERY_STRING'];
-    header("Location:http://localhost/vcwebsite/TableEvents.php?error=Wrong Access" . $queryString);
+    header("Location:/TableEvents.php?error=Wrong Access" . $queryString);
     die();
 }
 ?>

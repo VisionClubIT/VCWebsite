@@ -93,18 +93,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result) {
         // Member updated successfully, redirect back to TableMembers.php with success message
         $queryString = $_SERVER['QUERY_STRING'];
-        header("Location:http://localhost/vcwebsite/TableMembers.php?success=Member: $MemberId updated successfully" . $queryString);
+        header("Location:/TableMembers.php?success=Member: $MemberId updated successfully" . $queryString);
         die();
     } else {
         // Error updating Member, redirect back to TableMembers.php with error message
         $queryString = $_SERVER['QUERY_STRING'];
-        header("Location:http://localhost/vcwebsite/TableMembers.php?error=Member: $MemberId update Failed" . $queryString);
+        header("Location:/TableMembers.php?error=Member: $MemberId update Failed" . $queryString);
         die();
     }
 } else {
     // Wrong access, redirect back to TableMembers.php with error message
     $queryString = $_SERVER['QUERY_STRING'];
-    header("Location:http://localhost/vcwebsite/TableMembers.php?error=Wrong Access" . $queryString);
+    header("Location:/TableMembers.php?error=Wrong Access" . $queryString);
     die();
 }
 ?>

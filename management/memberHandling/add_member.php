@@ -63,12 +63,12 @@ if ($uploadOk == 1) {
     if ($result) {
         // Member added successfully, redirect back to TableMembers.php with success message
         $queryString = $_SERVER['QUERY_STRING'];
-        header("Location:http://localhost/vcwebsite/TableMembers.php?success=Member added successfully" . $queryString);
+        header("Location:/TableMembers.php?success=Member added successfully" . $queryString);
         die();
     } else {
         // Error adding Member, redirect back to TableMembers.php with error message
         $queryString = $_SERVER['QUERY_STRING'];
-        header("Location:http://localhost/vcwebsite/TableMembers.php?error=" . urlencode('Error adding Member: ' . $stmt->error) . $queryString);
+        header("Location:/TableMembers.php?error=" . urlencode('Error adding Member: ' . $stmt->error) . $queryString);
         die();
     }
 } else {

@@ -57,12 +57,25 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="MemberRole">Role</label>
-                                        <input type="text" class="form-control" id="MemberRole" name="MemberRole" required>
+                                        <select class="form-control" id="MemberRole" name="MemberRole" required>
+                                            <option value="الرئيس">الرئيس</option>
+                                            <option value="نائب الرئيس">نائب الرئيس</option>
+                                            <option value="رئيس و مؤسس النادي">رئيس و مؤسس النادي</option>
+                                            <option value="قائد الفريق التقني">قائد الفريق التقني</option>
+                                            <option value="قائد فريق العلاقات العامة">قائد فريق العلاقات العامة</option>
+                                            <option value="قائد التنظيم والدعم اللوجستي">قائد التنظيم والدعم اللوجستي</option>
+                                            <option value="قائد فريق الإعلام والتسويق">قائد فريق الإعلام والتسويق</option>
+                                            <option value="قائد الإدارة القانونية">قائد الإدارة القانونية</option>
+                                            <option value="قائد فريق الموارد البشرية">قائد فريق الموارد البشرية</option>
+                                            <option value="قائد فريق الأداء والجودة">قائد فريق الأداء والجودة</option>
+                                            <option value="قائد الإدارة المالية">قائد الإدارة المالية</option>
+                                        </select>
                                     </div>
+
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="MemberLinkedin">Linkedin</label>
-                                            <input type="url" class="form-control" id="MemberLinkedin" name="MemberLinkedin" placeholder="Enter a valid URL" required>
+                                            <input type="url" class="form-control" id="MemberLinkedin" name="MemberLinkedin" placeholder="Enter a valid URL">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="MemberImage">Picture File</label>
@@ -138,7 +151,19 @@
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="MemberRole_<?php echo $row['id']; ?>">Role</label>
-                                                        <input type="text" class="form-control" id="MemberRole_<?php echo $row['id']; ?>" name="MemberRole" value="<?php echo $row['Role']; ?>" required>
+                                                        <select class="form-control" id="MemberRole_<?php echo $row['id']; ?>" name="MemberRole" required>
+                                                            <option value="الرئيس" <?php echo ($row['Role'] == 'الرئيس') ? 'selected' : ''; ?>>الرئيس</option>
+                                                            <option value="نائب الرئيس" <?php echo ($row['Role'] == 'نائب الرئيس') ? 'selected' : ''; ?>>نائب الرئيس</option>
+                                                            <option value="رئيس و مؤسس النادي" <?php echo ($row['Role'] == 'رئيس و مؤسس النادي') ? 'selected' : ''; ?>>رئيس و مؤسس النادي</option>
+                                                            <option value="قائد الفريق التقني" <?php echo ($row['Role'] == 'قائد الفريق التقني') ? 'selected' : ''; ?>>قائد الفريق التقني</option>
+                                                            <option value="قائد فريق العلاقات العامة" <?php echo ($row['Role'] == 'قائد فريق العلاقات العامة') ? 'selected' : ''; ?>>قائد فريق العلاقات العامة</option>
+                                                            <option value="قائد التنظيم والدعم اللوجستي" <?php echo ($row['Role'] == 'قائد التنظيم والدعم اللوجستي') ? 'selected' : ''; ?>>قائد التنظيم والدعم اللوجستي</option>
+                                                            <option value="قائد فريق الإعلام والتسويق" <?php echo ($row['Role'] == 'قائد فريق الإعلام والتسويق') ? 'selected' : ''; ?>>قائد فريق الإعلام والتسويق</option>
+                                                            <option value="قائد الإدارة القانونية" <?php echo ($row['Role'] == 'قائد الإدارة القانونية') ? 'selected' : ''; ?>>قائد الإدارة القانونية</option>
+                                                            <option value="قائد فريق الموارد البشرية" <?php echo ($row['Role'] == 'قائد فريق الموارد البشرية') ? 'selected' : ''; ?>>قائد فريق الموارد البشرية</option>
+                                                            <option value="قائد فريق الأداء والجودة" <?php echo ($row['Role'] == 'قائد فريق الأداء والجودة') ? 'selected' : ''; ?>>قائد فريق الأداء والجودة</option>
+                                                            <option value="قائد الإدارة المالية" <?php echo ($row['Role'] == 'قائد الإدارة المالية') ? 'selected' : ''; ?>>قائد الإدارة المالية</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -148,7 +173,7 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                         <label for="MemberLinkedin_<?php echo $row['id']; ?>">Linkedin</label>
-                                                        <input type="url" class="form-control" id="MemberLinkedin_<?php echo $row['id']; ?>" name="MemberLinkedin" value="<?php echo $row['Linkedin']; ?>" placeholder="Enter a valid URL" required>
+                                                        <input type="url" class="form-control" id="MemberLinkedin_<?php echo $row['id']; ?>" name="MemberLinkedin" value="<?php echo $row['Linkedin']; ?>" placeholder="Enter a valid URL">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label for="newMemberImage_<?php echo $row['id']; ?>">New Image File</label>

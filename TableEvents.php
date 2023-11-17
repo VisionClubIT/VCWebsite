@@ -75,7 +75,10 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="eventButtonText">Button Text</label>
-                                        <input type="text" class="form-control" id="eventButtonText" name="eventButtonText" required>
+                                        <select class="form-control" id="eventButtonText" name="eventButtonText" required>
+                                            <option value="اقرأ المزيد">اقرأ المزيد</option>
+                                            <option value="سجل الآن">سجل الآن</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-success"><i class="fas fa-plus"></i> Add Event</button>
@@ -163,7 +166,10 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="eventButtonText_<?php echo $row['id']; ?>">Button Text</label>
-                                                    <input type="text" class="form-control" id="eventButtonText_<?php echo $row['id']; ?>" name="eventButtonText" value="<?php echo $row['buttonText']; ?>" required>
+                                                    <select class="form-control" id="eventButtonText_<?php echo $row['id']; ?>" name="eventButtonText" required>
+                                                        <option value="اقرأ المزيد" <?php echo ($row['buttonText'] == 'اقرأ المزيد') ? 'selected' : ''; ?>>اقرأ المزيد</option>
+                                                        <option value="سجل الآن" <?php echo ($row['buttonText'] == 'سجل الآن') ? 'selected' : ''; ?>>سجل الآن</option>
+                                                    </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Save</button>

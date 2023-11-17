@@ -9,18 +9,18 @@ if (isset($_POST['MemberId'])) {
     if ($con->query($sql) === TRUE) {
         // Member deleted successfully, redirect back to TableMembers.php with success message
         $queryString =  $_SERVER['QUERY_STRING'];   
-        header("Location:http://localhost/vcwebsite/TableMembers.php?success=Member: $MemberId deleted successfully".$queryString);
+        header("Location:/TableMembers.php?success=Member: $MemberId deleted successfully".$queryString);
         die();
     } else {
         // Member deletion faild
         $queryString =  $_SERVER['QUERY_STRING'];   
-        header("Location:http://localhost/vcwebsite/TableMembers.php?error=Member: $MemberId deletion failed".$queryString);
+        header("Location:/TableMembers.php?error=Member: $MemberId deletion failed".$queryString);
         die();
     }
 } else {
     // Member deletion faild
     $queryString =  $_SERVER['QUERY_STRING'];   
-    header("Location:http://localhost/vcwebsite/TableMembers.php?error=no MemberId found".$queryString);
+    header("Location:/TableMembers.php?error=no MemberId found".$queryString);
     die();
 }
 

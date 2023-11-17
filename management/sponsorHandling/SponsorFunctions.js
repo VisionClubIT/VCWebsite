@@ -8,11 +8,11 @@
         });
 
         // Add validation for tweet URL
-        $('#addEventForm').submit(function () {
-            var tweetUrl = $('#eventTweet').val();
+        $('#addSponsorForm').submit(function () {
+            var tweetUrl = $('#SponsorTweet').val();
             if (tweetUrl && !isValidUrl(tweetUrl)) {
                 alert('Please enter a valid Tweet URL.');
-                return false; // Prevent form submission
+                return false; // PrSponsor form submission
             }
         });
 
@@ -23,94 +23,94 @@
         }
     });
 
-function addEvent() {
+function addSponsor() {
     // Get form data
     var formData = {
-        eventName: $('#eventName').val(),
-        eventDate: $('#eventDate').val(),
-        eventDescription: $('#eventDescription').val(),
-        eventTweet: $('#eventTweet').val(),
-        eventImage: $('#eventImage').val(),
-        eventButtonText: $('#eventButtonText').val()
+        SponsorName: $('#SponsorName').val(),
+        SponsorDate: $('#SponsorDate').val(),
+        SponsorDescription: $('#SponsorDescription').val(),
+        SponsorTweet: $('#SponsorTweet').val(),
+        SponsorImage: $('#SponsorImage').val(),
+        SponsorButtonText: $('#SponsorButtonText').val()
     };
 
-    // Perform AJAX request to add event
+    // Perform AJAX request to add Sponsor
     $.ajax({
         type: 'POST',
-        url: 'add_event.php', // Replace with the actual PHP script to handle adding events
+        url: 'add_Sponsor.php', // Replace with the actual PHP script to handle adding Sponsors
         data: formData,
         success: function(response) {
             // Handle success, e.g., close the modal, refresh the table, etc.
-            $('#addEventModal').modal('hide');
+            $('#addSponsorModal').modal('hide');
             console.error('Success');
 
-            // You may want to refresh the table or perform other actions after adding the event
+            // You may want to refresh the table or perform other actions after adding the Sponsor
         },
         error: function(error) {
             // Handle error, e.g., display an error message
-            console.error('Error adding event:', error);
+            console.error('Error adding Sponsor:', error);
         }
     });
 }
-function confirmDelete(eventId) {
-    var confirmation = confirm("Are you sure you want to delete this event?");
+function confirmDelete(SponsorId) {
+    var confirmation = confirm("Are you sure you want to delete this Sponsor?");
     if (confirmation) {
         // If the user confirms, submit the form
-        document.getElementById('deleteForm_' + eventId).submit();
+        document.getElementById('deleteForm_' + SponsorId).submit();
     }
 }
 
 
-function deleteEvent(eventId) {
-    // Use AJAX to send a request to delete_event.php (create this file)
-    fetch('localhost/VCWebsite/management/eventHandling/delete_event.php', {
+function deleteSponsor(SponsorId) {
+    // Use AJAX to send a request to delete_Sponsor.php (create this file)
+    fetch('localhost/VCWebsite/management/SponsorHandling/delete_Sponsor.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: 'eventId=' + eventId,
+        body: 'SponsorId=' + SponsorId,
     })
     .then(response => response.text())
     .then(data => {
         // Handle the response as needed
         if (data === 'success') {
             // If deletion was successful, remove the row from the table
-            $('#eventRow_' + eventId).remove();
+            $('#SponsorRow_' + SponsorId).remove();
             console.log('success');
         } else {
             // Handle errors or display a message
-            alert('Failed to delete event.');
+            alert('Failed to delete Sponsor.');
             console.error('fail');
         }
     })
     .catch(error => {
-        console.error('Error deleting event:', error);
+        console.error('Error deleting Sponsor:', error);
     });
 }
 
 
-function editEvent(eventId) {
-    // Hide the row with event details
-    $('#eventRow_' + eventId).hide();
+function editSponsor(SponsorId) {
+    // Hide the row with Sponsor details
+    $('#SponsorRow_' + SponsorId).hide();
     
     // Show the edit form
-    $('#editForm_' + eventId).show();
+    $('#editForm_' + SponsorId).show();
 }
 
-function cancelEdit(eventId) {
+function cancelEdit(SponsorId) {
     // Hide the edit form
-    $('#editForm_' + eventId).hide();
+    $('#editForm_' + SponsorId).hide();
 
-    // Show the row with event details
-    $('#eventRow_' + eventId).show();
+    // Show the row with Sponsor details
+    $('#SponsorRow_' + SponsorId).show();
 }
 
-function saveEvent(eventId) {
-    // Use AJAX to send a request to update_event.php (create this file)
+function saveSponsor(SponsorId) {
+    // Use AJAX to send a request to update_Sponsor.php (create this file)
     $.ajax({
-        url: 'update_event.php',
+        url: 'update_Sponsor.php',
         method: 'POST',
-        data: $('#eventForm_' + eventId).serialize(),
+        data: $('#SponsorForm_' + SponsorId).serialize(),
         success: function(response) {
             // Handle the response as needed
             if (response === 'success') {
@@ -119,7 +119,7 @@ function saveEvent(eventId) {
                 location.reload();
             } else {
                 // Handle errors or display a message
-                alert('Failed to update event.');
+                alert('Failed to update Sponsor.');
             }
         }
     });

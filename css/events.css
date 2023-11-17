@@ -25,7 +25,7 @@ body {
 /* Adjusted CSS for the promotional event */
 .promotional-event {
   background-image: url('<?php echo $backgroundImage; ?>');
-  background-position:top;
+  background-position:center;
   height: 400px; /* Increase the height of the promotional container as needed */
   position: relative;  /* Relative positioning for overlay REMOVE */
   display: flex; /* To vertically align content REMOVE */

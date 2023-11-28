@@ -98,9 +98,9 @@
     <div class="carousel-inner">
         <!-- Slide 1 -->
         <div class="carousel-item active">
-            <img src="uploads/events/ND.png" alt="">
+            <img src="meetingWeek2.png" alt="">
             <div class="carousel-caption">
-                <h1>اليوم الوطني</h1>
+                <h1>Meeting Week</h1>
                 <a href="Events.php" class="btn btn-primary">تابع المزيد</a>
             </div>
         </div>

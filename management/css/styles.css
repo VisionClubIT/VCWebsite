@@ -52,3 +52,20 @@ th, td {
 .admin-view .nav-link-container:hover a{
     color: #e0e0e0 !important;
 }
+.admin-view .nav-link-container form button.nav-link {
+    color: white !important;
+}
+
+/* Add your existing styles above */
+
+@media (max-width: 768px) {
+    .admin-view #sidebar {
+        position: static;
+        height: auto;
+        border-right: none;
+    }
+
+    .admin-view .main-content {
+        margin-left: 0;
+    }
+}

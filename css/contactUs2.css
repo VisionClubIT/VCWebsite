@@ -157,6 +157,7 @@ div.seperator {
 }
 
 details > summary {
+
   list-style: none;
 }
 details > summary::-webkit-details-marker {
@@ -164,7 +165,7 @@ details > summary::-webkit-details-marker {
 }
 
 summary {
-  font-size: 1.4em;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   -webkit-touch-callout: none;
@@ -203,7 +204,7 @@ details[open] p {
 
 details[open] summary:after {
   content: "-";
-  font-size: 3.2em;
+  font-size: 18px;
   margin: -33px 0.35em 0 0;
   font-weight: 200;
 }

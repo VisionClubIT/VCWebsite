@@ -1,5 +1,6 @@
 <?php 
 session_start();
+$error="";
 if (isset( $_POST["submit"] )){
     include "config\database.php";
     $email=$_POST["email"];
@@ -17,7 +18,8 @@ if (isset( $_POST["submit"] )){
             exit;
     }
     else if($rowcount == 0){
-       echo("your email or password is incorrect!");
+        $error="your email or password is incorrect!";
+
     }
 }
 
@@ -37,14 +39,16 @@ if (isset( $_POST["submit"] )){
         <div class="card"><form action=# method="post">
            <img src="media/Logo.color.png" class="logo">
            <div class="input">
-           <div style="position: absolute; padding-top: 22px; padding-left: 8px; color:  #769570;">E-mail</div>
-           <input type="email" name="email" placeholder="email" class="email">
-           <br>
-           <div style="position: absolute; padding-top: 22px; padding-left: 8px; color:  #769570;">Password</div>
+            <p>
+           <label for="email" style="position: absolute; padding-top: 22px; padding-left: 8px; color:  #769570;">E-mail</label>
+           <input type="email" name="email" placeholder="email" class="email"></p>
+           <p>
+           <label for="password" style="position: absolute; padding-top: 22px; padding-left: 8px; color:  #769570;">Password</label>
            <input type="password" name ="password" placeholder="password" class="password">
-           <br>
-           <a href=verfication.php class="forgot"> forgot password?</a>
-           <br>
+           
+           </p>
+           <div class="error"><?php echo $error?></div>
+
            <input type="submit" name="submit" value="Log In" class="login-button">
            </div></form>
         </div>

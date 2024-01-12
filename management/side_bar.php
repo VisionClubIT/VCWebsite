@@ -1,6 +1,8 @@
 <?php
 // Start the session
-session_start();
+if(!isset($_SESSION)){ 
+    session_start();
+}
 
 // Check if the logout form has been submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

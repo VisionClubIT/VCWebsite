@@ -48,21 +48,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <ul style="list-style: none; padding: 0;">
                 <li class="nav-item">
                     <div class="nav-link-container">
-                        <a class="nav-link active" href="TableEvents.php">
+                        <a class="nav-link active" href="TableEvents">
                             <i class="fas fa-home fa-fw mr-2"></i>Events
                         </a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="nav-link-container">
-                        <a class="nav-link" href="TableMembers.php">
+                        <a class="nav-link" href="TableMembers">
                             <i class="fas fa-users fa-fw mr-2"></i>Members
                         </a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="nav-link-container">
-                        <a class="nav-link" href="TableSponsors.php">
+                        <a class="nav-link" href="TableSponsors">
                             <i class="fas fa-handshake fa-fw mr-2"></i>Sponsors
                         </a>
                     </div>

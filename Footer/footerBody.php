@@ -114,22 +114,22 @@
                         <ul class="navbar-nav text-center flex-column flex-sm-row mx-auto">
                         
                         <li class="nav-item">
-                            <a class="nav-link"  href="index.php">الصفحة الرئيسية</a>
+                            <a class="nav-link"  href="Home">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="Events.php">الفعاليات والأنشطة</a>
+                            <a class="nav-link"  href="Events.">الفعاليات والأنشطة</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"  href="Aboutus.php" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle"  href="AboutUs" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             عن النادي
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" id="subPages" href="Aboutus.php">الرسالة والرؤية</a>
-                            <a class="dropdown-item" id="subPages" href="ourTeam.php">الهيكل التنظيمي</a>
+                            <a class="dropdown-item" id="subPages" href="AboutUs">الرسالة والرؤية</a>
+                            <a class="dropdown-item" id="subPages" href="OurTeam">الهيكل التنظيمي</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="ContactUs.php">تواصل معنا</a>
+                            <a class="nav-link"  href="ContactUs">تواصل معنا</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

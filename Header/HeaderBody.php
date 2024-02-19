@@ -34,12 +34,12 @@
                 <ul class="navbar-nav">
                     <!-- Menu Items -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link" id="headerTextSize" href="index.php">
+                        <a class="nav-link" id="headerTextSize" href="Home">
                             الصفحة الرئيسية
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" id="headerTextSize" href="Events.php">
+                        <a class="nav-link" id="headerTextSize" href="Events">
                         الفعاليات والأنشطة
                         </a>
                     </li>
@@ -48,12 +48,12 @@
                            عن النادي
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" id="subPages" href="Aboutus.php">الرسالة والرؤية</a>
-                            <a class="dropdown-item" id="subPages" href="ourTeam.php">الهيكل التنظيمي</a>
+                            <a class="dropdown-item" id="subPages" href="AboutUs">الرسالة والرؤية</a>
+                            <a class="dropdown-item" id="subPages" href="OurTeam">الهيكل التنظيمي</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" id="headerTextSize" href="ContactUs.php">
+                        <a class="nav-link" id="headerTextSize" href="ContactUs">
                         تواصل معنا
                         </a>
                     </li>

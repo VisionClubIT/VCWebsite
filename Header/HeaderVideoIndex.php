@@ -99,12 +99,12 @@
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a class="nav-link headerTextSize" href="index.php">
+                        <a class="nav-link headerTextSize" href="Home">
                             <span>الصفحة الرئيسية</span>
                         </a>
                     </li>
                     <li class="nav-item has-sub">
-                        <a class="nav-link headerTextSize" href="Events.php" >الفعاليات والانشطة</a>
+                        <a class="nav-link headerTextSize" href="Events" >الفعاليات والانشطة</a>
                     </li>
 
                     <li class="nav-item has-sub">
@@ -115,19 +115,19 @@
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="Aboutus.php" style="font-size: 1.5rem">
+                                <a href="AboutUs" style="font-size: 1.5rem">
                                     الرسالة والرؤية  
                                 </a>
                             </li>
                             <li>
-                                <a href="ourTeam.php" style="font-size: 1.5rem">
+                                <a href="OurTeam" style="font-size: 1.5rem">
                                      الهيكل التنظيمي
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link headerTextSize" href="ContactUs.php">
+                        <a class="nav-link headerTextSize" href="ContactUs">
                             <span>تواصل معنا</span>
                         </a>
                     </li>

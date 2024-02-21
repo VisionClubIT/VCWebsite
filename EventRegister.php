@@ -19,7 +19,25 @@ require_once('config/database.php'); // Include your database configuration
     <!--
         Content Here
     -->
-    
+    <form action="#" method="post">
+        <div>
+            <label for="regFirstName">First Name:</label>
+            <input type="text" id="regFirstName" name="regFirstName" required>
+        </div>
+        <div>
+            <label for="regLastName">Last Name:</label>
+            <input type="text" id="regLastName" name="regLastName" required>
+        </div>
+        <div>
+            <label for="regEmail">Email:</label>
+            <input type="email" id="regEmail" name="regEmail" required>
+        </div>
+        <div>
+            <label for="regPhoneNumber">Phone Number:</label>
+            <input type="tel" id="regPhoneNumber" name="regPhoneNumber" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 
 
     <?php include_once 'Footer/footerBody.php' ?>

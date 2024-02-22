@@ -12,6 +12,9 @@ switch ($page) {
     case 'Events':
         include 'Events.php';
         break;
+    case 'EventRegister':
+        include 'EventRegister.php';
+        break;
     case 'OurTeam':
         include 'ourTeam.php';
         break;

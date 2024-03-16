@@ -16,7 +16,6 @@ require_once('config/database.php'); // Include your database configuration
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
         }
         .regContainer {
             max-width: 600px;
@@ -65,7 +64,7 @@ require_once('config/database.php'); // Include your database configuration
         margin-right: 5px;
     }
         button[type="submit"] {
-            background-color: #987554;
+            background-color: #4682b4;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -73,9 +72,10 @@ require_once('config/database.php'); // Include your database configuration
             cursor: pointer;
             width: 100%;
             margin-top: 10px;
+            font-size: 18px;
         }
         button[type="submit"]:hover {
-            background-color: #664229;
+            background-color: #b0c4de;
         }
     </style>
 </head>
@@ -140,12 +140,13 @@ require_once('config/database.php'); // Include your database configuration
         </div>
     </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit">إرسال</button>
         </form>
     </div>
 
 
     <?php include_once 'Footer/footerBody.php' ?>
+
 </body>
 
 </html>

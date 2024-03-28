@@ -41,7 +41,7 @@
     transform: translate(-50%, -50%);
 }
 
-/* Media Query for responsive text size */
+/* Media Query for responsive text size*/
 @media (max-width: 768px) {
     .text {
         font-size: 24px; /* Adjust the font size as needed for smaller screens */
@@ -109,7 +109,7 @@
 
 .tree li::before,
 .tree li::after {
-    content: '';
+    /* content: ''; */
     position: absolute;
     top: 0;
     right: 50%;
@@ -152,7 +152,7 @@
 }
 
 .tree ul ul::before {
-    content: '';
+    /* content: ''; */
     position: absolute;
     top: 0;
     left: 50%;
@@ -163,7 +163,7 @@
 
 .tree li a {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 40px;
     display: inline-grid;
     border-radius: 5px;
     text-decoration-line: none;
@@ -172,14 +172,14 @@
 }
 
 .tree li a img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 10px !important;
     border-radius: 100px;
     margin: auto;
 }
 .tree li a{
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .tree li a span {
@@ -187,7 +187,7 @@
     border-radius: 5px;
     color: #666;
     padding: 8px;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;

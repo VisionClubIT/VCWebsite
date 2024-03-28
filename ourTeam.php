@@ -87,7 +87,7 @@ $leaders = ["قائد الفريق التقني", "قائد فريق العلا�
         foreach (['الرئيس','رئيس و مؤسس النادي','نائبة الرئيس', 'نائب الرئيس'] as $role) {
             $data = getHierarchyData($blockYear, $role, $con);
             if ($data && $role == 'الرئيس' || $data && $role == 'رئيس و مؤسس النادي') {
-                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a><ul>";
+                echo "<li><a href='{$data['Linkedin']}' target='_blank'><img src='{$data['Picture']}'>$role<span>{$data['Name']}</span></a></li>";
             }
            
             if ($data && $role == 'نائب الرئيس') {

@@ -59,6 +59,7 @@
             padding: 0;
             justify-content: space-between;
             font-family: "Bukra Bold" !important;
+            z-index: 5;
         }
         .header2023White .navbar-nav {
             padding: 0;

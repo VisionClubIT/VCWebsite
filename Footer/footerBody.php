@@ -117,7 +117,7 @@
                             <a class="nav-link"  href="Home">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="Events.">الفعاليات والأنشطة</a>
+                            <a class="nav-link"  href="Events">الفعاليات والأنشطة</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle"  href="AboutUs" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
